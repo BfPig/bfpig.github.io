@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="定义在学习ES6中挑选出比较常用、实用的部分。  var、let、constlet和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。  let用于声明变量，const用于声明常量。意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。 12345678910let a =1;a = 2;// 2const b = 1;b = 2;// Identifier">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T05:55:47.228Z">
+<meta property="og:updated_time" content="2018-03-05T05:56:56.363Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6实用小记 (一)">
 <meta name="twitter:description" content="定义在学习ES6中挑选出比较常用、实用的部分。  var、let、constlet和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。  let用于声明变量，const用于声明常量。意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。 12345678910let a =1;a = 2;// 2const b = 1;b = 2;// Identifier">
@@ -315,9 +315,9 @@
 <li><p>不存在变量提升</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="keyword">let</span> b =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<p>-暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></p>
-<ul>
+<li><p>暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+</li>
 <li><p>模版字符串<br>在拼接HTML插入DOM的时候，功效尤其显著。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">'hello,'</span>+name+<span class="string">'.'</span>+<span class="string">'Nice to meet you!'</span></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">`hello,<span class="subst">$&#123;name&#125;</span>.Nice to meet you!`</span></span><br></pre></td></tr></table></figure>
 </li>
@@ -348,8 +348,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/13/css-norm/" rel="next" title="CSS 使用规范">
-                <i class="fa fa-chevron-left"></i> CSS 使用规范
+              <a href="/2017/09/13/more/" rel="next" title="模块化">
+                <i class="fa fa-chevron-left"></i> 模块化
               </a>
             
           </div>
@@ -433,7 +433,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
