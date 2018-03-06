@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="######1、安装git apt-get install git  ######2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令：">
+<meta name="description" content="1、安装gitapt-get install git  2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令： 1git clone gi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Debian安装『SQLmap』">
 <meta property="og:url" content="https://bfpig.github.io/2015/12/12/2015-12-12-install-sqlmap/index.html">
 <meta property="og:site_name" content="Cannan">
-<meta property="og:description" content="######1、安装git apt-get install git  ######2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令：">
+<meta property="og:description" content="1、安装gitapt-get install git  2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令： 1git clone gi">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T11:51:33.508Z">
+<meta property="og:updated_time" content="2018-03-06T11:54:21.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debian安装『SQLmap』">
-<meta name="twitter:description" content="######1、安装git apt-get install git  ######2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令：">
+<meta name="twitter:description" content="1、安装gitapt-get install git  2、从github上克隆sqlmap到本地github提供了两种地址，SSL和SSH，都可以使用，建议使用git~ 1234地址1：https://github.com/sqlmapproject/sqlmap.git地址2：git@github.com:sqlmapproject/sqlmap.git 克隆命令： 1git clone gi">
 
 
 
@@ -335,9 +335,8 @@
       
 
       
-        <p>######1、安装git</p>
-<pre><code>apt-get install git 
-</code></pre><p>######2、从github上克隆sqlmap到本地<br>github提供了两种地址，SSL和SSH，都可以使用，建议使用git~</p>
+        <h6 id="1、安装git"><a href="#1、安装git" class="headerlink" title="1、安装git"></a>1、安装git</h6><pre><code>apt-get install git 
+</code></pre><h6 id="2、从github上克隆sqlmap到本地"><a href="#2、从github上克隆sqlmap到本地" class="headerlink" title="2、从github上克隆sqlmap到本地"></a>2、从github上克隆sqlmap到本地</h6><p>github提供了两种地址，SSL和SSH，都可以使用，建议使用git~</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">地址1：</span><br><span class="line">https://github.com/sqlmapproject/sqlmap.git</span><br><span class="line">地址2：</span><br><span class="line">git@github.com:sqlmapproject/sqlmap.git</span><br></pre></td></tr></table></figure>
 <p>克隆命令：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:sqlmapproject/sqlmap.git /你要放sqlmap的目录路径</span><br></pre></td></tr></table></figure>
@@ -345,7 +344,7 @@
 <p>OK，搞定，安装完了，试试先~</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /sqlmap的目录</span><br><span class="line">./sqlmap.py -h</span><br></pre></td></tr></table></figure>
 <p>不过这样的话，每次运行都要cd到sqlmap的目录下，稍稍有些麻烦~</p>
-<p>######3、建立快捷方式~<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /sqlmap路径/sqlmap.py /usr/bin/sqlmap</span><br></pre></td></tr></table></figure></p>
+<h6 id="3、建立快捷方式"><a href="#3、建立快捷方式" class="headerlink" title="3、建立快捷方式~"></a>3、建立快捷方式~</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /sqlmap路径/sqlmap.py /usr/bin/sqlmap</span><br></pre></td></tr></table></figure>
 <p>现在试下任意目录运行sqlmap吧~</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlmap -h</span><br></pre></td></tr></table></figure>
       
@@ -435,8 +434,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -487,6 +495,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#1、安装git"><span class="nav-number">1.</span> <span class="nav-text">1、安装git</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#2、从github上克隆sqlmap到本地"><span class="nav-number">2.</span> <span class="nav-text">2、从github上克隆sqlmap到本地</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#3、建立快捷方式"><span class="nav-number">3.</span> <span class="nav-text">3、建立快捷方式~</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

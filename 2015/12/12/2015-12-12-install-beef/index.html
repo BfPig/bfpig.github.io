@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby ######提醒：安装rvm和ruby的时候不要用root账户">
+<meta name="description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby 提醒：安装rvm和ruby的时候不要用root账户">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Debian安装『BeEF xss』">
 <meta property="og:url" content="https://bfpig.github.io/2015/12/12/2015-12-12-install-beef/index.html">
 <meta property="og:site_name" content="Cannan">
-<meta property="og:description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby ######提醒：安装rvm和ruby的时候不要用root账户">
+<meta property="og:description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby 提醒：安装rvm和ruby的时候不要用root账户">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T11:51:24.023Z">
+<meta property="og:updated_time" content="2018-03-06T11:54:14.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debian安装『BeEF xss』">
-<meta name="twitter:description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby ######提醒：安装rvm和ruby的时候不要用root账户">
+<meta name="twitter:description" content="在BeEF的wiki上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~ 1、安装『git』和『curl』 apt-get update apt-get install curl git 2、安装rvm，通过rvm来安装ruby 提醒：安装rvm和ruby的时候不要用root账户">
 
 
 
@@ -351,9 +351,8 @@
 <pre><code>apt-get update
 apt-get install curl git
 </code></pre><p>2、安装rvm，通过rvm来安装ruby</p>
-<p>######提醒：安装rvm和ruby的时候不要用root账户</p>
-<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable		//安装rvm</span><br><span class="line">source ~/.rvm/scripts/rvm		//激活rvm</span><br><span class="line">rvm install 2.1.5		//安装ruby 2.1.5版本</span><br><span class="line">rvm use 2.1.5 -- default		//设置2.1.5为默认版本</span><br><span class="line">```	</span><br><span class="line">接着，我们就要安装bundler，但是蛋疼的问题就在这里,因为我们有伟大的长城~~</span><br><span class="line"></span><br><span class="line">######在此感谢马云，谢谢淘宝提供的[ruby国内镜像](https://ruby.taobao.org/)</span><br><span class="line"></span><br><span class="line">我们现在来替换官方镜像</span><br></pre></td></tr></table></figure>
+<h6 id="提醒：安装rvm和ruby的时候不要用root账户"><a href="#提醒：安装rvm和ruby的时候不要用root账户" class="headerlink" title="提醒：安装rvm和ruby的时候不要用root账户"></a>提醒：安装rvm和ruby的时候不要用root账户</h6><a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">curl -sSL https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable		//安装rvm</span><br><span class="line">source ~/.rvm/scripts/rvm		//激活rvm</span><br><span class="line">rvm install 2.1.5		//安装ruby 2.1.5版本</span><br><span class="line">rvm use 2.1.5 -- default		//设置2.1.5为默认版本</span><br><span class="line">```	</span><br><span class="line">接着，我们就要安装bundler，但是蛋疼的问题就在这里,因为我们有伟大的长城~~</span><br><span class="line"></span><br><span class="line">###### 在此感谢马云，谢谢淘宝提供的[ruby国内镜像](https://ruby.taobao.org/)</span><br><span class="line"></span><br><span class="line">我们现在来替换官方镜像</span><br></pre></td></tr></table></figure>
 <p>gem sources –add <a href="https://ruby.taobao.org/" target="_blank" rel="noopener">https://ruby.taobao.org/</a> –remove <a href="https://rubygems.org/" target="_blank" rel="noopener">https://rubygems.org/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">来看下是否替换成功~</span><br></pre></td></tr></table></figure></p>
 <p>gem sources -l<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果如下显示成功~~</span><br></pre></td></tr></table></figure></p>
 <p><strong><em> CURRENT SOURCES </em></strong><br><a href="https://ruby.taobao.org/" target="_blank" rel="noopener">https://ruby.taobao.org/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">现在来通过gem安装 bundler</span><br></pre></td></tr></table></figure></p>
@@ -450,8 +449,17 @@ apt-get install curl git
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -502,6 +510,22 @@ apt-get install curl git
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#提醒：安装rvm和ruby的时候不要用root账户"><span class="nav-number">1.</span> <span class="nav-text">提醒：安装rvm和ruby的时候不要用root账户</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

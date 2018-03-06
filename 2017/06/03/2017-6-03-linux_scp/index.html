@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="####语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
+<meta name="description" content="语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux scp命令">
 <meta property="og:url" content="https://bfpig.github.io/2017/06/03/2017-6-03-linux_scp/index.html">
 <meta property="og:site_name" content="Cannan">
-<meta property="og:description" content="####语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
+<meta property="og:description" content="语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-06T11:51:41.978Z">
+<meta property="og:updated_time" content="2018-03-06T11:54:34.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux scp命令">
-<meta name="twitter:description" content="####语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
+<meta name="twitter:description" content="语法123scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file][-l limit] [-o ssh_option] [-P port] [-S program][[user@]host1:]file1 [...] [[user@]host2:]file2">
 
 
 
@@ -335,10 +335,9 @@
       
 
       
-        <p>####语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]</span><br><span class="line">[-l limit] [-o ssh_option] [-P port] [-S program]</span><br><span class="line">[[user@]host1:]file1 [...] [[user@]host2:]file2</span><br></pre></td></tr></table></figure></p>
+        <h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp [-1246BCpqrv] [-c cipher] [-F ssh_config] [-i identity_file]</span><br><span class="line">[-l limit] [-o ssh_option] [-P port] [-S program]</span><br><span class="line">[[user@]host1:]file1 [...] [[user@]host2:]file2</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>####简写</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp [可选参数] file_source file_target</span><br></pre></td></tr></table></figure>
+<h4 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp [可选参数] file_source file_target</span><br></pre></td></tr></table></figure>
 <ul>
 <li>-1： 强制scp命令使用协议ssh1</li>
 <li>-2： 强制scp命令使用协议ssh2</li>
@@ -358,17 +357,14 @@
 <li>-P port：注意是大写的P, port是指定数据传输用到的端口号</li>
 <li>-S program： 指定加密传输时所使用的程序。此程序必须能够理解ssh(1)的选项。</li>
 </ul>
-<p>####从本地复制到远程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp local_file remote_username@remote_ip:remote_folder</span><br></pre></td></tr></table></figure>
+<h4 id="从本地复制到远程"><a href="#从本地复制到远程" class="headerlink" title="从本地复制到远程"></a>从本地复制到远程</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp local_file remote_username@remote_ip:remote_folder</span><br></pre></td></tr></table></figure>
 <p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp local_file remote_username@remote_ip:remote_file</span><br></pre></td></tr></table></figure></p>
 <p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp local_file remote_ip:remote_folder</span><br></pre></td></tr></table></figure></p>
 <p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp local_file remote_ip:remote_file</span><br></pre></td></tr></table></figure></p>
-<p>####复制目录命令格式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r local_folder remote_username@remote_ip:remote_folder</span><br></pre></td></tr></table></figure></p>
+<h4 id="复制目录命令格式"><a href="#复制目录命令格式" class="headerlink" title="复制目录命令格式"></a>复制目录命令格式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r local_folder remote_username@remote_ip:remote_folder</span><br></pre></td></tr></table></figure>
 <p>或者<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r local_folder remote_ip:remote_folder</span><br></pre></td></tr></table></figure></p>
-<p>####从远程复制到本地</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scp root@blog.ibfpig.top:/home/root/others/music /home/space/music/1.mp3 </span><br><span class="line">scp -r blog.ibfpig.top:/home/root/others/ /home/space/music/</span><br></pre></td></tr></table></figure>
-<p>####scp命令使用端口号 4588<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -p 4588 remote@blog.ibfpig.top:/usr/local/sin.sh /home/administrator</span><br></pre></td></tr></table></figure></p>
-
+<h4 id="从远程复制到本地"><a href="#从远程复制到本地" class="headerlink" title="从远程复制到本地"></a>从远程复制到本地</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scp root@blog.ibfpig.top:/home/root/others/music /home/space/music/1.mp3 </span><br><span class="line">scp -r blog.ibfpig.top:/home/root/others/ /home/space/music/</span><br></pre></td></tr></table></figure>
+<h4 id="scp命令使用端口号-4588"><a href="#scp命令使用端口号-4588" class="headerlink" title="scp命令使用端口号 4588"></a>scp命令使用端口号 4588</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -p 4588 remote@blog.ibfpig.top:/usr/local/sin.sh /home/administrator</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -456,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -508,6 +513,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法"><span class="nav-number">1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#简写"><span class="nav-number">2.</span> <span class="nav-text">简写</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从本地复制到远程"><span class="nav-number">3.</span> <span class="nav-text">从本地复制到远程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#复制目录命令格式"><span class="nav-number">4.</span> <span class="nav-text">复制目录命令格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从远程复制到本地"><span class="nav-number">5.</span> <span class="nav-text">从远程复制到本地</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#scp命令使用端口号-4588"><span class="nav-number">6.</span> <span class="nav-text">scp命令使用端口号 4588</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
