@@ -83,13 +83,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cannan">
-<meta property="og:url" content="https://bfpig.github.io/archives/2017/10/index.html">
+<meta name="description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="树莓派vim代码高亮">
+<meta property="og:url" content="https://bfpig.github.io/2015/12/07/2015-12-07-rpi-vim/index.html">
 <meta property="og:site_name" content="Cannan">
+<meta property="og:description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-06T11:51:20.752Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cannan">
+<meta name="twitter:title" content="树莓派vim代码高亮">
+<meta name="twitter:description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
 
 
 
@@ -119,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://bfpig.github.io/archives/2017/10/"/>
+  <link rel="canonical" href="https://bfpig.github.io/2015/12/07/2015-12-07-rpi-vim/"/>
 
 
 
 
 
-  <title>归档 | Cannan</title>
+  <title>树莓派vim代码高亮 | Cannan</title>
   
 
 
@@ -144,7 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -228,74 +232,157 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 14 篇日志。 继续努力。
-      </span>
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://bfpig.github.io/2015/12/07/2015-12-07-rpi-vim/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cannan">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/10/21/ES61/" itemprop="url">
-              
-                <span itemprop="name">ES6实用小记 (一)</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">树莓派vim代码高亮</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-10-21T17:32:25+08:00"
-              content="2017-10-21" >
-          10-21
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-07T19:22:04+08:00">
+                2015-12-07
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
+      
 
+      
+        <p>默认树莓派没有安装vim，执行下面命令安装之</p>
+<pre><code>sudo apt-get install -y vim
+</code></pre><p>安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。</p>
+<a id="more"></a>
+<p>在~目录下面新建.vimrc文件可以实现</p>
+<pre><code>pi@raspberrypi ~ $ cd ~
+
+pi@raspberrypi ~ $ vim .vimrc
+</code></pre><p>在.vimrc文件中插入以下代码：</p>
+<pre><code>set nu
+syntax on
+set tabstop=4
+</code></pre><p>再试试vim，看看是不是就有代码高亮了呢~</p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/12/01/2015-12-01-raspberry-pi-course1/" rel="next" title="[玩转树莓派]1、系统安装">
+                <i class="fa fa-chevron-left"></i> [玩转树莓派]1、系统安装
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/12/12/2015-12-12-install-sqlmap/" rel="prev" title="Debian安装『SQLmap』">
+                Debian安装『SQLmap』 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -303,6 +390,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -508,6 +599,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
