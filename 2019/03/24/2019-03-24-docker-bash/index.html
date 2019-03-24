@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="Cannan">
 <meta property="og:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式)：  1docker run -d -it  image_name 附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T14:09:59.209Z">
+<meta property="og:updated_time" content="2019-03-24T14:11:34.590Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker 常用命令">
 <meta name="twitter:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式)：  1docker run -d -it  image_name 附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;gt;">
@@ -429,8 +429,8 @@
 <li>删除一个或者多个镜像;</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rmi image_name</span><br></pre></td></tr></table></figure>
-<p>-f, –force=false Force; –no-prune=false Do not delete untagged parents</p>
-<ul>
+<pre><code>-f, –force=false Force; –no-prune=false Do not delete untagged parents
+</code></pre><ul>
 <li>显示一个镜像的历史;</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">history</span> image_name</span><br></pre></td></tr></table></figure>
