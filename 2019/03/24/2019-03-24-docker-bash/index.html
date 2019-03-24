@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式）：1$docker run -d -it  image_name   附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
+<meta name="description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式)：  1$docker run -d -it  image_name 附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker 常用命令">
 <meta property="og:url" content="http://blog.ibfpig.top/2019/03/24/2019-03-24-docker-bash/index.html">
 <meta property="og:site_name" content="Cannan">
-<meta property="og:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式）：1$docker run -d -it  image_name   附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
+<meta property="og:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式)：  1$docker run -d -it  image_name 附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T14:03:47.416Z">
+<meta property="og:updated_time" content="2019-03-24T14:05:15.331Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker 常用命令">
-<meta name="twitter:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式）：1$docker run -d -it  image_name   附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
+<meta name="twitter:description" content="操作容器启动容器 启动容器并启动bash（交互方式）:  1$docker run -i -t &amp;lt;image_name/continar_id&amp;gt; /bin/bash  启动容器以后台方式运行(更通用的方式)：  1$docker run -d -it  image_name 附着到容器 附着到正在运行的容器  1docker attach &amp;lt;id、container_name&amp;g">
 
 
 
@@ -340,18 +340,18 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$docker</span> run -i -t &lt;image_name/continar_id&gt; /bin/bash</span><br></pre></td></tr></table></figure>
 <ul>
-<li>启动容器以后台方式运行(更通用的方式）：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$docker</span> run -d -it  image_name</span><br></pre></td></tr></table></figure>
-</li>
+<li>启动容器以后台方式运行(更通用的方式)：</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$docker</span> run -d -it  image_name</span><br></pre></td></tr></table></figure>
 <h2 id="附着到容器"><a href="#附着到容器" class="headerlink" title="附着到容器"></a>附着到容器</h2><ul>
 <li>附着到正在运行的容器</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker attach &lt;id、container_name&gt;</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <ul>
-<li>进入正在运行的容器内部，同时运行bash(比attach更好用)<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -t -i &lt;id/container_name&gt;  /bin/bash</span><br></pre></td></tr></table></figure>
-</li>
+<li>进入正在运行的容器内部，同时运行bash(比attach更好用)</li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -t -i &lt;id/container_name&gt;  /bin/bash</span><br></pre></td></tr></table></figure>
 <p>ps:可以封装一个shell脚本方便运行exec </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> indocker.sh </span><br><span class="line">docker <span class="built_in">exec</span> -t -i <span class="variable">$1</span> /bin/bash</span><br><span class="line"><span class="comment"># 查看需要附着的容器id</span></span><br><span class="line"><span class="variable">$docker</span> ps | less -S</span><br><span class="line">CONTAINER ID        IMAGE                                                 </span><br><span class="line">9cf7b563f689        hello.demo.kdemo:v160525.202747</span><br><span class="line"></span><br><span class="line">$./indocker.sh 9cf7b563f689</span><br></pre></td></tr></table></figure>
 <h2 id="查看容器日志"><a href="#查看容器日志" class="headerlink" title="查看容器日志"></a>查看容器日志</h2><ul>
