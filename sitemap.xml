@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.ibfpig.top/baidu_verify_cdQXCoPmAt.html</loc>
-    
-    <lastmod>2019-04-23T11:48:47.970Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.ibfpig.top/2019/01/15/2019-01-15-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gulp%E5%8E%8B%E7%BC%A9CSS/</loc>
     
     <lastmod>2019-04-23T09:38:52.440Z</lastmod>
@@ -163,13 +156,6 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/11/21/2017-6-23-regex/</loc>
-    
-    <lastmod>2018-03-05T06:10:57.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.ibfpig.top/2017/11/21/regex/</loc>
     
     <lastmod>2018-03-05T06:10:57.000Z</lastmod>
@@ -177,9 +163,9 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/09/13/2017-6-23-more/</loc>
+    <loc>http://blog.ibfpig.top/2017/11/21/2017-6-23-regex/</loc>
     
-    <lastmod>2018-03-05T06:01:18.000Z</lastmod>
+    <lastmod>2018-03-05T06:10:57.000Z</lastmod>
     
   </url>
   
@@ -191,9 +177,9 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/10/21/ES61/</loc>
+    <loc>http://blog.ibfpig.top/2017/09/13/2017-6-23-more/</loc>
     
-    <lastmod>2018-03-05T05:56:56.000Z</lastmod>
+    <lastmod>2018-03-05T06:01:18.000Z</lastmod>
     
   </url>
   
@@ -205,14 +191,21 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/10/21/ES61/</loc>
+    
+    <lastmod>2018-03-05T05:56:56.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-6-23-html-norm/</loc>
     
     <lastmod>2018-03-05T05:49:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/2017-6-23-html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/html-norm/</loc>
     
     <lastmod>2018-03-05T05:49:56.000Z</lastmod>
     
