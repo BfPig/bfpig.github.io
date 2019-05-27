@@ -1,0 +1,37 @@
+---
+title: "nrm 换源"
+date: 2017-06-7 12:32:05 +0800
+comments: true
+categories: npm
+---
+#### nrm 是一个 NPM 源管理器，允许你快速地在如下 NPM 源间切换
+
+安装
+```
+sudo npm install -g nrm
+```
+<!--more-->
+
+列出可选的源,带 * 的是当前使用的源，上面的输出表明当前源是官方源。
+```
+nrm ls 
+```
+
+
+切换
+
+```
+nrm use taobao
+```
+
+增加、删除源
+```
+nrm add  <registry> <url> [home]	//增加
+nrm del <registry>			//删除
+```
+测试速度
+
+```
+nrm test npm	//测试指定源
+nrm test		//测试所有源的响应时间
+```

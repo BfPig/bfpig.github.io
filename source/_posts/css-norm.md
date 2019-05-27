@@ -1,0 +1,64 @@
+---
+title: CSS 使用规范
+date: 2017/8/13 20:46:25
+---
+
+## 统一
+* 统一使用怪异盒子模型 `box-sizing:border-box;`
+
+## 选择器
+*  非必要时刻，不要超过 `三层`
+* 非必要时刻，不要为 `id`  写样式
+* 非必要时刻，不要使用 `style` 内嵌样式
+* 非必要时刻，不要使用  `important`
+
+## 属性书写顺序
+1. Position
+2. Box model
+3. Typographic
+4. Visual
+```css
+ .declaration-order {
+     /* 定位相关 */
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     z-index: 100;
+
+     /* 盒模型相关 */
+     display: block;
+     width: 100px;
+     height: 100px;
+
+     /* 文本属性、排版相关 */
+     font: normal 13px "Helvetica Neue", sans-serif;
+     line-height: 1.5;
+     color: #333;
+     text-align: center;
+
+     /* Visual */
+     background-color: #f5f5f5;
+     border: 1px solid #e5e5e5;
+  }
+```
+
+## class 命名
+* 小写 `.btn`
+* 破折号 `.btn-info`
+* id的命名使用驼峰命名法  `#userName`
+* 避免过度任意的简写。`.btn `代表 `button`，但是` .b`不能表达任何意思。
+* 尽可能短，并且意义明确。
+* 基于最近的父class或基本class作为新class的前缀。`.menu-header` `.menu-container`
+```css
+  /* 不规范的写法 */
+  .m { ... }
+  .red { ... }
+  .container { ... }
+
+  /* 规范的写法 */
+  .menu { ... }
+  .important { ... }
+  .menu-container { ... }
+```

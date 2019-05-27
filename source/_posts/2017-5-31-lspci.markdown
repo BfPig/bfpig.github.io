@@ -1,0 +1,14 @@
+---
+
+title: "Centos 安装安全狗的时候提示lspci"
+date: 2017-05-31 07:15:05 +0800
+comments: true
+categories: lspci
+---
+
+## lspci缺失
+#### 安装安全狗的时候提示lspci没有，特此记录
+
+```
+yum -y install pciutils
+```
