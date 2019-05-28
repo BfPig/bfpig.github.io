@@ -1,5 +1,5 @@
 http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/
-http://blog.ibfpig.top/2019/05/29/2019-05-28-配置多git账号/
+http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/
 http://blog.ibfpig.top/2019/04/23/2019-04-23-Centos安装oh-my-zsh/
 http://blog.ibfpig.top/2019/04/04/2019-04-04-License/
 http://blog.ibfpig.top/2019/04/01/2019-04-01-node运行ES2015/

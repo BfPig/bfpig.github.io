@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.ibfpig.top/2019/04/04/2019-04-04-License/</loc>
+    <lastmod>2019-05-28</lastmod>
+  </url>  <url>
+    <loc>http://blog.ibfpig.top/2019/04/23/2019-04-23-Centos%E5%AE%89%E8%A3%85oh-my-zsh/</loc>
+    <lastmod>2019-05-28</lastmod>
+  </url>  <url>
     <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-%E9%85%8D%E7%BD%AE%E7%BB%88%E7%AB%AF%E4%BB%A3%E7%90%86/</loc>
     <lastmod>2019-05-28</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2019/05/29/2019-05-28-%E9%85%8D%E7%BD%AE%E5%A4%9Agit%E8%B4%A6%E5%8F%B7/</loc>
+    <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-%E9%85%8D%E7%BD%AE%E5%A4%9Agit%E8%B4%A6%E5%8F%B7/</loc>
     <lastmod>2019-05-28</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2019/01/15/2019-01-15-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gulp%E5%8E%8B%E7%BC%A9CSS/</loc>
@@ -12,12 +18,6 @@
   </url>  <url>
     <loc>http://blog.ibfpig.top/2019/04/01/2019-04-01-node%E8%BF%90%E8%A1%8CES2015/</loc>
     <lastmod>2019-04-23</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2019/04/23/2019-04-23-Centos%E5%AE%89%E8%A3%85oh-my-zsh/</loc>
-    <lastmod>2019-04-22</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2019/04/04/2019-04-04-License/</loc>
-    <lastmod>2019-04-04</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2019/03/24/2019-03-24-docker-bash/</loc>
     <lastmod>2019-03-24</lastmod>

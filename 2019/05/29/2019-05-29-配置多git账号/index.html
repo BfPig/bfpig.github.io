@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="定义在学习ES6中挑选出比较常用、实用的部分。  var、let、constlet和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。  let用于声明变量，const用于声明常量。意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。 12345678910let a =1;a = 2;// 2const b = 1;b = 2;// Identifier">
+<meta name="description" content="生成SSH密钥ssh-keygen -t rsa -C &amp;quot;your email&amp;quot; 可以通过命名活着放在不同的目录进行区分。 添加新的SSH keys到GitHub中将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。 清除git的全局设置如果你之前在设置本地仓库和github连接的时候设置过user.name和user.em">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ES6实用小记 (一)">
-<meta property="og:url" content="http://blog.ibfpig.top/2017/10/21/ES61/index.html">
+<meta property="og:title" content="配置多git账号">
+<meta property="og:url" content="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/index.html">
 <meta property="og:site_name" content="殷迦南小记录">
-<meta property="og:description" content="定义在学习ES6中挑选出比较常用、实用的部分。  var、let、constlet和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。  let用于声明变量，const用于声明常量。意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。 12345678910let a =1;a = 2;// 2const b = 1;b = 2;// Identifier">
+<meta property="og:description" content="生成SSH密钥ssh-keygen -t rsa -C &amp;quot;your email&amp;quot; 可以通过命名活着放在不同的目录进行区分。 添加新的SSH keys到GitHub中将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。 清除git的全局设置如果你之前在设置本地仓库和github连接的时候设置过user.name和user.em">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-05T05:56:56.000Z">
+<meta property="og:updated_time" content="2019-05-28T16:19:20.111Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ES6实用小记 (一)">
-<meta name="twitter:description" content="定义在学习ES6中挑选出比较常用、实用的部分。  var、let、constlet和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。  let用于声明变量，const用于声明常量。意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。 12345678910let a =1;a = 2;// 2const b = 1;b = 2;// Identifier">
+<meta name="twitter:title" content="配置多git账号">
+<meta name="twitter:description" content="生成SSH密钥ssh-keygen -t rsa -C &amp;quot;your email&amp;quot; 可以通过命名活着放在不同的目录进行区分。 添加新的SSH keys到GitHub中将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。 清除git的全局设置如果你之前在设置本地仓库和github连接的时候设置过user.name和user.em">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.ibfpig.top/2017/10/21/ES61/"/>
+  <link rel="canonical" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/"/>
 
 
 
 
 
-  <title>ES6实用小记 (一) | 殷迦南小记录</title>
+  <title>配置多git账号 | 殷迦南小记录</title>
   
 
 
@@ -246,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/10/21/ES61/">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="殷迦南">
@@ -263,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ES6实用小记 (一)</h1>
+          <h1 class="post-title" itemprop="name headline">配置多git账号</h1>
         
 
         <div class="post-meta">
@@ -275,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T17:32:25+08:00">
-                2017-10-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T00:01:05+08:00">
+                2019-05-29
               </time>
             
 
@@ -286,6 +286,50 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/github/" itemprop="url" rel="index">
+                    <span itemprop="name">github</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/github/gitlib/" itemprop="url" rel="index">
+                    <span itemprop="name">gitlib</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -294,9 +338,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/10/21/ES61/#comments" itemprop="discussionUrl">
+                <a href="/2019/05/29/2019-05-29-配置多git账号/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/10/21/ES61/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/05/29/2019-05-29-配置多git账号/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -324,31 +368,22 @@
       
 
       
-        <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在学习ES6中挑选出比较常用、实用的部分。</p>
-<ul>
-<li><p>var、let、const<br>let和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。</p>
-</li>
-<li><p>let用于声明变量，const用于声明常量。<br>意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a =<span class="number">1</span>;</span><br><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">1</span>;</span><br><span class="line">b = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br><span class="line"><span class="keyword">let</span> a ;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="keyword">const</span> b ;</span><br><span class="line"><span class="comment">// Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>块级作用域</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">//  3</span></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: b is not defined</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>不允许重复声明<br>在一定程度上防止了变量污染</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;  <span class="comment">// or const a = 3;let a = 4;</span></span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>不存在变量提升</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="keyword">let</span> b =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>模版字符串<br>在拼接HTML插入DOM的时候，功效尤其显著。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">'hello,'</span>+name+<span class="string">'.'</span>+<span class="string">'Nice to meet you!'</span></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">`hello,<span class="subst">$&#123;name&#125;</span>.Nice to meet you!`</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>函数默认值<br>在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES5</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  x = x || <span class="string">'Hello'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params"> x = <span class="string">'Hello'</span></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></li>
-</ul>
+        <h1 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h1><p><code>ssh-keygen -t rsa -C &quot;your email&quot;</code></p>
+<p>可以通过命名活着放在不同的目录进行区分。</p>
+<h1 id="添加新的SSH-keys到GitHub中"><a href="#添加新的SSH-keys到GitHub中" class="headerlink" title="添加新的SSH keys到GitHub中"></a>添加新的SSH keys到GitHub中</h1><p>将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。</p>
+<h1 id="清除git的全局设置"><a href="#清除git的全局设置" class="headerlink" title="清除git的全局设置"></a>清除git的全局设置</h1><p>如果你之前在设置本地仓库和github连接的时候设置过user.name和user.email,那么你必须首先清楚掉该设置，因为不清楚掉该设置，两个账号在提交资料的时候，验证肯定冲突（只能设置一个全局的user.name和user.email，而你现在有两个账号就对应两个不同的）。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"your_name"</span></span><br><span class="line">git config --global user.email  <span class="string">"your_email"</span></span><br></pre></td></tr></table></figure>
+<h1 id="执行ssh-agent让ssh识别新的私钥"><a href="#执行ssh-agent让ssh识别新的私钥" class="headerlink" title="执行ssh-agent让ssh识别新的私钥"></a>执行ssh-agent让ssh识别新的私钥</h1><p>分别使用<code>ssh-add</code>将其添加到ssh-agent中。</p>
+<p><code>ssh-add ~/.ssh/id_rsa</code></p>
+<p>如果出现<code>Could not open a connection to your authentication agent</code>的错误，可以先执行一遍<code>ssh-agent bash</code>，之后在执行<code>ssh-add</code>。</p>
+<h1 id="配置config文件"><a href="#配置config文件" class="headerlink" title="配置config文件"></a>配置config文件</h1><p>看下<code>~/.ssh/</code>目录下有没有config，没有直接新建一个<code>touch config</code>，有的话就直接在后边添加配置。</p>
+<p>配置如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一个</span></span><br><span class="line"></span><br><span class="line">Host git@one.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/one/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二个</span></span><br><span class="line"></span><br><span class="line">Host git@two.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/two/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># ....第N个</span></span><br></pre></td></tr></table></figure>
+<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@one.github.com</span><br><span class="line">ssh -T git@two.github.com</span><br></pre></td></tr></table></figure>
+<h1 id="clone-Git仓库"><a href="#clone-Git仓库" class="headerlink" title="clone Git仓库"></a>clone Git仓库</h1><p>假设原来的git ssh 地址是<code>git clone git@xxxxxx.com:xxx/test.git</code></p>
+<p>那么新的地址就对应配置config时候不同的密钥对应的HostName，</p>
+<p>比如是上边的one，那么，新地址就应该是<code>git clone git@one.xxxxxx.com:xxx/test.git</code></p>
+<p>当然，如果懒得话，不改地址也是可以的，同样可以正常的操作，但是在push到仓库后，可以看见多个头像。</p>
 
       
     </div>
@@ -373,8 +408,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/13/2017-6-23-more/" rel="next" title="模块化">
-                <i class="fa fa-chevron-left"></i> 模块化
+              <a href="/2019/04/23/2019-04-23-Centos安装oh-my-zsh/" rel="next" title="CentOs安装oh my zsh">
+                <i class="fa fa-chevron-left"></i> CentOs安装oh my zsh
               </a>
             
           </div>
@@ -383,8 +418,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/21/2017-6-23-ES61/" rel="prev" title="ES6实用小记 (一)">
-                ES6实用小记 (一) <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/29/2019-05-29-配置终端代理/" rel="prev" title="配置终端代理">
+                配置终端代理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -518,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#生成SSH密钥"><span class="nav-number">1.</span> <span class="nav-text">生成SSH密钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加新的SSH-keys到GitHub中"><span class="nav-number">2.</span> <span class="nav-text">添加新的SSH keys到GitHub中</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#清除git的全局设置"><span class="nav-number">3.</span> <span class="nav-text">清除git的全局设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#执行ssh-agent让ssh识别新的私钥"><span class="nav-number">4.</span> <span class="nav-text">执行ssh-agent让ssh识别新的私钥</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置config文件"><span class="nav-number">5.</span> <span class="nav-text">配置config文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#测试"><span class="nav-number">6.</span> <span class="nav-text">测试</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#clone-Git仓库"><span class="nav-number">7.</span> <span class="nav-text">clone Git仓库</span></a></li></ol></div>
             
 
           </div>
@@ -692,9 +727,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.ibfpig.top/2017/10/21/ES61/';
-          this.page.identifier = '2017/10/21/ES61/';
-          this.page.title = 'ES6实用小记 (一)';
+          this.page.url = 'http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/';
+          this.page.identifier = '2019/05/29/2019-05-29-配置多git账号/';
+          this.page.title = '配置多git账号';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://thlz998.disqus.com/embed.js';
