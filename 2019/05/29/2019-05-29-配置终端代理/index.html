@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
+<meta name="description" content="可以直接在~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc中添加一个函数进去。 123456789101112131415# 开启代理proxy () &amp;#123;	export https_proxy=http://127.0.0.1:10086	export http_proxy=http://127.0.0.1:10001	export">
 <meta property="og:type" content="article">
-<meta property="og:title" content="树莓派vim代码高亮">
-<meta property="og:url" content="http://blog.ibfpig.top/2015/12/07/2015-12-07-rpi-vim/index.html">
+<meta property="og:title" content="配置终端代理">
+<meta property="og:url" content="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/index.html">
 <meta property="og:site_name" content="殷迦南小记录">
-<meta property="og:description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
+<meta property="og:description" content="可以直接在~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc中添加一个函数进去。 123456789101112131415# 开启代理proxy () &amp;#123;	export https_proxy=http://127.0.0.1:10086	export http_proxy=http://127.0.0.1:10001	export">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-31T16:30:53.000Z">
+<meta property="og:updated_time" content="2019-05-28T16:27:25.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="树莓派vim代码高亮">
-<meta name="twitter:description" content="默认树莓派没有安装vim，执行下面命令安装之 sudo apt-get install -y vim 安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。">
+<meta name="twitter:title" content="配置终端代理">
+<meta name="twitter:description" content="可以直接在~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc中添加一个函数进去。 123456789101112131415# 开启代理proxy () &amp;#123;	export https_proxy=http://127.0.0.1:10086	export http_proxy=http://127.0.0.1:10001	export">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.ibfpig.top/2015/12/07/2015-12-07-rpi-vim/"/>
+  <link rel="canonical" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/"/>
 
 
 
 
 
-  <title>树莓派vim代码高亮 | 殷迦南小记录</title>
+  <title>配置终端代理 | 殷迦南小记录</title>
   
 
 
@@ -246,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2015/12/07/2015-12-07-rpi-vim/">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="殷迦南">
@@ -263,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">树莓派vim代码高亮</h1>
+          <h1 class="post-title" itemprop="name headline">配置终端代理</h1>
         
 
         <div class="post-meta">
@@ -275,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-07T19:22:04+08:00">
-                2015-12-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T00:20:05+08:00">
+                2019-05-29
               </time>
             
 
@@ -286,6 +286,61 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/MacOS/" itemprop="url" rel="index">
+                    <span itemprop="name">MacOS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/MacOS/终端/" itemprop="url" rel="index">
+                    <span itemprop="name">终端</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/MacOS/终端/Porxy/" itemprop="url" rel="index">
+                    <span itemprop="name">Porxy</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -294,9 +349,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2015/12/07/2015-12-07-rpi-vim/#comments" itemprop="discussionUrl">
+                <a href="/2019/05/29/2019-05-29-配置终端代理/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2015/12/07/2015-12-07-rpi-vim/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/05/29/2019-05-29-配置终端代理/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -324,14 +379,10 @@
       
 
       
-        <p>默认树莓派没有安装vim，执行下面命令安装之</p>
-<pre><code>sudo apt-get install -y vim
-</code></pre><p>安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。</p>
-<a id="more"></a>
-<p>在<code>~</code>目录下面新建.vimrc文件可以实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi ~ $ cd ~</span><br><span class="line">pi@raspberrypi ~ $ vim .vimrc</span><br></pre></td></tr></table></figure></p>
-<p>在.vimrc文件中插入以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set nu</span><br><span class="line">syntax on</span><br><span class="line">set tabstop=4</span><br></pre></td></tr></table></figure>
-<p>再试试vim，看看是不是就有代码高亮了呢~</p>
+        <p>可以直接在<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>中添加一个函数进去。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启代理</span></span><br><span class="line"><span class="function"><span class="title">proxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy=http://127.0.0.1:10086</span><br><span class="line">	<span class="built_in">export</span> http_proxy=http://127.0.0.1:10001</span><br><span class="line">	<span class="built_in">export</span> all_proxy=socks5://127.0.0.1:10010</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy on"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭代理</span></span><br><span class="line"><span class="function"><span class="title">unproxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy</span><br><span class="line">	<span class="built_in">export</span> http_proxy</span><br><span class="line">	<span class="built_in">export</span> all_proxy</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy off"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>之后执行<code>source ~/.zshrc</code>(对应自己的startup files文件)。</p>
+<p>需要开启代理的时候就执行<code>proxy</code>，关闭就执行<code>unproxy</code>。</p>
 
       
     </div>
@@ -356,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/01/2015-12-01-raspberry-pi-course1/" rel="next" title="[玩转树莓派]1、系统安装">
-                <i class="fa fa-chevron-left"></i> [玩转树莓派]1、系统安装
+              <a href="/2019/05/29/2019-05-28-配置多git账号/" rel="next" title="配置多git账号">
+                <i class="fa fa-chevron-left"></i> 配置多git账号
               </a>
             
           </div>
@@ -365,10 +416,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/12/12/2015-12-12-install-sqlmap/" rel="prev" title="Debian安装『SQLmap』">
-                Debian安装『SQLmap』 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -650,9 +697,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://blog.ibfpig.top/2015/12/07/2015-12-07-rpi-vim/';
-          this.page.identifier = '2015/12/07/2015-12-07-rpi-vim/';
-          this.page.title = '树莓派vim代码高亮';
+          this.page.url = 'http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/';
+          this.page.identifier = '2019/05/29/2019-05-29-配置终端代理/';
+          this.page.title = '配置终端代理';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://thlz998.disqus.com/embed.js';
