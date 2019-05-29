@@ -253,6 +253,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/10/21/ES61/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/21/ES61/" itemprop="url">ES6实用小记 (一)</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-21T17:32:25+08:00">
+                2017-10-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/10/21/ES61/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/10/21/ES61/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在学习ES6中挑选出比较常用、实用的部分。</p>
+<ul>
+<li><p>var、let、const<br>let和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。</p>
+</li>
+<li><p>let用于声明变量，const用于声明常量。<br>意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a =<span class="number">1</span>;</span><br><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">1</span>;</span><br><span class="line">b = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br><span class="line"><span class="keyword">let</span> a ;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="keyword">const</span> b ;</span><br><span class="line"><span class="comment">// Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>块级作用域</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">//  3</span></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: b is not defined</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不允许重复声明<br>在一定程度上防止了变量污染</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;  <span class="comment">// or const a = 3;let a = 4;</span></span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>不存在变量提升</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="keyword">let</span> b =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>模版字符串<br>在拼接HTML插入DOM的时候，功效尤其显著。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">'hello,'</span>+name+<span class="string">'.'</span>+<span class="string">'Nice to meet you!'</span></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">`hello,<span class="subst">$&#123;name&#125;</span>.Nice to meet you!`</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>函数默认值<br>在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES5</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  x = x || <span class="string">'Hello'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params"> x = <span class="string">'Hello'</span></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/09/13/2017-6-23-more/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -581,6 +736,161 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/08/13/2017-6-23-css-norm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/08/13/2017-6-23-css-norm/" itemprop="url">CSS 使用规范</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-13T20:46:25+08:00">
+                2017-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/08/13/2017-6-23-css-norm/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/08/13/2017-6-23-css-norm/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="统一"><a href="#统一" class="headerlink" title="统一"></a>统一</h2><ul>
+<li>统一使用怪异盒子模型 <code>box-sizing:border-box;</code></li>
+</ul>
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
+<li>非必要时刻，不要超过 <code>三层</code></li>
+<li>非必要时刻，不要为 <code>id</code>  写样式</li>
+<li>非必要时刻，不要使用 <code>style</code> 内嵌样式</li>
+<li>非必要时刻，不要使用  <code>important</code></li>
+</ul>
+<h2 id="属性书写顺序"><a href="#属性书写顺序" class="headerlink" title="属性书写顺序"></a>属性书写顺序</h2><ol>
+<li>Position</li>
+<li>Box model</li>
+<li>Typographic</li>
+<li>Visual<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.declaration-order</span> &#123;</span><br><span class="line">    <span class="comment">/* 定位相关 */</span></span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 盒模型相关 */</span></span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 文本属性、排版相关 */</span></span><br><span class="line">    <span class="attribute">font</span>: normal <span class="number">13px</span> <span class="string">"Helvetica Neue"</span>, sans-serif;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* Visual */</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#e5e5e5</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="class-命名"><a href="#class-命名" class="headerlink" title="class 命名"></a>class 命名</h2><ul>
+<li>小写 <code>.btn</code></li>
+<li>破折号 <code>.btn-info</code></li>
+<li>id的命名使用驼峰命名法  <code>#userName</code></li>
+<li>避免过度任意的简写。<code>.btn</code>代表 <code>button</code>，但是<code>.b</code>不能表达任何意思。</li>
+<li>尽可能短，并且意义明确。</li>
+<li>基于最近的父class或基本class作为新class的前缀。<code>.menu-header</code> <code>.menu-container</code><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 不规范的写法 */</span></span><br><span class="line">.m &#123; ... &#125;</span><br><span class="line">.red &#123; ... &#125;</span><br><span class="line">.container &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 规范的写法 */</span></span><br><span class="line">.menu &#123; ... &#125;</span><br><span class="line">.important &#123; ... &#125;</span><br><span class="line">.menu-container &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/08/13/2017-6-23-html-norm/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -693,161 +1003,6 @@
 <h5 id="h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素"><a href="#h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素" class="headerlink" title="h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素"></a>h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="li标签可以包含div以及ul"><a href="#li标签可以包含div以及ul" class="headerlink" title="li标签可以包含div以及ul"></a>li标签可以包含div以及ul</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>迷路的a标签<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="元素并排（块级和块级并列，内联和内联并列"><a href="#元素并排（块级和块级并列，内联和内联并列" class="headerlink" title="元素并排（块级和块级并列，内联和内联并列)"></a>元素并排（块级和块级并列，内联和内联并列)</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>我是内联元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是块级元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/08/13/2017-6-23-css-norm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/08/13/2017-6-23-css-norm/" itemprop="url">CSS 使用规范</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-13T20:46:25+08:00">
-                2017-08-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/08/13/2017-6-23-css-norm/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/08/13/2017-6-23-css-norm/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="统一"><a href="#统一" class="headerlink" title="统一"></a>统一</h2><ul>
-<li>统一使用怪异盒子模型 <code>box-sizing:border-box;</code></li>
-</ul>
-<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul>
-<li>非必要时刻，不要超过 <code>三层</code></li>
-<li>非必要时刻，不要为 <code>id</code>  写样式</li>
-<li>非必要时刻，不要使用 <code>style</code> 内嵌样式</li>
-<li>非必要时刻，不要使用  <code>important</code></li>
-</ul>
-<h2 id="属性书写顺序"><a href="#属性书写顺序" class="headerlink" title="属性书写顺序"></a>属性书写顺序</h2><ol>
-<li>Position</li>
-<li>Box model</li>
-<li>Typographic</li>
-<li>Visual<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.declaration-order</span> &#123;</span><br><span class="line">    <span class="comment">/* 定位相关 */</span></span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 盒模型相关 */</span></span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 文本属性、排版相关 */</span></span><br><span class="line">    <span class="attribute">font</span>: normal <span class="number">13px</span> <span class="string">"Helvetica Neue"</span>, sans-serif;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* Visual */</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#e5e5e5</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="class-命名"><a href="#class-命名" class="headerlink" title="class 命名"></a>class 命名</h2><ul>
-<li>小写 <code>.btn</code></li>
-<li>破折号 <code>.btn-info</code></li>
-<li>id的命名使用驼峰命名法  <code>#userName</code></li>
-<li>避免过度任意的简写。<code>.btn</code>代表 <code>button</code>，但是<code>.b</code>不能表达任何意思。</li>
-<li>尽可能短，并且意义明确。</li>
-<li>基于最近的父class或基本class作为新class的前缀。<code>.menu-header</code> <code>.menu-container</code><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 不规范的写法 */</span></span><br><span class="line">.m &#123; ... &#125;</span><br><span class="line">.red &#123; ... &#125;</span><br><span class="line">.container &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 规范的写法 */</span></span><br><span class="line">.menu &#123; ... &#125;</span><br><span class="line">.important &#123; ... &#125;</span><br><span class="line">.menu-container &#123; ... &#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
 
           
         
@@ -1664,158 +1819,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/05/31/2017-5-31-lspci/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/05/31/2017-5-31-lspci/" itemprop="url">Centos 安装安全狗的时候提示lspci</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-31T07:15:05+08:00">
-                2017-05-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/lspci/" itemprop="url" rel="index">
-                    <span itemprop="name">lspci</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/05/31/2017-5-31-lspci/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/05/31/2017-5-31-lspci/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="lspci缺失"><a href="#lspci缺失" class="headerlink" title="lspci缺失"></a>lspci缺失</h2><h4 id="安装安全狗的时候提示lspci没有，特此记录"><a href="#安装安全狗的时候提示lspci没有，特此记录" class="headerlink" title="安装安全狗的时候提示lspci没有，特此记录"></a>安装安全狗的时候提示lspci没有，特此记录</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install pciutils</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1866,7 +1869,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1877,7 +1880,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">42</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
