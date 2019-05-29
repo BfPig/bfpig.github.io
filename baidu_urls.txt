@@ -1,5 +1,5 @@
+http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx+TengineToSSL/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx80to443/
-http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/
