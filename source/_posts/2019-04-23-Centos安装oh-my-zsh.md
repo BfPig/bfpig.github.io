@@ -2,7 +2,7 @@
 title: CentOs安装oh my zsh
 date: 2019-04-23 07:49:05 +0800
 comments: true
-categories: [Linux,Centos]
+categories: [linux,centos]
 ---
 
 # 安装zsh包
