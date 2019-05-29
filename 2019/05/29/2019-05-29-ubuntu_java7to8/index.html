@@ -83,17 +83,17 @@
 
 
 
-<meta name="description" content="查看原版本java -version123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-apt-rep">
+<meta name="description" content="查看原版本java -version 显示如下 123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-a">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu java7 升级到8">
+<meta property="og:title" content="Ubuntu java7 升级到 java8">
 <meta property="og:url" content="http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/index.html">
 <meta property="og:site_name" content="殷迦南小记录">
-<meta property="og:description" content="查看原版本java -version123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-apt-rep">
+<meta property="og:description" content="查看原版本java -version 显示如下 123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-a">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-05-29T05:40:04.117Z">
+<meta property="og:updated_time" content="2019-05-29T05:40:52.419Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ubuntu java7 升级到8">
-<meta name="twitter:description" content="查看原版本java -version123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-apt-rep">
+<meta name="twitter:title" content="Ubuntu java7 升级到 java8">
+<meta name="twitter:description" content="查看原版本java -version 显示如下 123java version &quot;1.7.0_101&quot;OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode) 安装 opensdk 8123add-a">
 
 
 
@@ -129,7 +129,7 @@
 
 
 
-  <title>Ubuntu java7 升级到8 | 殷迦南小记录</title>
+  <title>Ubuntu java7 升级到 java8 | 殷迦南小记录</title>
   
 
 
@@ -273,7 +273,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Ubuntu java7 升级到8</h1>
+          <h1 class="post-title" itemprop="name headline">Ubuntu java7 升级到 java8</h1>
         
 
         <div class="post-meta">
@@ -378,7 +378,9 @@
       
 
       
-        <h1 id="查看原版本java-version"><a href="#查看原版本java-version" class="headerlink" title="查看原版本java -version"></a>查看原版本<code>java -version</code></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java version <span class="string">"1.7.0_101"</span></span><br><span class="line">OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)</span><br><span class="line">OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)</span><br></pre></td></tr></table></figure>
+        <h1 id="查看原版本"><a href="#查看原版本" class="headerlink" title="查看原版本"></a>查看原版本</h1><p><code>java -version</code></p>
+<p>显示如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java version <span class="string">"1.7.0_101"</span></span><br><span class="line">OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)</span><br><span class="line">OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)</span><br></pre></td></tr></table></figure>
 <h1 id="安装-opensdk-8"><a href="#安装-opensdk-8" class="headerlink" title="安装 opensdk 8"></a>安装 opensdk 8</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add-apt-repository ppa:openjdk-r/ppa</span><br><span class="line">apt-get update</span><br><span class="line">apt-get install openjdk-8-jdk</span><br></pre></td></tr></table></figure>
 <h1 id="列出已经安装的Java版本"><a href="#列出已经安装的Java版本" class="headerlink" title="列出已经安装的Java版本"></a>列出已经安装的Java版本</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-java-alternatives -l</span><br></pre></td></tr></table></figure>
 <p>显示如下：</p>
@@ -551,7 +553,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查看原版本java-version"><span class="nav-number">1.</span> <span class="nav-text">查看原版本java -version</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-opensdk-8"><span class="nav-number">2.</span> <span class="nav-text">安装 opensdk 8</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列出已经安装的Java版本"><span class="nav-number">3.</span> <span class="nav-text">列出已经安装的Java版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手动切换版本"><span class="nav-number">4.</span> <span class="nav-text">手动切换版本</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#查看原版本"><span class="nav-number">1.</span> <span class="nav-text">查看原版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装-opensdk-8"><span class="nav-number">2.</span> <span class="nav-text">安装 opensdk 8</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列出已经安装的Java版本"><span class="nav-number">3.</span> <span class="nav-text">列出已经安装的Java版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#手动切换版本"><span class="nav-number">4.</span> <span class="nav-text">手动切换版本</span></a></li></ol></div>
             
 
           </div>
@@ -727,7 +729,7 @@
         var disqus_config = function () {
           this.page.url = 'http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/';
           this.page.identifier = '2019/05/29/2019-05-29-ubuntu_java7to8/';
-          this.page.title = 'Ubuntu java7 升级到8';
+          this.page.title = 'Ubuntu java7 升级到 java8';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://thlz998.disqus.com/embed.js';
