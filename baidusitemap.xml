@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-08-13-css-norm/</loc>
+    <lastmod>2019-05-29</lastmod>
+  </url>  <url>
     <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/</loc>
     <lastmod>2019-05-29</lastmod>
   </url>  <url>
@@ -49,19 +52,19 @@
     <loc>http://blog.ibfpig.top/2015/12/12/2015-12-12-install-beef/</loc>
     <lastmod>2018-07-31</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2018/06/28/2018-7-2-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%5B1%5D/</loc>
+    <loc>http://blog.ibfpig.top/2018/06/28/2018-07-02-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%5B1%5D/</loc>
     <lastmod>2018-07-02</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2018/06/28/2018-6-28-gitemoji/</loc>
+    <loc>http://blog.ibfpig.top/2018/06/28/2018-06-28-gitemoji/</loc>
     <lastmod>2018-07-02</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2018/03/10/2018-3-10-chattr/</loc>
+    <loc>http://blog.ibfpig.top/2018/03/10/2018-03-10-chattr/</loc>
     <lastmod>2018-03-10</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2000/01/01/0000-00-00-md/</loc>
     <lastmod>2018-03-08</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/06/03/2017-6-03-linux_scp/</loc>
+    <loc>http://blog.ibfpig.top/2017/06/03/2017-06-03-linux_scp/</loc>
     <lastmod>2018-03-06</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2015/12/12/2015-12-12-install-sqlmap/</loc>
@@ -70,43 +73,40 @@
     <loc>http://blog.ibfpig.top/2015/12/01/2015-12-01-raspberry-pi-course1/</loc>
     <lastmod>2018-03-06</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/05/31/2017-5-31-lspci/</loc>
+    <loc>http://blog.ibfpig.top/2017/05/31/2017-05-31-lspci/</loc>
     <lastmod>2018-03-06</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/06/23/2017-6-23-nginxstart/</loc>
+    <loc>http://blog.ibfpig.top/2017/06/23/2017-06-23-nginxstart/</loc>
     <lastmod>2018-03-06</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/06/07/2017-6-07-nrm/</loc>
+    <loc>http://blog.ibfpig.top/2017/06/07/2017-06-07-nrm/</loc>
     <lastmod>2018-03-06</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/11/21/2017-6-23-regex/</loc>
+    <loc>http://blog.ibfpig.top/2017/11/21/2017-06-23-regex/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/11/21/regex/</loc>
+    <loc>http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/09/13/2017-6-23-more/</loc>
+    <loc>http://blog.ibfpig.top/2017/09/13/2017-06-23-more/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/09/13/more/</loc>
+    <loc>http://blog.ibfpig.top/2017/09/13/2017-09-13-more/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/10/21/2017-6-23-ES61/</loc>
+    <loc>http://blog.ibfpig.top/2017/10/21/2017-06-23-ES61/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/10/21/ES61/</loc>
+    <loc>http://blog.ibfpig.top/2017/10/21/2017-10-21-ES61/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/2017-6-23-html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-06-23-html-norm/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-08-13-html-norm/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/2017-6-23-css-norm/</loc>
-    <lastmod>2018-03-05</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/css-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-06-23-css-norm/</loc>
     <lastmod>2018-03-05</lastmod>
   </url>
 </urlset>

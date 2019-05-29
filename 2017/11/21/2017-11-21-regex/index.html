@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+<meta name="baidu-site-verification" content="cdQXCoPmAt" />
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon.png?v=5.1.4" color="#222">
+
+
+  <link rel="manifest" href="/images/manifest.json">
+
+
+  <meta name="msapplication-config" content="/images/browserconfig.xml" />
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="正则表达式定义正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。 创建正则表达式12var re1 = new RegExp(“abc”);var re2 = /abc/; 使用构造函数创建时，反斜杠的使用规则与往常相同。使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。 匹配测试test方法接受用户传递的字符串，并返回">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/index.html">
+<meta property="og:site_name" content="殷迦南小记录">
+<meta property="og:description" content="正则表达式定义正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。 创建正则表达式12var re1 = new RegExp(“abc”);var re2 = /abc/; 使用构造函数创建时，反斜杠的使用规则与往常相同。使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。 匹配测试test方法接受用户传递的字符串，并返回">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-05T06:10:57.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="正则表达式">
+<meta name="twitter:description" content="正则表达式定义正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。 创建正则表达式12var re1 = new RegExp(“abc”);var re2 = /abc/; 使用构造函数创建时，反斜杠的使用规则与往常相同。使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。 匹配测试test方法接受用户传递的字符串，并返回">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/"/>
+
+
+
+
+
+  <title>正则表达式 | 殷迦南小记录</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">殷迦南小记录</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一个没什么用的博客</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-applebeta">
+          <a href="/Apple_Beta/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            AppleBeta
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">正则表达式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-21T06:55:29+08:00">
+                2017-11-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/21/2017-11-21-regex/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/11/21/2017-11-21-regex/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。</p>
+<h2 id="创建正则表达式"><a href="#创建正则表达式" class="headerlink" title="创建正则表达式"></a>创建正则表达式</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re1 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(“abc”);</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br></pre></td></tr></table></figure>
+<p>使用构造函数创建时，反斜杠的使用规则与往常相同。<br>使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。</p>
+<h2 id="匹配测试"><a href="#匹配测试" class="headerlink" title="匹配测试"></a>匹配测试</h2><h3 id="test方法"><a href="#test方法" class="headerlink" title="test方法"></a>test方法</h3><p>接受用户传递的字符串，并返回一个布尔值，表示字符串中是否包含能与表达式模式匹配的字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; false</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="exec方法"><a href="#exec方法" class="headerlink" title="exec方法"></a>exec方法</h2><p>如果无法匹配模式则返回null,否则返回一个表示匹配字符串信息的对象。<br>exec方法返回的对象中包含index属性，表示字符串成功匹配的起始位置。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; ["abc", index: 0, input: "abcde"]</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; null</span></span><br></pre></td></tr></table></figure></p>
+<p>若正则表达式中包含圆括号的子表达式分组，与这些分组匹配的文本也会出现在数组中。<br>第一个元素是与整个模式匹配的字符串，<br>其后是与第一个分组匹配的部分字符串，然后是第二个分组如此类推。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dataTimeRE = <span class="regexp">/(\d&#123;1,2&#125;)-(\d&#123;1,2&#125;)-(\d&#123;4&#125;)/</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'24-8-2016'</span>;</span><br><span class="line"><span class="keyword">var</span> match = dataTimeRE.exec(str);</span><br><span class="line"><span class="built_in">console</span>.log(match);</span><br></pre></td></tr></table></figure>
+<p>// &gt; [“24-8-2016”, “24”, “8”, “2016”, index: 0, input: “24-8-2016”]</p>
+<h2 id="字符组快捷写法"><a href="#字符组快捷写法" class="headerlink" title="字符组快捷写法"></a>字符组快捷写法</h2><ul>
+<li>\d －－数字符号</li>
+<li>\w －－字母和数字符号</li>
+<li>\s －－空白符号（空格，制表符，换行符等）</li>
+<li>\D －－非数字符号</li>
+<li>\W －－非字母和数字符号</li>
+<li>\S －－非空白符号<br>. －－除了换行符以外的任意符号<h2 id="部分模式重复"><a href="#部分模式重复" class="headerlink" title="部分模式重复"></a>部分模式重复</h2></li>
+<li>＋ －－该元素至少重复一次</li>
+<li>＊ －－该元素至少重复一次，同时可以匹配模式不存在的情况</li>
+<li>？ －－可选，模式出现0次或1次</li>
+<li>{ } －－指明模式出现的次数。{4},4次。{2,4},2~4次。{,4},0~4次。{4.},至少4次以上。<h2 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h2></li>
+<li>^ －－字符始位置</li>
+<li>$ －－字符结束位置</li>
+<li>\b －－单词边界（ \w 集合）<br>/^\d+$/：匹配一个或者多个数字组成的字符串。<br>/^!/ ：匹配任何以感叹号开头的字符串。<br>/x^/ ：不匹配任何字符串。</li>
+</ul>
+<h2 id="子表达式分组"><a href="#子表达式分组" class="headerlink" title="子表达式分组"></a>子表达式分组</h2><p>如果一次性相想对多个元素使用＊或者＋，那么就需要使用分组。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> strRE = <span class="regexp">/boo+(hoo+)+/i</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'Booooohooooohoohoooo'</span>;</span><br><span class="line"><span class="keyword">var</span> test = strRE.test(str);</span><br><span class="line"><span class="built_in">console</span>.log(test);</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="选项模式"><a href="#选项模式" class="headerlink" title="选项模式"></a>选项模式</h2><p>管道符号（｜），表示从其左侧的模式和右侧的模式任意选择一个进行匹配。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animalCount = <span class="regexp">/\b\d+ (pig|cow|chicken)s?\b/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animalCount.test(<span class="string">"15 cows"</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="用例"><a href="#用例" class="headerlink" title="用例"></a>用例</h2><h3 id="检查手机号码"><a href="#检查手机号码" class="headerlink" title="检查手机号码"></a>检查手机号码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isMobile</span>(<span class="params">tel</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="regexp">/^((\(\d&#123;2,3&#125;\))|(\d&#123;3&#125;\-))?(1[34578]\d&#123;9&#125;)$/</span>.test(tel);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="获取URL的Query参数"><a href="#获取URL的Query参数" class="headerlink" title="获取URL的Query参数"></a>获取URL的Query参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getQuery</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = location.search.match(<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"[\?\&amp;]"</span> + name+ <span class="string">"=([^\&amp;]+)"</span>,<span class="string">"i"</span>));</span><br><span class="line">    <span class="keyword">if</span>(result == <span class="literal">null</span> || result.length &lt; <span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="拆分host后缀"><a href="#拆分host后缀" class="headerlink" title="拆分host后缀"></a>拆分host后缀</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">domainarr</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">var</span> durl = <span class="regexp">/http:\/\/([^\/]+)\//i</span>;</span><br><span class="line">     <span class="keyword">var</span> hosts = url.match(durl);</span><br><span class="line">     <span class="keyword">var</span> d_arr;</span><br><span class="line">     hosts = hosts[<span class="number">1</span>];</span><br><span class="line">     d_arr = hosts.split(<span class="string">'.'</span>);</span><br><span class="line">     <span class="keyword">return</span> d_arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/21/2017-06-23-ES61/" rel="next" title="ES6实用小记 (一)">
+                <i class="fa fa-chevron-left"></i> ES6实用小记 (一)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/21/2017-06-23-regex/" rel="prev" title="正则表达式">
+                正则表达式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">殷迦南</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">36</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建正则表达式"><span class="nav-number">1.2.</span> <span class="nav-text">创建正则表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#匹配测试"><span class="nav-number">1.3.</span> <span class="nav-text">匹配测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#test方法"><span class="nav-number">1.3.1.</span> <span class="nav-text">test方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#exec方法"><span class="nav-number">1.4.</span> <span class="nav-text">exec方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字符组快捷写法"><span class="nav-number">1.5.</span> <span class="nav-text">字符组快捷写法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部分模式重复"><span class="nav-number">1.6.</span> <span class="nav-text">部分模式重复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边界"><span class="nav-number">1.7.</span> <span class="nav-text">边界</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子表达式分组"><span class="nav-number">1.8.</span> <span class="nav-text">子表达式分组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选项模式"><span class="nav-number">1.9.</span> <span class="nav-text">选项模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用例"><span class="nav-number">1.10.</span> <span class="nav-text">用例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检查手机号码"><span class="nav-number">1.10.1.</span> <span class="nav-text">检查手机号码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取URL的Query参数"><span class="nav-number">1.10.2.</span> <span class="nav-text">获取URL的Query参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拆分host后缀"><span class="nav-number">1.10.3.</span> <span class="nav-text">拆分host后缀</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">殷迦南</span>
+
+  
+</div>
+
+
+  <div class="powered-by"><a class="theme-link" target="_blank" href="http://www.miitbeian.gov.cn">陕ICP备17002911号</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info"><a class="theme-link" target="_blank" href="http://blog.ibfpig.top">殷迦南</a></div>
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138879481-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138879481-1');
+</script>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://thlz998.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/';
+          this.page.identifier = '2017/11/21/2017-11-21-regex/';
+          this.page.title = '正则表达式';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://thlz998.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
