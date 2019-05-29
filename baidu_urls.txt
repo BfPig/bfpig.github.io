@@ -1,5 +1,5 @@
-http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx80to443/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx+TengineToSSL/
+http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx80to443/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-配置终端代理/
 http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/
 http://blog.ibfpig.top/2019/04/23/2019-04-23-Centos安装oh-my-zsh/
