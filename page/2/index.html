@@ -253,369 +253,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/29/2019-05-29-配置多git账号/" itemprop="url">配置多git账号</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T00:01:05+08:00">
-                2019-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/github/" itemprop="url" rel="index">
-                    <span itemprop="name">github</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/github/gitlib/" itemprop="url" rel="index">
-                    <span itemprop="name">gitlib</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/05/29/2019-05-29-配置多git账号/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/05/29/2019-05-29-配置多git账号/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h1><p><code>ssh-keygen -t rsa -C &quot;your email&quot;</code></p>
-<p>可以通过命名活着放在不同的目录进行区分。</p>
-<h1 id="添加新的SSH-keys到GitHub中"><a href="#添加新的SSH-keys到GitHub中" class="headerlink" title="添加新的SSH keys到GitHub中"></a>添加新的SSH keys到GitHub中</h1><p>将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。</p>
-<h1 id="清除git的全局设置"><a href="#清除git的全局设置" class="headerlink" title="清除git的全局设置"></a>清除git的全局设置</h1><p>如果你之前在设置本地仓库和github连接的时候设置过user.name和user.email,那么你必须首先清楚掉该设置，因为不清楚掉该设置，两个账号在提交资料的时候，验证肯定冲突（只能设置一个全局的user.name和user.email，而你现在有两个账号就对应两个不同的）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"your_name"</span></span><br><span class="line">git config --global user.email  <span class="string">"your_email"</span></span><br></pre></td></tr></table></figure>
-<h1 id="执行ssh-agent让ssh识别新的私钥"><a href="#执行ssh-agent让ssh识别新的私钥" class="headerlink" title="执行ssh-agent让ssh识别新的私钥"></a>执行ssh-agent让ssh识别新的私钥</h1><p>分别使用<code>ssh-add</code>将其添加到ssh-agent中。</p>
-<p><code>ssh-add ~/.ssh/id_rsa</code></p>
-<p>如果出现<code>Could not open a connection to your authentication agent</code>的错误，可以先执行一遍<code>ssh-agent bash</code>，之后在执行<code>ssh-add</code>。</p>
-<h1 id="配置config文件"><a href="#配置config文件" class="headerlink" title="配置config文件"></a>配置config文件</h1><p>看下<code>~/.ssh/</code>目录下有没有config，没有直接新建一个<code>touch config</code>，有的话就直接在后边添加配置。</p>
-<p>配置如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一个</span></span><br><span class="line"></span><br><span class="line">Host git@one.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/one/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二个</span></span><br><span class="line"></span><br><span class="line">Host git@two.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/two/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># ....第N个</span></span><br></pre></td></tr></table></figure>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@one.github.com</span><br><span class="line">ssh -T git@two.github.com</span><br></pre></td></tr></table></figure>
-<h1 id="clone-Git仓库"><a href="#clone-Git仓库" class="headerlink" title="clone Git仓库"></a>clone Git仓库</h1><p>假设原来的git ssh 地址是<code>git clone git@xxxxxx.com:xxx/test.git</code></p>
-<p>那么新的地址就对应配置config时候不同的密钥对应的HostName，</p>
-<p>比如是上边的one，那么，新地址就应该是<code>git clone git@one.xxxxxx.com:xxx/test.git</code></p>
-<p>当然，如果懒得话，不改地址也是可以的，同样可以正常的操作，但是在push到仓库后，可以看见多个头像。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/04/23/2019-04-23-Centos安装oh-my-zsh/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/23/2019-04-23-Centos安装oh-my-zsh/" itemprop="url">CentOs安装oh my zsh</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-23T07:49:05+08:00">
-                2019-04-23
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/centos/" itemprop="url" rel="index">
-                    <span itemprop="name">centos</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/04/23/2019-04-23-Centos安装oh-my-zsh/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/04/23/2019-04-23-Centos安装oh-my-zsh/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="安装zsh包"><a href="#安装zsh包" class="headerlink" title="安装zsh包"></a>安装zsh包</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install zsh</span><br></pre></td></tr></table></figure>
-<h1 id="切换默认shell为zsh"><a href="#切换默认shell为zsh" class="headerlink" title="切换默认shell为zsh"></a>切换默认shell为zsh</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chsh -s /bin/zsh</span><br></pre></td></tr></table></figure>
-<h1 id="重启服务器使得配置生效"><a href="#重启服务器使得配置生效" class="headerlink" title="重启服务器使得配置生效"></a>重启服务器使得配置生效</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure>
-<h1 id="安装on-my-zsh"><a href="#安装on-my-zsh" class="headerlink" title="安装on my zsh"></a>安装on my zsh</h1><h3 id="curl"><a href="#curl" class="headerlink" title="curl"></a>curl</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)</span>"</span></span><br></pre></td></tr></table></figure>
-<h3 id="wget"><a href="#wget" class="headerlink" title="wget"></a>wget</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">"<span class="variable">$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)</span>"</span></span><br></pre></td></tr></table></figure>
-<h1 id="修改oh-my-zsh-主题"><a href="#修改oh-my-zsh-主题" class="headerlink" title="修改oh my zsh 主题"></a>修改oh my zsh 主题</h1><p>在<code>~/.oh-my-zsh/themes</code>目录下已经列出了yum安装的主题，所以我们直接使用就可以了</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME=<span class="string">"主题名"</span></span><br></pre></td></tr></table></figure>
-<p>之后source即可</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> ~/.zshrc</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/04/04/2019-04-04-License/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2196,11 +1833,330 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2018/06/28/2018-07-02-前端基础知识梳理[1]/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/28/2018-07-02-前端基础知识梳理[1]/" itemprop="url">前端基础知识梳理[1]</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-28T14:15:05+08:00">
+                2018-06-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端基础知识梳理/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础知识梳理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/06/28/2018-07-02-前端基础知识梳理[1]/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/06/28/2018-07-02-前端基础知识梳理[1]/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2018/03/10/2018-03-10-chattr/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/10/2018-03-10-chattr/" itemprop="url">chattr命令</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-10T14:15:05+08:00">
+                2018-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/chattr/" itemprop="url" rel="index">
+                    <span itemprop="name">chattr</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/03/10/2018-03-10-chattr/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/03/10/2018-03-10-chattr/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="chattr命令"><a href="#chattr命令" class="headerlink" title="chattr命令"></a>chattr命令</h1><p><strong>chattr命令</strong>：有时候你发现用root权限都不能修改某个文件，大部分原因是曾经用chattr命令锁定该文件了。chattr命令的作用很大，通过chattr命令修改属性能够提高系统的安全性，但是它并不适合所有的目录。chattr命令不能保护/、/dev、/tmp、/var目录。lsattr命令是显示chattr命令设置的文件属性。</p>
+<blockquote>
+<p>语法 chattr [-RV] [-+=AacDdijsSu] [-v version] 文件或目录</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#参数  描述</span></span><br><span class="line">－R  <span class="comment">#递归处理所有的文件及子目录。</span></span><br><span class="line">－V  <span class="comment">#详细显示修改内容，并打印输出。</span></span><br><span class="line">–   <span class="comment">#失效属性。</span></span><br><span class="line">+   <span class="comment">#激活属性。</span></span><br><span class="line">=   <span class="comment">#指定属性。</span></span><br><span class="line">A   <span class="comment">#Atime，告诉系统不要修改对这个文件的最后访问时间。</span></span><br><span class="line">S   <span class="comment">#Sync，一旦应用程序对这个文件执行了写操作，使系统立刻把修改的结果写到磁盘。</span></span><br><span class="line">a   <span class="comment">#Append Only，系统只允许在这个文件之后追加数据，不允许任何进程覆盖或截断这个文件。如果目录具有这个属性，系统将只允许在这个目录下建立和修改文件，而不允许删除任何文件。</span></span><br><span class="line">i   <span class="comment">#Immutable，系统不允许对这个文件进行任何的修改。如果目录具有这个属性，那么任何的进程只能修改目录之下的文件，不允许建立和删除文件。</span></span><br><span class="line">D   <span class="comment">#检查压缩文件中的错误。</span></span><br><span class="line">d   <span class="comment">#No dump，在进行文件系统备份时，dump程序将忽略这个文件。</span></span><br><span class="line">C   <span class="comment">#Compress，系统以透明的方式压缩这个文件。从这个文件读取时，返回的是解压之后的数据；而向这个文件中写入数据时，数据首先被压缩之后才写入磁盘。</span></span><br><span class="line">s   <span class="comment">#Secure Delete，让系统在删除这个文件时，使用0填充文件所在的区域。</span></span><br><span class="line">u   <span class="comment">#Undelete，当一个应用程序请求删除这个文件，系统会保留其数据块以便以后能够恢复删除这个文件。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#例子</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用chattr命令防止系统中某个关键文件被修改：</span></span><br><span class="line">chattr +i /etc/resolv.conf</span><br><span class="line">  </span><br><span class="line"><span class="comment"># 用lsattr查询文件属性：</span></span><br><span class="line">lsattr /etc/resolv.conf</span><br><span class="line">----i-------- /etc/resolv.conf <span class="comment">#显示如上</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># 让某个文件只能往里面追加数据，但不能删除，适用于各种日志文件：</span></span><br><span class="line">chattr +a /var/<span class="built_in">log</span>/messages</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -2246,7 +2202,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">42</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
