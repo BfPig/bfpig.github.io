@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="殷迦南小记录">
 <meta property="og:description" content="可以直接在~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc中添加一个函数进去。 123456789101112131415# 开启代理proxy () &amp;#123;	export https_proxy=http://127.0.0.1:10086	export http_proxy=http://127.0.0.1:10001	export">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-01T02:57:40.458Z">
+<meta property="og:updated_time" content="2019-06-01T03:14:48.128Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置终端代理">
 <meta name="twitter:description" content="可以直接在~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc中添加一个函数进去。 123456789101112131415# 开启代理proxy () &amp;#123;	export https_proxy=http://127.0.0.1:10086	export http_proxy=http://127.0.0.1:10001	export">
@@ -381,26 +381,116 @@
         <p>可以直接在<code>~/.bash_profile</code>, <code>~/.zshrc</code>, <code>~/.profile</code>, or <code>~/.bashrc</code>中添加一个函数进去。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启代理</span></span><br><span class="line"><span class="function"><span class="title">proxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy=http://127.0.0.1:10086</span><br><span class="line">	<span class="built_in">export</span> http_proxy=http://127.0.0.1:10001</span><br><span class="line">	<span class="built_in">export</span> all_proxy=socks5://127.0.0.1:10010</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy on"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭代理</span></span><br><span class="line"><span class="function"><span class="title">unproxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy</span><br><span class="line">	<span class="built_in">export</span> http_proxy</span><br><span class="line">	<span class="built_in">export</span> all_proxy</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy off"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>之后执行<code>source ~/.zshrc</code>(对应自己的startup files文件)。</p>
-<p>需要开启代理的时候就执行<code>proxy</code>，关闭就执行<code>unproxy</code>。</p>
-<blockquote class="pullquote mindmap mindmap-md"><ul>
+<p>需要开启代理的时候就执行<code>proxy</code>，关闭就执行<code>unproxy</code>。<br><blockquote class="pullquote mindmap mindmap-md"><ul>
 <li>重学前端<ul>
 <li>JavaScript<ul>
 <li>运行时<ul>
-<li>数据结构</li>
-<li>执行过程(算法)</li>
+<li>数据结构<ul>
+<li>类型(7种基本类型和7种语言类型)<ul>
+<li>对象(历史、设计思路)</li>
 </ul>
 </li>
-<li>文法</li>
+<li>实例(内置对象)<ul>
+<li>应用机制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>执行过程(算法)<ul>
+<li>事件循环</li>
+<li>微任务执行</li>
+<li>函数执行</li>
+<li>语句级执行</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>文法<ul>
+<li>词法</li>
+<li>语法</li>
+</ul>
+</li>
 <li>语义</li>
 </ul>
 </li>
-<li>HTML/CSS</li>
-<li>浏览器的实现原理和API</li>
-<li>前端工程实践</li>
+<li>HTML/CSS<ul>
+<li>HTML<ul>
+<li>元素<ul>
+<li>文档元信息</li>
+<li>语义相关内容</li>
+<li>链接</li>
+<li>替换型元素</li>
+<li>表单</li>
+<li>表格</li>
+<li>总集</li>
+</ul>
+</li>
+<li>语言<ul>
+<li>实体</li>
+<li>命名空间</li>
+</ul>
+</li>
+<li>补充标准</li>
+</ul>
+</li>
+<li>CSS<ul>
+<li>语言<ul>
+<li>@rule</li>
+<li>选择器</li>
+<li>单位</li>
+</ul>
+</li>
+<li>功能<ul>
+<li>布局<ul>
+<li>正常</li>
+<li>弹性</li>
+</ul>
+</li>
+<li>绘制<ul>
+<li>颜色和形状</li>
+<li>文字相关</li>
+</ul>
+</li>
+<li>交互<ul>
+<li>动画</li>
+<li>其他交互</li>
 </ul>
 </li>
 </ul>
-</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>浏览器的实现原理和API<ul>
+<li>实现原理<ul>
+<li>解析</li>
+<li>构建DOM树</li>
+<li>计算CSS</li>
+<li>渲染、合成和绘制</li>
+</ul>
+</li>
+<li>API<ul>
+<li>DOM</li>
+<li>CSSOM</li>
+<li>事件</li>
+<li>API总集合</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>前端工程实践<ul>
+<li>性能</li>
+<li>工具链</li>
+<li>持续集成</li>
+<li>搭建系统</li>
+<li>架构于基础库    </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote></p>
 
       
     </div>
