@@ -1756,6 +1756,9 @@ pre .javascript .function {
 .mindmap-lg {
   height: 800px;
 }
+#yincannaacasc {
+  background: #000;
+}
 .sidebar {
   position: fixed;
   right: 0;
@@ -1920,7 +1923,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #34bd1b;
+  background: #ffff7e;
 }
 .links-of-blogroll {
   font-size: 13px;
