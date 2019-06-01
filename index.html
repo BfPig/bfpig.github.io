@@ -963,6 +963,25 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启代理</span></span><br><span class="line"><span class="function"><span class="title">proxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy=http://127.0.0.1:10086</span><br><span class="line">	<span class="built_in">export</span> http_proxy=http://127.0.0.1:10001</span><br><span class="line">	<span class="built_in">export</span> all_proxy=socks5://127.0.0.1:10010</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy on"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关闭代理</span></span><br><span class="line"><span class="function"><span class="title">unproxy</span></span> () &#123;</span><br><span class="line">	<span class="built_in">export</span> https_proxy</span><br><span class="line">	<span class="built_in">export</span> http_proxy</span><br><span class="line">	<span class="built_in">export</span> all_proxy</span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"Proxy off"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>之后执行<code>source ~/.zshrc</code>(对应自己的startup files文件)。</p>
 <p>需要开启代理的时候就执行<code>proxy</code>，关闭就执行<code>unproxy</code>。</p>
+<blockquote class="pullquote mindmap mindmap-md"><ul>
+<li>重学前端<ul>
+<li>JavaScript<ul>
+<li>运行时<ul>
+<li>数据结构</li>
+<li>执行过程(算法)</li>
+</ul>
+</li>
+<li>文法</li>
+<li>语义</li>
+</ul>
+</li>
+<li>HTML/CSS</li>
+<li>浏览器的实现原理和API</li>
+<li>前端工程实践</li>
+</ul>
+</li>
+</ul>
+</blockquote>
 
           
         
