@@ -13,9 +13,7 @@
       
       <categories>
           
-          <category> 前端 </category>
-          
-          <category> 重学前端 </category>
+          <category> web </category>
           
       </categories>
       
@@ -42,9 +40,7 @@
       
       <categories>
           
-          <category> 前端 </category>
-          
-          <category> 重学前端 </category>
+          <category> web </category>
           
       </categories>
       
@@ -71,9 +67,7 @@
       
       <categories>
           
-          <category> 前端 </category>
-          
-          <category> 重学前端 </category>
+          <category> web </category>
           
       </categories>
       
@@ -100,9 +94,7 @@
       
       <categories>
           
-          <category> 前端 </category>
-          
-          <category> 重学前端 </category>
+          <category> web </category>
           
       </categories>
       
@@ -131,12 +123,18 @@
           
           <category> linux </category>
           
-          <category> ubuntu </category>
-          
-          <category> java </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> java </tag>
+            
+        </tags>
       
     </entry>
     
@@ -154,16 +152,22 @@
           
           <category> linux </category>
           
-          <category> ssl </category>
-          
-          <category> nginx </category>
-          
-          <category> https </category>
-          
-          <category> tengine </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> ssl </tag>
+            
+            <tag> https </tag>
+            
+            <tag> tengine </tag>
+            
+        </tags>
       
     </entry>
     
@@ -181,14 +185,20 @@
           
           <category> linux </category>
           
-          <category> ssl </category>
-          
-          <category> nginx </category>
-          
-          <category> https </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> nginx </tag>
+            
+            <tag> ssl </tag>
+            
+            <tag> https </tag>
+            
+        </tags>
       
     </entry>
     
@@ -204,14 +214,20 @@
       
       <categories>
           
-          <category> linux </category>
-          
-          <category> macOS </category>
-          
           <category> porxy </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> macOS </tag>
+            
+            <tag> porxy </tag>
+            
+        </tags>
       
     </entry>
     
@@ -229,12 +245,16 @@
           
           <category> git </category>
           
-          <category> github </category>
-          
-          <category> gitlib </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+            <tag> github </tag>
+            
+        </tags>
       
     </entry>
     
@@ -252,10 +272,16 @@
           
           <category> linux </category>
           
-          <category> centos </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> centos </tag>
+            
+        </tags>
       
     </entry>
     
@@ -276,6 +302,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> license </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -294,6 +326,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> node </tag>
+            
+        </tags>
       
     </entry>
     
@@ -314,6 +352,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -328,18 +372,26 @@
       
       <categories>
           
-          <category> 前端 </category>
+          <category> 翻译 </category>
           
           <category> 前端笔记 </category>
           
-          <category> 前端工程化 </category>
-          
-          <category> CSS </category>
-          
-          <category> gulp </category>
-          
       </categories>
       
+      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+            <tag> 翻译 </tag>
+            
+            <tag> gulp </tag>
+            
+            <tag> 前端工程化 </tag>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -364,6 +416,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -380,12 +438,18 @@
           
           <category> 小程序 </category>
           
-          <category> 前端 </category>
-          
           <category> 前端笔记 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+            <tag> 小程序 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -408,6 +472,12 @@
       </categories>
       
       
+        <tags>
+            
+            <tag> tools </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -429,24 +499,11 @@
       </categories>
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>前端基础知识梳理[1]</title>
-      <link href="/2018/06/28/2018-07-02-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%5B1%5D/"/>
-      <url>/2018/06/28/2018-07-02-%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86%5B1%5D/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 前端基础知识梳理 </category>
-          
-      </categories>
-      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
       
     </entry>
     
@@ -468,6 +525,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
       
     </entry>
     
@@ -492,18 +555,15 @@
       </categories>
       
       
-    </entry>
-    
-    
-    
-    <entry>
-      <title>正则表达式</title>
-      <link href="/2017/11/21/2017-06-23-regex/"/>
-      <url>/2017/11/21/2017-06-23-regex/</url>
-      
-        <content type="html"><![CDATA[<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。</p><h2 id="创建正则表达式"><a href="#创建正则表达式" class="headerlink" title="创建正则表达式"></a>创建正则表达式</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re1 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(“abc”);</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br></pre></td></tr></table></figure><p>使用构造函数创建时，反斜杠的使用规则与往常相同。<br>使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。</p><h2 id="匹配测试"><a href="#匹配测试" class="headerlink" title="匹配测试"></a>匹配测试</h2><h3 id="test方法"><a href="#test方法" class="headerlink" title="test方法"></a>test方法</h3><p>接受用户传递的字符串，并返回一个布尔值，表示字符串中是否包含能与表达式模式匹配的字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; false</span></span><br></pre></td></tr></table></figure></p><h2 id="exec方法"><a href="#exec方法" class="headerlink" title="exec方法"></a>exec方法</h2><p>如果无法匹配模式则返回null,否则返回一个表示匹配字符串信息的对象。<br>exec方法返回的对象中包含index属性，表示字符串成功匹配的起始位置。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; ["abc", index: 0, input: "abcde"]</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; null</span></span><br></pre></td></tr></table></figure></p><p>若正则表达式中包含圆括号的子表达式分组，与这些分组匹配的文本也会出现在数组中。<br>第一个元素是与整个模式匹配的字符串，<br>其后是与第一个分组匹配的部分字符串，然后是第二个分组如此类推。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dataTimeRE = <span class="regexp">/(\d&#123;1,2&#125;)-(\d&#123;1,2&#125;)-(\d&#123;4&#125;)/</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'24-8-2016'</span>;</span><br><span class="line"><span class="keyword">var</span> match = dataTimeRE.exec(str);</span><br><span class="line"><span class="built_in">console</span>.log(match);</span><br></pre></td></tr></table></figure><p>// &gt; [“24-8-2016”, “24”, “8”, “2016”, index: 0, input: “24-8-2016”]</p><h2 id="字符组快捷写法"><a href="#字符组快捷写法" class="headerlink" title="字符组快捷写法"></a>字符组快捷写法</h2><ul><li>\d －－数字符号</li><li>\w －－字母和数字符号</li><li>\s －－空白符号（空格，制表符，换行符等）</li><li>\D －－非数字符号</li><li>\W －－非字母和数字符号</li><li>\S －－非空白符号<br>. －－除了换行符以外的任意符号<h2 id="部分模式重复"><a href="#部分模式重复" class="headerlink" title="部分模式重复"></a>部分模式重复</h2></li><li>＋ －－该元素至少重复一次</li><li>＊ －－该元素至少重复一次，同时可以匹配模式不存在的情况</li><li>？ －－可选，模式出现0次或1次</li><li>{ } －－指明模式出现的次数。{4},4次。{2,4},2~4次。{,4},0~4次。{4.},至少4次以上。<h2 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h2></li><li>^ －－字符始位置</li><li>$ －－字符结束位置</li><li>\b －－单词边界（ \w 集合）<br>/^\d+$/：匹配一个或者多个数字组成的字符串。<br>/^!/ ：匹配任何以感叹号开头的字符串。<br>/x^/ ：不匹配任何字符串。</li></ul><h2 id="子表达式分组"><a href="#子表达式分组" class="headerlink" title="子表达式分组"></a>子表达式分组</h2><p>如果一次性相想对多个元素使用＊或者＋，那么就需要使用分组。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> strRE = <span class="regexp">/boo+(hoo+)+/i</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'Booooohooooohoohoooo'</span>;</span><br><span class="line"><span class="keyword">var</span> test = strRE.test(str);</span><br><span class="line"><span class="built_in">console</span>.log(test);</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p><h2 id="选项模式"><a href="#选项模式" class="headerlink" title="选项模式"></a>选项模式</h2><p>管道符号（｜），表示从其左侧的模式和右侧的模式任意选择一个进行匹配。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animalCount = <span class="regexp">/\b\d+ (pig|cow|chicken)s?\b/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animalCount.test(<span class="string">"15 cows"</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p><h2 id="用例"><a href="#用例" class="headerlink" title="用例"></a>用例</h2><h3 id="检查手机号码"><a href="#检查手机号码" class="headerlink" title="检查手机号码"></a>检查手机号码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isMobile</span>(<span class="params">tel</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="regexp">/^((\(\d&#123;2,3&#125;\))|(\d&#123;3&#125;\-))?(1[34578]\d&#123;9&#125;)$/</span>.test(tel);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="获取URL的Query参数"><a href="#获取URL的Query参数" class="headerlink" title="获取URL的Query参数"></a>获取URL的Query参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getQuery</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = location.search.match(<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"[\?\&amp;]"</span> + name+ <span class="string">"=([^\&amp;]+)"</span>,<span class="string">"i"</span>));</span><br><span class="line">    <span class="keyword">if</span>(result == <span class="literal">null</span> || result.length &lt; <span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="拆分host后缀"><a href="#拆分host后缀" class="headerlink" title="拆分host后缀"></a>拆分host后缀</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">domainarr</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">var</span> durl = <span class="regexp">/http:\/\/([^\/]+)\//i</span>;</span><br><span class="line">     <span class="keyword">var</span> hosts = url.match(durl);</span><br><span class="line">     <span class="keyword">var</span> d_arr;</span><br><span class="line">     hosts = hosts[<span class="number">1</span>];</span><br><span class="line">     d_arr = hosts.split(<span class="string">'.'</span>);</span><br><span class="line">     <span class="keyword">return</span> d_arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+            <tag> ES6 </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
       
     </entry>
     
@@ -517,19 +577,18 @@
         <content type="html"><![CDATA[<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>正则表达式是一种描述字符串数据模式的方法，是检查、处理字符串的强力工具。</p><h2 id="创建正则表达式"><a href="#创建正则表达式" class="headerlink" title="创建正则表达式"></a>创建正则表达式</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re1 = <span class="keyword">new</span> <span class="built_in">RegExp</span>(“abc”);</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br></pre></td></tr></table></figure><p>使用构造函数创建时，反斜杠的使用规则与往常相同。<br>使用双斜杠字面值创建时，不确定字符是否具有特殊含义，而不是字母、数字、空格式，只要在字符前加上反斜杠即可。</p><h2 id="匹配测试"><a href="#匹配测试" class="headerlink" title="匹配测试"></a>匹配测试</h2><h3 id="test方法"><a href="#test方法" class="headerlink" title="test方法"></a>test方法</h3><p>接受用户传递的字符串，并返回一个布尔值，表示字符串中是否包含能与表达式模式匹配的字符串。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.test(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; false</span></span><br></pre></td></tr></table></figure></p><h2 id="exec方法"><a href="#exec方法" class="headerlink" title="exec方法"></a>exec方法</h2><p>如果无法匹配模式则返回null,否则返回一个表示匹配字符串信息的对象。<br>exec方法返回的对象中包含index属性，表示字符串成功匹配的起始位置。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/abc/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abcde'</span>));</span><br><span class="line"><span class="comment">// &gt; ["abc", index: 0, input: "abcde"]</span></span><br><span class="line"><span class="built_in">console</span>.log(re2.exec(<span class="string">'abxde'</span>));</span><br><span class="line"><span class="comment">// &gt; null</span></span><br></pre></td></tr></table></figure></p><p>若正则表达式中包含圆括号的子表达式分组，与这些分组匹配的文本也会出现在数组中。<br>第一个元素是与整个模式匹配的字符串，<br>其后是与第一个分组匹配的部分字符串，然后是第二个分组如此类推。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dataTimeRE = <span class="regexp">/(\d&#123;1,2&#125;)-(\d&#123;1,2&#125;)-(\d&#123;4&#125;)/</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'24-8-2016'</span>;</span><br><span class="line"><span class="keyword">var</span> match = dataTimeRE.exec(str);</span><br><span class="line"><span class="built_in">console</span>.log(match);</span><br></pre></td></tr></table></figure><p>// &gt; [“24-8-2016”, “24”, “8”, “2016”, index: 0, input: “24-8-2016”]</p><h2 id="字符组快捷写法"><a href="#字符组快捷写法" class="headerlink" title="字符组快捷写法"></a>字符组快捷写法</h2><ul><li>\d －－数字符号</li><li>\w －－字母和数字符号</li><li>\s －－空白符号（空格，制表符，换行符等）</li><li>\D －－非数字符号</li><li>\W －－非字母和数字符号</li><li>\S －－非空白符号<br>. －－除了换行符以外的任意符号<h2 id="部分模式重复"><a href="#部分模式重复" class="headerlink" title="部分模式重复"></a>部分模式重复</h2></li><li>＋ －－该元素至少重复一次</li><li>＊ －－该元素至少重复一次，同时可以匹配模式不存在的情况</li><li>？ －－可选，模式出现0次或1次</li><li>{ } －－指明模式出现的次数。{4},4次。{2,4},2~4次。{,4},0~4次。{4.},至少4次以上。<h2 id="边界"><a href="#边界" class="headerlink" title="边界"></a>边界</h2></li><li>^ －－字符始位置</li><li>$ －－字符结束位置</li><li>\b －－单词边界（ \w 集合）<br>/^\d+$/：匹配一个或者多个数字组成的字符串。<br>/^!/ ：匹配任何以感叹号开头的字符串。<br>/x^/ ：不匹配任何字符串。</li></ul><h2 id="子表达式分组"><a href="#子表达式分组" class="headerlink" title="子表达式分组"></a>子表达式分组</h2><p>如果一次性相想对多个元素使用＊或者＋，那么就需要使用分组。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> strRE = <span class="regexp">/boo+(hoo+)+/i</span>;</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'Booooohooooohoohoooo'</span>;</span><br><span class="line"><span class="keyword">var</span> test = strRE.test(str);</span><br><span class="line"><span class="built_in">console</span>.log(test);</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p><h2 id="选项模式"><a href="#选项模式" class="headerlink" title="选项模式"></a>选项模式</h2><p>管道符号（｜），表示从其左侧的模式和右侧的模式任意选择一个进行匹配。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> animalCount = <span class="regexp">/\b\d+ (pig|cow|chicken)s?\b/</span>;</span><br><span class="line"><span class="built_in">console</span>.log(animalCount.test(<span class="string">"15 cows"</span>));</span><br><span class="line"><span class="comment">// &gt; true</span></span><br></pre></td></tr></table></figure></p><h2 id="用例"><a href="#用例" class="headerlink" title="用例"></a>用例</h2><h3 id="检查手机号码"><a href="#检查手机号码" class="headerlink" title="检查手机号码"></a>检查手机号码</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">isMobile</span>(<span class="params">tel</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">return</span> <span class="regexp">/^((\(\d&#123;2,3&#125;\))|(\d&#123;3&#125;\-))?(1[34578]\d&#123;9&#125;)$/</span>.test(tel);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="获取URL的Query参数"><a href="#获取URL的Query参数" class="headerlink" title="获取URL的Query参数"></a>获取URL的Query参数</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getQuery</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> result = location.search.match(<span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"[\?\&amp;]"</span> + name+ <span class="string">"=([^\&amp;]+)"</span>,<span class="string">"i"</span>));</span><br><span class="line">    <span class="keyword">if</span>(result == <span class="literal">null</span> || result.length &lt; <span class="number">1</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result[<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="拆分host后缀"><a href="#拆分host后缀" class="headerlink" title="拆分host后缀"></a>拆分host后缀</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">domainarr</span>(<span class="params">url</span>)</span>&#123;</span><br><span class="line">     <span class="keyword">var</span> durl = <span class="regexp">/http:\/\/([^\/]+)\//i</span>;</span><br><span class="line">     <span class="keyword">var</span> hosts = url.match(durl);</span><br><span class="line">     <span class="keyword">var</span> d_arr;</span><br><span class="line">     hosts = hosts[<span class="number">1</span>];</span><br><span class="line">     d_arr = hosts.split(<span class="string">'.'</span>);</span><br><span class="line">     <span class="keyword">return</span> d_arr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>ES6实用小记 (一)</title>
-      <link href="/2017/10/21/2017-06-23-ES61/"/>
-      <url>/2017/10/21/2017-06-23-ES61/</url>
-      
-        <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在学习ES6中挑选出比较常用、实用的部分。</p><ul><li><p>var、let、const<br>let和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。</p></li><li><p>let用于声明变量，const用于声明常量。<br>意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a =<span class="number">1</span>;</span><br><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">1</span>;</span><br><span class="line">b = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br><span class="line"><span class="keyword">let</span> a ;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="keyword">const</span> b ;</span><br><span class="line"><span class="comment">// Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure></li><li><p>块级作用域</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">//  3</span></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: b is not defined</span></span><br></pre></td></tr></table></figure></li><li><p>不允许重复声明<br>在一定程度上防止了变量污染</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;  <span class="comment">// or const a = 3;let a = 4;</span></span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br></pre></td></tr></table></figure></li><li><p>不存在变量提升</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="keyword">let</span> b =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure></li><li><p>暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></li><li><p>模版字符串<br>在拼接HTML插入DOM的时候，功效尤其显著。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">'hello,'</span>+name+<span class="string">'.'</span>+<span class="string">'Nice to meet you!'</span></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">`hello,<span class="subst">$&#123;name&#125;</span>.Nice to meet you!`</span></span><br></pre></td></tr></table></figure></li><li><p>函数默认值<br>在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES5</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  x = x || <span class="string">'Hello'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params"> x = <span class="string">'Hello'</span></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      <categories>
+          
+          <category> 正则表达式 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> 正则表达式 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -543,19 +602,26 @@
         <content type="html"><![CDATA[<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>在学习ES6中挑选出比较常用、实用的部分。</p><ul><li><p>var、let、const<br>let和const的出现，应该就是为了替代var吧，能使代码结构更加之严谨。</p></li><li><p>let用于声明变量，const用于声明常量。<br>意思就是let可以重新赋值，const则不能，并且const声明就必须赋值。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a =<span class="number">1</span>;</span><br><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="keyword">const</span> b = <span class="number">1</span>;</span><br><span class="line">b = <span class="number">2</span>;</span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br><span class="line"><span class="keyword">let</span> a ;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="keyword">const</span> b ;</span><br><span class="line"><span class="comment">// Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure></li><li><p>块级作用域</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">var</span> a = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">//  3</span></span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    <span class="keyword">let</span> b = <span class="number">3</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: b is not defined</span></span><br></pre></td></tr></table></figure></li><li><p>不允许重复声明<br>在一定程度上防止了变量污染</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">2</span>;  <span class="comment">// or const a = 3;let a = 4;</span></span><br><span class="line"><span class="comment">// Identifier 'a' has already been declared</span></span><br></pre></td></tr></table></figure></li><li><p>不存在变量提升</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="keyword">var</span> a =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// undefind</span></span><br><span class="line"><span class="built_in">console</span>.log(b)</span><br><span class="line"><span class="keyword">let</span> b =<span class="number">1</span>;</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br></pre></td></tr></table></figure></li><li><p>暂存性死区<br>在当前的块级作用域中声明，即代表绑定了该环境，在当前环境中声明前赋值都会报错。因为在这个区域不支持变量提升。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>  a = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">    a =<span class="number">4</span>;</span><br><span class="line">    <span class="keyword">let</span> a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a)</span><br><span class="line"><span class="comment">// Uncaught ReferenceError: a is not defined</span></span><br><span class="line"></span><br><span class="line">### 最外层不再是window</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> c = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a) <span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.b) <span class="comment">// undefined</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.c) <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></li><li><p>模版字符串<br>在拼接HTML插入DOM的时候，功效尤其显著。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">'hello,'</span>+name+<span class="string">'.'</span>+<span class="string">'Nice to meet you!'</span></span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line"><span class="keyword">var</span> name = <span class="string">'jax'</span>;</span><br><span class="line"><span class="keyword">var</span> say = <span class="string">`hello,<span class="subst">$&#123;name&#125;</span>.Nice to meet you!`</span></span><br></pre></td></tr></table></figure></li><li><p>函数默认值<br>在ES6之前，不能直接为函数的参数指定默认值，只能采用变通的方法。</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//ES5</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  x = x || <span class="string">'Hello'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br><span class="line"><span class="comment">// ES6</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> <span class="title">log</span>(<span class="params"> x = <span class="string">'Hello'</span></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x);</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>模块化</title>
-      <link href="/2017/09/13/2017-06-23-more/"/>
-      <url>/2017/09/13/2017-06-23-more/</url>
-      
-        <content type="html"><![CDATA[<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><p>伴随着移动互联的大潮，当今越来越多的网站已经从网页模式进化到了 Webapp 模式。它们运行在现代的高级浏览器里，使用 HTML5、 CSS3、 ES6 等更新的技术来开发丰富的功能，网页已经不仅仅是完成浏览的基本需求，并且webapp通常是一个单页面应用，每一个视图通过异步的方式加载，这导致页面初始化和使用过程中会加载越来越多的 JavaScript 代码，这给前端开发的流程和资源组织带来了巨大的挑战。</p><p>前端开发和其他开发工作的主要区别，首先是前端是基于多语言、多层次的编码和组织工作，其次前端产品的交付是基于浏览器，这些资源是通过增量加载的方式运行到浏览器端，如何在开发环境组织好这些碎片化的代码和资源，并且保证他们在浏览器端快速、优雅的加载和更新，就需要一个模块化系统，这个理想中的模块化系统是前端工程师多年来一直探索的难题。</p><h2 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h2><p>模块通过将代码分割成不同文件和命名空间，为更大规模的程序提供了结构。</p><p>模块系统的演进<br>模块系统主要解决模块的定义、依赖和导出，先来看看已经存在的模块系统。</p><h3 id="script标签"><a href="#script标签" class="headerlink" title="script标签"></a>script标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module1.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module2.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"libraryA.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module3.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这是最原始的 JavaScript 文件加载方式，如果把每一个文件看做是一个模块，那么他们的接口通常是暴露在全局作用域下，也就是定义在 window 对象中，不同模块的接口调用都是一个作用域中，一些复杂的框架，会使用命名空间的概念来组织这些模块的接口，典型的例子如 YUI 库。</p><p>这种原始的加载方式暴露了一些显而易见的弊端：</p><ul><li>全局作用域下容易造成变量冲突</li><li>文件只能按照 script 的书写顺序进行加载</li><li>开发人员必须主观解决模块和代码库的依赖关系</li><li>在大型项目中各种资源难以管理，长期积累的问题会导致代码库混乱</li></ul><h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><p>服务器端的 Node.js 遵循 CommonJS规范，该规范的核心思想是允许模块通过 require 方法来同步加载所要依赖的其他模块，然后通过 exports 或 module.exports 来导出需要暴露的接口。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">"module"</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">"../file.js"</span>);</span><br><span class="line">exports.doStuff = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="built_in">module</span>.exports = someValue;</span><br></pre></td></tr></table></figure></p><h2 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h2><p>服务器端模块便于重用<br>NPM 中已经有将近20万个可以使用模块包<br>简单并容易使用</p><h2 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h2><p>同步的模块加载方式不适合在浏览器环境中，同步意味着阻塞加载，浏览器资源是异步加载的<br>不能非阻塞的并行加载多个模块</p><h2 id="实现："><a href="#实现：" class="headerlink" title="实现："></a>实现：</h2><p>服务器端的 Node.js<br>Browserify，浏览器端的 CommonJS 实现，可以使用 NPM 的模块，但是编译打包后的文件体积可能很大<br>modules-webmake，类似Browserify，还不如 Browserify 灵活<br>wreq，Browserify 的前身</p><h2 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h2><p>Asynchronous Module Definition 规范其实只有一个主要接口 define(id?, dependencies?, factory)，它要在声明模块的时候指定所有的依赖 dependencies，并且还要当做形参传到 factory 中，对于依赖的模块提前执行，依赖前置。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="string">"module"</span>, [<span class="string">"dep1"</span>, <span class="string">"dep2"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">d1, d2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> someExportedValue;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">require</span>([<span class="string">"module"</span>, <span class="string">"../file"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">module, file</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;);</span><br></pre></td></tr></table></figure></p><h2 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h2><p>适合在浏览器环境中异步加载模块<br>可以并行加载多个模块</p><h2 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h2><p>提高了开发成本，代码的阅读和书写比较困难，模块定义方式的语义不顺畅<br>不符合通用的模块化思维方式，是一种妥协的实现</p><h2 id="实现：-1"><a href="#实现：-1" class="headerlink" title="实现："></a>实现：</h2><p>RequireJS<br>curl</p><h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>Common Module Definition 规范和 AMD 很相似，尽量保持简单，并与 CommonJS 和 Node.js 的 Modules 规范保持了很大的兼容性。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</span><br><span class="line">  <span class="keyword">var</span> Spinning = <span class="built_in">require</span>(<span class="string">'./spinning'</span>);</span><br><span class="line">  exports.doSomething = ...</span><br><span class="line">  <span class="built_in">module</span>.exports = ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><h2 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h2><p>依赖就近，延迟执行<br>可以很容易在 Node.js 中运行</p><h2 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h2><p>依赖 SPM 打包，模块的加载逻辑偏重</p><h2 id="实现：-2"><a href="#实现：-2" class="headerlink" title="实现："></a>实现：</h2><p>Sea.js<br>coolie</p><h2 id="UMD"><a href="#UMD" class="headerlink" title="UMD"></a>UMD</h2><p>Universal Module Definition 规范类似于兼容 CommonJS 和 AMD 的语法糖，是模块定义的跨平台解决方案。</p><h2 id="ES6-模块"><a href="#ES6-模块" class="headerlink" title="ES6 模块"></a>ES6 模块</h2><p>EcmaScript6 标准增加了 JavaScript 语言层面的模块体系定义。ES6 模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"jquery"</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">doStuff</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">module</span> <span class="string">"localModule"</span> &#123;&#125;</span><br></pre></td></tr></table></figure></p><h2 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h2><p>容易进行静态分析<br>面向未来的 EcmaScript 标准</p><h2 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h2><p>原生浏览器端还没有实现该标准<br>全新的命令字，新版的 Node.js才支持</p><h2 id="实现：-3"><a href="#实现：-3" class="headerlink" title="实现："></a>实现：</h2><p>Babel</p><h2 id="前端模块化"><a href="#前端模块化" class="headerlink" title="前端模块化"></a>前端模块化</h2><p>前端模块要在客户端中执行，所以他们需要增量加载到浏览器中。</p><p>模块的加载和传输，我们首先能想到两种极端的方式，一种是每个模块文件都单独请求，另一种是把所有模块打包成一个文件然后只请求一次。显而易见，每个模块都发起单独的请求造成了请求次数过多，导致应用启动速度慢；一次请求加载所有模块导致流量浪费、初始化过程慢。这两种方式都不是好的解决方案，它们过于简单粗暴。</p><p>分块传输，按需进行懒加载，在实际用到某些模块的时候再增量更新，才是较为合理的模块加载方案。</p><p>要实现模块的按需加载，就需要一个对整个代码库中的模块进行静态分析、编译打包的过程。</p>]]></content>
+      <categories>
+          
+          <category> 前端笔记 </category>
+          
+          <category> ES6 </category>
+          
+          <category> web </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+            <tag> ES6 </tag>
+            
+            <tag> web </tag>
+            
+        </tags>
       
     </entry>
     
@@ -569,32 +635,20 @@
         <content type="html"><![CDATA[<h2 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h2><p>伴随着移动互联的大潮，当今越来越多的网站已经从网页模式进化到了 Webapp 模式。它们运行在现代的高级浏览器里，使用 HTML5、 CSS3、 ES6 等更新的技术来开发丰富的功能，网页已经不仅仅是完成浏览的基本需求，并且webapp通常是一个单页面应用，每一个视图通过异步的方式加载，这导致页面初始化和使用过程中会加载越来越多的 JavaScript 代码，这给前端开发的流程和资源组织带来了巨大的挑战。</p><p>前端开发和其他开发工作的主要区别，首先是前端是基于多语言、多层次的编码和组织工作，其次前端产品的交付是基于浏览器，这些资源是通过增量加载的方式运行到浏览器端，如何在开发环境组织好这些碎片化的代码和资源，并且保证他们在浏览器端快速、优雅的加载和更新，就需要一个模块化系统，这个理想中的模块化系统是前端工程师多年来一直探索的难题。</p><h2 id="定义："><a href="#定义：" class="headerlink" title="定义："></a>定义：</h2><p>模块通过将代码分割成不同文件和命名空间，为更大规模的程序提供了结构。</p><p>模块系统的演进<br>模块系统主要解决模块的定义、依赖和导出，先来看看已经存在的模块系统。</p><h3 id="script标签"><a href="#script标签" class="headerlink" title="script标签"></a>script标签</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module1.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module2.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"libraryA.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"module3.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这是最原始的 JavaScript 文件加载方式，如果把每一个文件看做是一个模块，那么他们的接口通常是暴露在全局作用域下，也就是定义在 window 对象中，不同模块的接口调用都是一个作用域中，一些复杂的框架，会使用命名空间的概念来组织这些模块的接口，典型的例子如 YUI 库。</p><p>这种原始的加载方式暴露了一些显而易见的弊端：</p><ul><li>全局作用域下容易造成变量冲突</li><li>文件只能按照 script 的书写顺序进行加载</li><li>开发人员必须主观解决模块和代码库的依赖关系</li><li>在大型项目中各种资源难以管理，长期积累的问题会导致代码库混乱</li></ul><h2 id="CommonJS"><a href="#CommonJS" class="headerlink" title="CommonJS"></a>CommonJS</h2><p>服务器端的 Node.js 遵循 CommonJS规范，该规范的核心思想是允许模块通过 require 方法来同步加载所要依赖的其他模块，然后通过 exports 或 module.exports 来导出需要暴露的接口。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">"module"</span>);</span><br><span class="line"><span class="built_in">require</span>(<span class="string">"../file.js"</span>);</span><br><span class="line">exports.doStuff = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="built_in">module</span>.exports = someValue;</span><br></pre></td></tr></table></figure></p><h2 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h2><p>服务器端模块便于重用<br>NPM 中已经有将近20万个可以使用模块包<br>简单并容易使用</p><h2 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h2><p>同步的模块加载方式不适合在浏览器环境中，同步意味着阻塞加载，浏览器资源是异步加载的<br>不能非阻塞的并行加载多个模块</p><h2 id="实现："><a href="#实现：" class="headerlink" title="实现："></a>实现：</h2><p>服务器端的 Node.js<br>Browserify，浏览器端的 CommonJS 实现，可以使用 NPM 的模块，但是编译打包后的文件体积可能很大<br>modules-webmake，类似Browserify，还不如 Browserify 灵活<br>wreq，Browserify 的前身</p><h2 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h2><p>Asynchronous Module Definition 规范其实只有一个主要接口 define(id?, dependencies?, factory)，它要在声明模块的时候指定所有的依赖 dependencies，并且还要当做形参传到 factory 中，对于依赖的模块提前执行，依赖前置。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="string">"module"</span>, [<span class="string">"dep1"</span>, <span class="string">"dep2"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">d1, d2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> someExportedValue;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">require</span>([<span class="string">"module"</span>, <span class="string">"../file"</span>], <span class="function"><span class="keyword">function</span>(<span class="params">module, file</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;);</span><br></pre></td></tr></table></figure></p><h2 id="优点：-1"><a href="#优点：-1" class="headerlink" title="优点："></a>优点：</h2><p>适合在浏览器环境中异步加载模块<br>可以并行加载多个模块</p><h2 id="缺点：-1"><a href="#缺点：-1" class="headerlink" title="缺点："></a>缺点：</h2><p>提高了开发成本，代码的阅读和书写比较困难，模块定义方式的语义不顺畅<br>不符合通用的模块化思维方式，是一种妥协的实现</p><h2 id="实现：-1"><a href="#实现：-1" class="headerlink" title="实现："></a>实现：</h2><p>RequireJS<br>curl</p><h2 id="CMD"><a href="#CMD" class="headerlink" title="CMD"></a>CMD</h2><p>Common Module Definition 规范和 AMD 很相似，尽量保持简单，并与 CommonJS 和 Node.js 的 Modules 规范保持了很大的兼容性。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="function"><span class="keyword">function</span>(<span class="params">require, exports, module</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> $ = <span class="built_in">require</span>(<span class="string">'jquery'</span>);</span><br><span class="line">  <span class="keyword">var</span> Spinning = <span class="built_in">require</span>(<span class="string">'./spinning'</span>);</span><br><span class="line">  exports.doSomething = ...</span><br><span class="line">  <span class="built_in">module</span>.exports = ...</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><h2 id="优点：-2"><a href="#优点：-2" class="headerlink" title="优点："></a>优点：</h2><p>依赖就近，延迟执行<br>可以很容易在 Node.js 中运行</p><h2 id="缺点：-2"><a href="#缺点：-2" class="headerlink" title="缺点："></a>缺点：</h2><p>依赖 SPM 打包，模块的加载逻辑偏重</p><h2 id="实现：-2"><a href="#实现：-2" class="headerlink" title="实现："></a>实现：</h2><p>Sea.js<br>coolie</p><h2 id="UMD"><a href="#UMD" class="headerlink" title="UMD"></a>UMD</h2><p>Universal Module Definition 规范类似于兼容 CommonJS 和 AMD 的语法糖，是模块定义的跨平台解决方案。</p><h2 id="ES6-模块"><a href="#ES6-模块" class="headerlink" title="ES6 模块"></a>ES6 模块</h2><p>EcmaScript6 标准增加了 JavaScript 语言层面的模块体系定义。ES6 模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。CommonJS 和 AMD 模块，都只能在运行时确定这些东西。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> <span class="string">"jquery"</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">doStuff</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="built_in">module</span> <span class="string">"localModule"</span> &#123;&#125;</span><br></pre></td></tr></table></figure></p><h2 id="优点：-3"><a href="#优点：-3" class="headerlink" title="优点："></a>优点：</h2><p>容易进行静态分析<br>面向未来的 EcmaScript 标准</p><h2 id="缺点：-3"><a href="#缺点：-3" class="headerlink" title="缺点："></a>缺点：</h2><p>原生浏览器端还没有实现该标准<br>全新的命令字，新版的 Node.js才支持</p><h2 id="实现：-3"><a href="#实现：-3" class="headerlink" title="实现："></a>实现：</h2><p>Babel</p><h2 id="前端模块化"><a href="#前端模块化" class="headerlink" title="前端模块化"></a>前端模块化</h2><p>前端模块要在客户端中执行，所以他们需要增量加载到浏览器中。</p><p>模块的加载和传输，我们首先能想到两种极端的方式，一种是每个模块文件都单独请求，另一种是把所有模块打包成一个文件然后只请求一次。显而易见，每个模块都发起单独的请求造成了请求次数过多，导致应用启动速度慢；一次请求加载所有模块导致流量浪费、初始化过程慢。这两种方式都不是好的解决方案，它们过于简单粗暴。</p><p>分块传输，按需进行懒加载，在实际用到某些模块的时候再增量更新，才是较为合理的模块加载方案。</p><p>要实现模块的按需加载，就需要一个对整个代码库中的模块进行静态分析、编译打包的过程。</p>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CSS 使用规范</title>
-      <link href="/2017/08/13/2017-06-23-css-norm/"/>
-      <url>/2017/08/13/2017-06-23-css-norm/</url>
-      
-        <content type="html"><![CDATA[<h2 id="统一"><a href="#统一" class="headerlink" title="统一"></a>统一</h2><ul><li>统一使用怪异盒子模型 <code>box-sizing:border-box;</code></li></ul><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul><li>非必要时刻，不要超过 <code>三层</code></li><li>非必要时刻，不要为 <code>id</code>  写样式</li><li>非必要时刻，不要使用 <code>style</code> 内嵌样式</li><li>非必要时刻，不要使用  <code>important</code></li></ul><h2 id="属性书写顺序"><a href="#属性书写顺序" class="headerlink" title="属性书写顺序"></a>属性书写顺序</h2><ol><li>Position</li><li>Box model</li><li>Typographic</li><li>Visual<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.declaration-order</span> &#123;</span><br><span class="line">    <span class="comment">/* 定位相关 */</span></span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 盒模型相关 */</span></span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 文本属性、排版相关 */</span></span><br><span class="line">    <span class="attribute">font</span>: normal <span class="number">13px</span> <span class="string">"Helvetica Neue"</span>, sans-serif;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* Visual */</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#e5e5e5</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="class-命名"><a href="#class-命名" class="headerlink" title="class 命名"></a>class 命名</h2><ul><li>小写 <code>.btn</code></li><li>破折号 <code>.btn-info</code></li><li>id的命名使用驼峰命名法  <code>#userName</code></li><li>避免过度任意的简写。<code>.btn</code>代表 <code>button</code>，但是<code>.b</code>不能表达任何意思。</li><li>尽可能短，并且意义明确。</li><li>基于最近的父class或基本class作为新class的前缀。<code>.menu-header</code> <code>.menu-container</code><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 不规范的写法 */</span></span><br><span class="line">.m &#123; ... &#125;</span><br><span class="line">.red &#123; ... &#125;</span><br><span class="line">.container &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 规范的写法 */</span></span><br><span class="line">.menu &#123; ... &#125;</span><br><span class="line">.important &#123; ... &#125;</span><br><span class="line">.menu-container &#123; ... &#125;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      <categories>
+          
+          <category> 前端笔记 </category>
+          
+          <category> 模块化 </category>
+          
+      </categories>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>HTML 使用规范</title>
-      <link href="/2017/08/13/2017-06-23-html-norm/"/>
-      <url>/2017/08/13/2017-06-23-html-norm/</url>
-      
-        <content type="html"><![CDATA[<h2 id="通用架构"><a href="#通用架构" class="headerlink" title="通用架构"></a>通用架构</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>极客学院IT在线教育平台-中国专业的IT职业在线教育平台<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"极客学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,ios,flash,java,python,html5,swift,cocos2dx"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"极客学院作为中国专业IT职业在线教育平台,拥有海量高清IT职业课程,涵盖30+个技术领域,如Android,iOS ,Flash,Java,Python,HTML5,Swift,Cocos2dx等视频教程.根据IT在线学习特点,极客学院推出IT学习知识体系图,IT职业学习实战路径图,帮助IT学习者从零基础起步,结合IT实战案例演练,系统学习,助你快速成为IT优秀技术人才！"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="标签属性书写顺序"><a href="#标签属性书写顺序" class="headerlink" title="标签属性书写顺序"></a>标签属性书写顺序</h3><p>class 用于标识高度可复用组件，因此应该排在首位。id 用于标识具体组件，一般提供给JS使用。</p><ol><li>class</li><li>id, name</li><li>data-*</li><li>src, for, type, href</li><li>title, alt</li></ol><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ol><li>用4个空格来代替制表符（tab）</li><li>嵌套元素应当缩进一次</li><li>对于属性的定义，确保全部使用双引号，不要使用单引号。</li></ol><h3 id="避免冗余"><a href="#避免冗余" class="headerlink" title="避免冗余"></a>避免冗余</h3><p>尽量遵循 HTML 标准和语义，但是不要以牺牲实用性为代价。任何时候都要尽量使用最少的标签并保持最小的复杂度。（尤其勿滥用div标签）<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 不规范的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"avatar"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"..."</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 规范的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"avatar"</span> <span class="attr">src</span>=<span class="string">"..."</span>&gt;</span></span><br></pre></td></tr></table></figure></p><h3 id="错误嵌套"><a href="#错误嵌套" class="headerlink" title="错误嵌套"></a>错误嵌套</h3><ol><li>a标签不可以嵌套交互式元素</li><li>块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素</li><li>p标签不能包含块级元素</li><li>这些标签不可包含块级元素</li><li>li标签可以包含div以及ul，ul的子元素应该只有li</li><li>元素并排（块级和块级并列，内联和内联并列)</li></ol><h4 id="语法错误"><a href="#语法错误" class="headerlink" title="语法错误"></a>语法错误</h4><p>浏览器是不能够正常解析的,有的虽然解析正常，但却达不到预想的目的</p><h5 id="a标签不可以嵌套交互式元素"><a href="#a标签不可以嵌套交互式元素" class="headerlink" title="a标签不可以嵌套交互式元素"></a>a标签不可以嵌套交互式元素</h5><p>a标签不可以嵌套交互式元素[a， audio（如果设置了controls属性）， button， details， embed， iframe， img（如果设置了usemap属性）， input（如果type属性不为hidden状态）， keygen， label， menu（如果type属性为toolbar状态），object（如果设置了usemap属性）， select， textarea， video（如果设置了controls属性）]<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*下面这些写法浏览器是不能够正常解析的,有的虽然解析正常，但却达不到预想的目的*/</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">cols</span>=<span class="string">"10"</span> <span class="attr">rows</span>=<span class="string">"5"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p><h4 id="语义错误"><a href="#语义错误" class="headerlink" title="语义错误"></a>语义错误</h4><p>页面可能正常解析，但不符合语义。这是因为浏览器自带容错机制，对于不规范的写法也能够正确的解析，各浏览器的容错机制不同，所以尽量按规范来写。</p><h5 id="块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素"><a href="#块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素" class="headerlink" title="块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素"></a>块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>jikexueyuan<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>IT education<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>wrong<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素"><a href="#h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素" class="headerlink" title="h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素"></a>h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="li标签可以包含div以及ul"><a href="#li标签可以包含div以及ul" class="headerlink" title="li标签可以包含div以及ul"></a>li标签可以包含div以及ul</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>迷路的a标签<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="元素并排（块级和块级并列，内联和内联并列"><a href="#元素并排（块级和块级并列，内联和内联并列" class="headerlink" title="元素并排（块级和块级并列，内联和内联并列)"></a>元素并排（块级和块级并列，内联和内联并列)</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>我是内联元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是块级元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -608,6 +662,20 @@
         <content type="html"><![CDATA[<h2 id="统一"><a href="#统一" class="headerlink" title="统一"></a>统一</h2><ul><li>统一使用怪异盒子模型 <code>box-sizing:border-box;</code></li></ul><h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><ul><li>非必要时刻，不要超过 <code>三层</code></li><li>非必要时刻，不要为 <code>id</code>  写样式</li><li>非必要时刻，不要使用 <code>style</code> 内嵌样式</li><li>非必要时刻，不要使用  <code>important</code></li></ul><h2 id="属性书写顺序"><a href="#属性书写顺序" class="headerlink" title="属性书写顺序"></a>属性书写顺序</h2><ol><li>Position</li><li>Box model</li><li>Typographic</li><li>Visual<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.declaration-order</span> &#123;</span><br><span class="line">    <span class="comment">/* 定位相关 */</span></span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 盒模型相关 */</span></span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* 文本属性、排版相关 */</span></span><br><span class="line">    <span class="attribute">font</span>: normal <span class="number">13px</span> <span class="string">"Helvetica Neue"</span>, sans-serif;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#333</span>;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/* Visual */</span></span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#f5f5f5</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#e5e5e5</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="class-命名"><a href="#class-命名" class="headerlink" title="class 命名"></a>class 命名</h2><ul><li>小写 <code>.btn</code></li><li>破折号 <code>.btn-info</code></li><li>id的命名使用驼峰命名法  <code>#userName</code></li><li>避免过度任意的简写。<code>.btn</code>代表 <code>button</code>，但是<code>.b</code>不能表达任何意思。</li><li>尽可能短，并且意义明确。</li><li>基于最近的父class或基本class作为新class的前缀。<code>.menu-header</code> <code>.menu-container</code><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 不规范的写法 */</span></span><br><span class="line">.m &#123; ... &#125;</span><br><span class="line">.red &#123; ... &#125;</span><br><span class="line">.container &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 规范的写法 */</span></span><br><span class="line">.menu &#123; ... &#125;</span><br><span class="line">.important &#123; ... &#125;</span><br><span class="line">.menu-container &#123; ... &#125;</span><br></pre></td></tr></table></figure></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> 前端笔记 </category>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -621,6 +689,20 @@
         <content type="html"><![CDATA[<h2 id="通用架构"><a href="#通用架构" class="headerlink" title="通用架构"></a>通用架构</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"utf-8"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>极客学院IT在线教育平台-中国专业的IT职业在线教育平台<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"keywords"</span> <span class="attr">content</span>=<span class="string">"极客学院,IT职业教育,IT在线教育平台,IT在线教育,IT在线学习,it职业培训,android,ios,flash,java,python,html5,swift,cocos2dx"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"description"</span> <span class="attr">content</span>=<span class="string">"极客学院作为中国专业IT职业在线教育平台,拥有海量高清IT职业课程,涵盖30+个技术领域,如Android,iOS ,Flash,Java,Python,HTML5,Swift,Cocos2dx等视频教程.根据IT在线学习特点,极客学院推出IT学习知识体系图,IT职业学习实战路径图,帮助IT学习者从零基础起步,结合IT实战案例演练,系统学习,助你快速成为IT优秀技术人才！"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><h3 id="标签属性书写顺序"><a href="#标签属性书写顺序" class="headerlink" title="标签属性书写顺序"></a>标签属性书写顺序</h3><p>class 用于标识高度可复用组件，因此应该排在首位。id 用于标识具体组件，一般提供给JS使用。</p><ol><li>class</li><li>id, name</li><li>data-*</li><li>src, for, type, href</li><li>title, alt</li></ol><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><ol><li>用4个空格来代替制表符（tab）</li><li>嵌套元素应当缩进一次</li><li>对于属性的定义，确保全部使用双引号，不要使用单引号。</li></ol><h3 id="避免冗余"><a href="#避免冗余" class="headerlink" title="避免冗余"></a>避免冗余</h3><p>尽量遵循 HTML 标准和语义，但是不要以牺牲实用性为代价。任何时候都要尽量使用最少的标签并保持最小的复杂度。（尤其勿滥用div标签）<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 不规范的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"avatar"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"..."</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 规范的写法 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">class</span>=<span class="string">"avatar"</span> <span class="attr">src</span>=<span class="string">"..."</span>&gt;</span></span><br></pre></td></tr></table></figure></p><h3 id="错误嵌套"><a href="#错误嵌套" class="headerlink" title="错误嵌套"></a>错误嵌套</h3><ol><li>a标签不可以嵌套交互式元素</li><li>块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素</li><li>p标签不能包含块级元素</li><li>这些标签不可包含块级元素</li><li>li标签可以包含div以及ul，ul的子元素应该只有li</li><li>元素并排（块级和块级并列，内联和内联并列)</li></ol><h4 id="语法错误"><a href="#语法错误" class="headerlink" title="语法错误"></a>语法错误</h4><p>浏览器是不能够正常解析的,有的虽然解析正常，但却达不到预想的目的</p><h5 id="a标签不可以嵌套交互式元素"><a href="#a标签不可以嵌套交互式元素" class="headerlink" title="a标签不可以嵌套交互式元素"></a>a标签不可以嵌套交互式元素</h5><p>a标签不可以嵌套交互式元素[a， audio（如果设置了controls属性）， button， details， embed， iframe， img（如果设置了usemap属性）， input（如果type属性不为hidden状态）， keygen， label， menu（如果type属性为toolbar状态），object（如果设置了usemap属性）， select， textarea， video（如果设置了controls属性）]<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">/*下面这些写法浏览器是不能够正常解析的,有的虽然解析正常，但却达不到预想的目的*/</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>click<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span>&gt;</span>click<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">""</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">cols</span>=<span class="string">"10"</span> <span class="attr">rows</span>=<span class="string">"5"</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p><h4 id="语义错误"><a href="#语义错误" class="headerlink" title="语义错误"></a>语义错误</h4><p>页面可能正常解析，但不符合语义。这是因为浏览器自带容错机制，对于不规范的写法也能够正确的解析，各浏览器的容错机制不同，所以尽量按规范来写。</p><h5 id="块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素"><a href="#块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素" class="headerlink" title="块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素"></a>块级元素可以包含内联元素和某些块级元素，内联元素不能包含块级元素，只能包含内联元素</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>jikexueyuan<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>IT education<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span>wrong<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素"><a href="#h1、h2、h3、h4、h5、h6、p-标签不能包含块级元素" class="headerlink" title="h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素"></a>h1、h2、h3、h4、h5、h6、p 标签不能包含块级元素</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="li标签可以包含div以及ul"><a href="#li标签可以包含div以及ul" class="headerlink" title="li标签可以包含div以及ul"></a>li标签可以包含div以及ul</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span>迷路的a标签<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="元素并排（块级和块级并列，内联和内联并列"><a href="#元素并排（块级和块级并列，内联和内联并列" class="headerlink" title="元素并排（块级和块级并列，内联和内联并列)"></a>元素并排（块级和块级并列，内联和内联并列)</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/*规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span><span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">""</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line">/*不规范的写法*/</span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span>&gt;</span>我是内联元素<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>我是块级元素<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
+      <categories>
+          
+          <category> 前端笔记 </category>
+          
+          <category> HTML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端笔记 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -636,10 +718,18 @@
       
       <categories>
           
-          <category> nginx </category>
+          <category> linux </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> nginx </tag>
+            
+        </tags>
       
     </entry>
     
@@ -655,10 +745,18 @@
       
       <categories>
           
-          <category> npm </category>
+          <category> node </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> node </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
       
     </entry>
     
@@ -674,10 +772,18 @@
       
       <categories>
           
-          <category> lspci </category>
+          <category> linux </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> scp </tag>
+            
+        </tags>
       
     </entry>
     
@@ -693,10 +799,18 @@
       
       <categories>
           
-          <category> lspci </category>
+          <category> linux </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> lspci </tag>
+            
+        </tags>
       
     </entry>
     
@@ -712,12 +826,26 @@
       
       <categories>
           
-          <category> BeEF </category>
+          <category> linux </category>
+          
+          <category> 安全 </category>
           
           <category> XSS </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> BeEF </tag>
+            
+            <tag> XSS </tag>
+            
+            <tag> 安全 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -733,10 +861,22 @@
       
       <categories>
           
-          <category> sqlmap </category>
+          <category> linux </category>
+          
+          <category> 安全 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 安全 </tag>
+            
+            <tag> SQLmap </tag>
+            
+        </tags>
       
     </entry>
     
@@ -750,6 +890,24 @@
         <content type="html"><![CDATA[<p>默认树莓派没有安装vim，执行下面命令安装之</p><pre><code>sudo apt-get install -y vim</code></pre><p>安装好之后就可以使用vi或者vim进行编辑操作，但是没有代码高亮显示。</p><a id="more"></a><p>在<code>~</code>目录下面新建.vimrc文件可以实现<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pi@raspberrypi ~ $ cd ~</span><br><span class="line">pi@raspberrypi ~ $ vim .vimrc</span><br></pre></td></tr></table></figure></p><p>在.vimrc文件中插入以下代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">set nu</span><br><span class="line">syntax on</span><br><span class="line">set tabstop=4</span><br></pre></td></tr></table></figure><p>再试试vim，看看是不是就有代码高亮了呢~</p>]]></content>
       
       
+      <categories>
+          
+          <category> 树莓派 </category>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 树莓派 </tag>
+            
+            <tag> vim </tag>
+            
+        </tags>
       
     </entry>
     
@@ -767,8 +925,18 @@
           
           <category> 树莓派 </category>
           
+          <category> linux </category>
+          
       </categories>
       
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+            <tag> 树莓派 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -784,12 +952,16 @@
       
       <categories>
           
-          <category> 笔记本 </category>
-          
-          <category> 记录 </category>
+          <category> blog </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> blog </tag>
+            
+        </tags>
       
     </entry>
     
