@@ -2,7 +2,9 @@
 title: Ubuntu java7 升级到 java8
 date: 2019-05-29 13:40:05 +0800
 comments: true
-categories: [linux]
+categories:
+  - linux
+  - java
 tags:
   - linux
   - ubuntu

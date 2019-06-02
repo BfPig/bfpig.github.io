@@ -2,7 +2,10 @@
 title: Nginx/Tengine服务器安装SSL证书
 date: 2019-05-29 12:22:05 +0800
 comments: true
-categories: [linux]
+categories:
+  - linux
+  - nginx
+  - tengine
 tags:
   - linux
   - ssl
