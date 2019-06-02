@@ -2,7 +2,7 @@
 title: sublime配置ESlintAuthFix
 date: 2018-12-17 02:10:05 +0800
 comments: true
-categories: [sublime,tools]
+categories: [tools,sublime]
 tags:
   - tools
 ---

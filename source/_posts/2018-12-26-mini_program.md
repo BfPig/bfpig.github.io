@@ -2,7 +2,7 @@
 title: 在小程序中使用Async/Await
 date: 2018-12-26 00:17:05 +0800
 comments: true
-categories: [小程序,前端笔记]
+categories: [前端笔记,小程序]
 tags:
   - 小程序
   - 前端笔记

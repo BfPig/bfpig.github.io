@@ -1,5 +1,4 @@
 ---
-
 title: "Centos 安装安全狗的时候提示lspci"
 date: 2017-05-31 07:15:05 +0800
 comments: true

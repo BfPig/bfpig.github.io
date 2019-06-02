@@ -2,7 +2,9 @@
 title: "Debian安装『BeEF xss』"
 date: 2015-12-12 14:19:21 +0800
 comments: true
-categories: [linux,安全,XSS]
+categories:
+  - linux
+  - [安全,XSS]
 tags:
   - linux
   - BeEF

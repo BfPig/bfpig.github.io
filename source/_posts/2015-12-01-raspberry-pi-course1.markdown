@@ -2,7 +2,9 @@
 title: "[玩转树莓派]1、系统安装"
 date: 2015-12-01 22:59
 comments: true
-categories: [树莓派,linux]
+categories:
+  - linux
+  - 树莓派
 tags:
   - linux
   - 树莓派
