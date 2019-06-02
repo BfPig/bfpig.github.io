@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.ibfpig.top/2018/03/10/2018-03-10-chattr/</loc>
+    <lastmod>2019-06-02</lastmod>
+  </url>  <url>
     <loc>http://blog.ibfpig.top/2019/01/15/2019-01-15-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8gulp%E5%8E%8B%E7%BC%A9CSS/</loc>
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
@@ -71,9 +74,6 @@
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2017/11/21/2017-11-21-regex/</loc>
-    <lastmod>2019-06-02</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2018/03/10/2018-03-10-chattr/</loc>
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2019/03/24/2019-03-24-docker-bash/</loc>

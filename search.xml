@@ -521,7 +521,7 @@
           
           <category> linux </category>
           
-          <category> chattr </category>
+          <category> 命令 </category>
           
       </categories>
       
@@ -529,6 +529,8 @@
         <tags>
             
             <tag> linux </tag>
+            
+            <tag> chattr </tag>
             
         </tags>
       
