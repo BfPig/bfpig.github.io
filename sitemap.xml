@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/</loc>
+    
+    <lastmod>2019-06-02T06:21:29.707Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ibfpig.top/2018/06/28/2018-06-28-gitemoji/</loc>
     
     <lastmod>2019-06-02T06:15:15.224Z</lastmod>
@@ -222,13 +229,6 @@
     <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx80to443/</loc>
     
     <lastmod>2019-06-02T05:43:05.711Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/</loc>
-    
-    <lastmod>2019-06-02T05:43:00.503Z</lastmod>
     
   </url>
   
