@@ -2,7 +2,10 @@
 title: "Nginx常用操作"
 date: 2017-06-23 12:32:05 +0800
 comments: true
-categories: [nginx]
+categories: [linux]
+tags:
+  - linux
+  - nginx
 ---
 
 ``` 

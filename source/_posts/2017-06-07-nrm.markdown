@@ -2,7 +2,10 @@
 title: "nrm 换源"
 date: 2017-06-7 12:32:05 +0800
 comments: true
-categories: npm
+categories: [node]
+tags:
+  - node
+  - npm
 ---
 #### nrm 是一个 NPM 源管理器，允许你快速地在如下 NPM 源间切换
 

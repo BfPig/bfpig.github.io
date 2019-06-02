@@ -2,7 +2,11 @@
 title: "Debian安装『SQLmap』"
 date: 2015-12-12 14:15:05 +0800
 comments: true
-categories: sqlmap
+categories: [linux,安全]
+tags:
+  - linux
+  - SQLmap
+  - 安全
 ---
 
 

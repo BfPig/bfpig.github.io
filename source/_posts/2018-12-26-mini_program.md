@@ -2,7 +2,10 @@
 title: 在小程序中使用Async/Await
 date: 2018-12-26 00:17:05 +0800
 comments: true
-categories: [小程序,前端,前端笔记]
+categories: [小程序,前端笔记]
+tags:
+  - 小程序
+  - 前端笔记
 ---
 
 截止2018-12-26，最先版本的小程序依旧不支持ES7的语法Async/Await

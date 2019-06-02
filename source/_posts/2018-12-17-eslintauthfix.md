@@ -3,6 +3,8 @@ title: sublime配置ESlintAuthFix
 date: 2018-12-17 02:10:05 +0800
 comments: true
 categories: [sublime,tools]
+tags:
+  - tools
 ---
 
 - 全局安装eslint

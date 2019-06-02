@@ -103,4 +103,9 @@ deploy:
 
 
 
+# 搜索
+search:
+  path: search.xml
+  field: post
+
 

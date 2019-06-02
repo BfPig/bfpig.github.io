@@ -2,7 +2,11 @@
 title: "树莓派vim代码高亮"
 date: 2015-12-07 19:22:04 +0800
 comments: true
-categories: 
+categories: [树莓派,linux]
+tags:
+  - linux
+  - 树莓派
+  - vim
 ---
 
 默认树莓派没有安装vim，执行下面命令安装之

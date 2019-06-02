@@ -2,7 +2,13 @@
 title: Nginx/Tengine服务器安装SSL证书
 date: 2019-05-29 12:22:05 +0800
 comments: true
-categories: [linux,ssl,nginx,https,tengine]
+categories: [linux]
+tags:
+  - linux
+  - ssl
+  - nginx
+  - https
+  - tengine
 ---
 
 在证书控制台下载Nginx版本证书。下载到本地的压缩文件包解压后包含：

@@ -2,7 +2,10 @@
 title: "Linux scp命令"
 date: 2017-06-3 15:40:05 +0800
 comments: true
-categories: lspci
+categories: [linux]
+tags:
+  - scp
+  - linux
 ---
 #### 语法
 ```

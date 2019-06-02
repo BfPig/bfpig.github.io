@@ -2,7 +2,10 @@
 title: "[玩转树莓派]1、系统安装"
 date: 2015-12-01 22:59
 comments: true
-categories: 树莓派 
+categories: [树莓派,linux]
+tags:
+  - linux
+  - 树莓派
 ---
 ### 系统安装
 本篇我们主要介绍的是树莓派的系统烧录方法。

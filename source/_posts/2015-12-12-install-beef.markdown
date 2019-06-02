@@ -2,7 +2,12 @@
 title: "Debian安装『BeEF xss』"
 date: 2015-12-12 14:19:21 +0800
 comments: true
-categories: [BeEF,XSS]
+categories: [linux,安全,XSS]
+tags:
+  - linux
+  - BeEF
+  - XSS
+  - 安全
 ---
 
 　　在BeEF的[wiki](https://github.com/beefproject/beef/wiki)上,安装的方法写的很详细，按照上面的方法来操作就可以~但是，前提是你得系统不受到我们亲爱的长城防火墙的影响，现在分享下我的安装过程~

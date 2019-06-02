@@ -1,6 +1,7 @@
 ---
 title: 下载Apple Beta软件
 date: 2019-05-29 11:20:28
+comments: false
 ---
 
 # iOS12.4
