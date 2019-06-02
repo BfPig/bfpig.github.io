@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ibfpig.top/tools/index.html</loc>
+    
+    <lastmod>2019-06-02T04:26:02.472Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ibfpig.top/2019/06/01/2019-06-01-%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF03/</loc>
     
     <lastmod>2019-06-01T08:11:50.200Z</lastmod>
@@ -65,7 +72,7 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/Apple_Beta/index.html</loc>
+    <loc>http://blog.ibfpig.top/tools/Apple_Beta/index.html</loc>
     
     <lastmod>2019-05-29T03:30:31.424Z</lastmod>
     
@@ -247,14 +254,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/09/13/2017-06-23-more/</loc>
+    <loc>http://blog.ibfpig.top/2017/09/13/2017-09-13-more/</loc>
     
     <lastmod>2018-03-05T06:01:18.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/09/13/2017-09-13-more/</loc>
+    <loc>http://blog.ibfpig.top/2017/09/13/2017-06-23-more/</loc>
     
     <lastmod>2018-03-05T06:01:18.000Z</lastmod>
     
@@ -275,14 +282,14 @@
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/2017-06-23-html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-08-13-html-norm/</loc>
     
     <lastmod>2018-03-05T05:49:56.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.ibfpig.top/2017/08/13/2017-08-13-html-norm/</loc>
+    <loc>http://blog.ibfpig.top/2017/08/13/2017-06-23-html-norm/</loc>
     
     <lastmod>2018-03-05T05:49:56.000Z</lastmod>
     
