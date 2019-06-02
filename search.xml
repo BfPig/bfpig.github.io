@@ -13,7 +13,7 @@
       
       <categories>
           
-          <category> web </category>
+          <category> 前端笔记 </category>
           
       </categories>
       
@@ -40,7 +40,7 @@
       
       <categories>
           
-          <category> web </category>
+          <category> 前端笔记 </category>
           
       </categories>
       
@@ -67,7 +67,7 @@
       
       <categories>
           
-          <category> web </category>
+          <category> 前端笔记 </category>
           
       </categories>
       
@@ -94,7 +94,7 @@
       
       <categories>
           
-          <category> web </category>
+          <category> 前端笔记 </category>
           
       </categories>
       
@@ -407,11 +407,9 @@
       
       <categories>
           
-          <category> CSS </category>
-          
-          <category> 前端 </category>
-          
           <category> 前端笔记 </category>
+          
+          <category> CSS </category>
           
       </categories>
       
@@ -436,9 +434,9 @@
       
       <categories>
           
-          <category> 小程序 </category>
-          
           <category> 前端笔记 </category>
+          
+          <category> 小程序 </category>
           
       </categories>
       
@@ -465,9 +463,9 @@
       
       <categories>
           
-          <category> sublime </category>
-          
           <category> tools </category>
+          
+          <category> sublime </category>
           
       </categories>
       
@@ -494,14 +492,14 @@
           
           <category> git </category>
           
-          <category> Emoji </category>
-          
       </categories>
       
       
         <tags>
             
             <tag> git </tag>
+            
+            <tag> Emoji </tag>
             
         </tags>
       
@@ -548,9 +546,9 @@
           
           <category> 前端笔记 </category>
           
-          <category> ES6 </category>
-          
           <category> web </category>
+          
+          <category> ES6 </category>
           
       </categories>
       
@@ -606,9 +604,9 @@
           
           <category> 前端笔记 </category>
           
-          <category> ES6 </category>
-          
           <category> web </category>
+          
+          <category> ES6 </category>
           
       </categories>
       
@@ -892,9 +890,9 @@
       
       <categories>
           
-          <category> 树莓派 </category>
-          
           <category> linux </category>
+          
+          <category> 树莓派 </category>
           
       </categories>
       
@@ -923,9 +921,9 @@
       
       <categories>
           
-          <category> 树莓派 </category>
-          
           <category> linux </category>
+          
+          <category> 树莓派 </category>
           
       </categories>
       
