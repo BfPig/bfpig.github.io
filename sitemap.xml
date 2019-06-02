@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.ibfpig.top/tags/index.html</loc>
+    
+    <lastmod>2019-06-02T04:35:42.774Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ibfpig.top/tools/Apple_Beta/index.html</loc>
+    
+    <lastmod>2019-06-02T04:34:04.422Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.ibfpig.top/about/index.html</loc>
+    
+    <lastmod>2019-06-02T04:33:55.434Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.ibfpig.top/tools/index.html</loc>
     
-    <lastmod>2019-06-02T04:26:02.472Z</lastmod>
+    <lastmod>2019-06-02T04:33:26.185Z</lastmod>
     
   </url>
   
@@ -68,13 +89,6 @@
     <loc>http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx80to443/</loc>
     
     <lastmod>2019-05-29T04:25:08.684Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ibfpig.top/tools/Apple_Beta/index.html</loc>
-    
-    <lastmod>2019-05-29T03:30:31.424Z</lastmod>
     
   </url>
   
@@ -229,13 +243,6 @@
     <loc>http://blog.ibfpig.top/2017/06/07/2017-06-07-nrm/</loc>
     
     <lastmod>2018-03-06T11:50:10.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.ibfpig.top/about/index.html</loc>
-    
-    <lastmod>2018-03-06T05:48:28.000Z</lastmod>
     
   </url>
   
