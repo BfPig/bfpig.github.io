@@ -546,8 +546,6 @@
           
           <category> 前端笔记 </category>
           
-          <category> web </category>
-          
           <category> ES6 </category>
           
       </categories>
@@ -558,8 +556,6 @@
             <tag> 前端笔记 </tag>
             
             <tag> ES6 </tag>
-            
-            <tag> web </tag>
             
         </tags>
       
@@ -604,8 +600,6 @@
           
           <category> 前端笔记 </category>
           
-          <category> web </category>
-          
           <category> ES6 </category>
           
       </categories>
@@ -616,8 +610,6 @@
             <tag> 前端笔记 </tag>
             
             <tag> ES6 </tag>
-            
-            <tag> web </tag>
             
         </tags>
       
@@ -837,11 +829,11 @@
             
             <tag> linux </tag>
             
+            <tag> 安全 </tag>
+            
             <tag> BeEF </tag>
             
             <tag> XSS </tag>
-            
-            <tag> 安全 </tag>
             
         </tags>
       
@@ -870,9 +862,9 @@
             
             <tag> linux </tag>
             
-            <tag> 安全 </tag>
-            
             <tag> SQLmap </tag>
+            
+            <tag> 安全 </tag>
             
         </tags>
       

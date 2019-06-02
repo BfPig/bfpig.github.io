@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://blog.ibfpig.top/2018/03/07/2018-03-07-Promise/</loc>
+    <lastmod>2019-06-02</lastmod>
+  </url>  <url>
+    <loc>http://blog.ibfpig.top/2017/10/21/2017-10-21-ES61/</loc>
+    <lastmod>2019-06-02</lastmod>
+  </url>  <url>
     <loc>http://blog.ibfpig.top/2019/06/01/2019-06-01-%E9%87%8D%E5%AD%A6%E5%89%8D%E7%AB%AF03/</loc>
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
@@ -23,12 +29,6 @@
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2018/06/28/2018-06-28-gitemoji/</loc>
-    <lastmod>2019-06-02</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2018/03/07/2018-03-07-Promise/</loc>
-    <lastmod>2019-06-02</lastmod>
-  </url>  <url>
-    <loc>http://blog.ibfpig.top/2017/10/21/2017-10-21-ES61/</loc>
     <lastmod>2019-06-02</lastmod>
   </url>  <url>
     <loc>http://blog.ibfpig.top/2017/05/31/2017-05-31-lspci/</loc>
