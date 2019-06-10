@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="殷迦南小记录">
 <meta property="og:description" content="生成SSH密钥ssh-keygen -t rsa -C &amp;quot;your email&amp;quot; 可以通过命名活着放在不同的目录进行区分。 添加新的SSH keys到GitHub中将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。 清除git的全局设置如果你之前在设置本地仓库和github连接的时候设置过user.name和user.em">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-02T06:15:02.523Z">
+<meta property="og:updated_time" content="2019-06-10T01:16:00.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置多git账号">
 <meta name="twitter:description" content="生成SSH密钥ssh-keygen -t rsa -C &amp;quot;your email&amp;quot; 可以通过命名活着放在不同的目录进行区分。 添加新的SSH keys到GitHub中将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。 清除git的全局设置如果你之前在设置本地仓库和github连接的时候设置过user.name和user.em">
@@ -418,6 +418,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"your_name"</span></span><br><span class="line">git config --global user.email  <span class="string">"your_email"</span></span><br></pre></td></tr></table></figure>
 <h1 id="执行ssh-agent让ssh识别新的私钥"><a href="#执行ssh-agent让ssh识别新的私钥" class="headerlink" title="执行ssh-agent让ssh识别新的私钥"></a>执行ssh-agent让ssh识别新的私钥</h1><p>分别使用<code>ssh-add</code>将其添加到ssh-agent中。</p>
 <p><code>ssh-add ~/.ssh/id_rsa</code></p>
+<p>注：直接执行<code>ssh-add</code>是临时的，可以执行<code>ssh-add -K</code>将其永久添加</p>
 <p>如果出现<code>Could not open a connection to your authentication agent</code>的错误，可以先执行一遍<code>ssh-agent bash</code>，之后在执行<code>ssh-add</code>。</p>
 <h1 id="配置config文件"><a href="#配置config文件" class="headerlink" title="配置config文件"></a>配置config文件</h1><p>看下<code>~/.ssh/</code>目录下有没有config，没有直接新建一个<code>touch config</code>，有的话就直接在后边添加配置。</p>
 <p>配置如下：</p>
