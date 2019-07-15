@@ -307,6 +307,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/07/19/2019-07-19-Flutter 生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/19/2019-07-19-Flutter 生命周期/" itemprop="url">Flutter 生命周期</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-19T10:29:05+08:00">
+                2019-07-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Flutter/" itemprop="url" rel="index">
+                    <span itemprop="name">Flutter</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/19/2019-07-19-Flutter 生命周期/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/07/19/2019-07-19-Flutter 生命周期/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li>initState：widget创建执行的第一个方法，可以再里面初始化一些数据，以及绑定控制器</li>
+<li>didChangeDependencies：当State对象的依赖发生变化时会被调用；例如：在之前build() 中包含了一个InheritedWidget，然后在之后的build() 中InheritedWidget发生了变化，那么此时InheritedWidget的子widget的didChangeDependencies()回调都会被调用。InheritedWidget这个widget可以由父控件向子控件共享数据，案例可以参考 scoped_model开源库。</li>
+<li>build ：它主要是用于构建Widget子树的。</li>
+<li>reassemble：此回调是专门为了开发调试而提供的，在热重载(hot reload)时会被调用，此回调在Release模式下永远不会被调用。</li>
+<li>didUpdateWidget：当树rebuid的时候会调用该方法。</li>
+<li>deactivate:当State对象从树中被移除时，会调用此回调。</li>
+<li>dispose():当State对象从树中被永久移除时调用；通常在此回调中释放资源。</li>
+</ul>
+<p>注：代码中的didChangeAppLifecycleState方法复写需要State with WidgetsBindingObserver这个抽象类</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement initState</span></span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">    WidgetsBinding.instance.addObserver(<span class="keyword">this</span>);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'initState'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didChangeAppLifecycleState(AppLifecycleState state) &#123;</span><br><span class="line">    <span class="built_in">print</span>(state.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didChangeDependencies() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement didChangeDependencies</span></span><br><span class="line">    <span class="keyword">super</span>.didChangeDependencies();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'didChangeDependencies'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didUpdateWidget(LifeDemo oldWidget) &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement didUpdateWidget</span></span><br><span class="line">    <span class="keyword">super</span>.didUpdateWidget(oldWidget);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'didUpdateWidget'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'build'</span>);</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement build</span></span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      home: Center(</span><br><span class="line">          child: GestureDetector(</span><br><span class="line">        child: <span class="keyword">new</span> Text(<span class="string">'lifeCycle'</span>),</span><br><span class="line">        onTap: () &#123;</span><br><span class="line">          Navigator.of(context)</span><br><span class="line">              .push(<span class="keyword">new</span> MaterialPageRoute(builder: (BuildContext c) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Text(<span class="string">'sdfs'</span>);</span><br><span class="line">          &#125;));</span><br><span class="line">        &#125;,</span><br><span class="line">      )),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> reassemble() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement reassemble</span></span><br><span class="line">    <span class="keyword">super</span>.reassemble();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'reassemble'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> deactivate() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement deactivate</span></span><br><span class="line">    <span class="keyword">super</span>.deactivate();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'deactivate'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> dispose() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement dispose</span></span><br><span class="line">    <span class="keyword">super</span>.dispose();</span><br><span class="line">    WidgetsBinding.instance.addObserver(<span class="keyword">this</span>);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'dispose'</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/06/18/2019-06-18-小程序遮罩穿透/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1801,175 +1964,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-配置多git账号/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/29/2019-05-29-配置多git账号/" itemprop="url">配置多git账号</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T00:01:05+08:00">
-                2019-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git/" itemprop="url" rel="index">
-                    <span itemprop="name">git</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/05/29/2019-05-29-配置多git账号/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/05/29/2019-05-29-配置多git账号/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h1><p><code>ssh-keygen -t rsa -C &quot;your email&quot;</code></p>
-<p>可以通过命名活着放在不同的目录进行区分。</p>
-<h1 id="添加新的SSH-keys到GitHub中"><a href="#添加新的SSH-keys到GitHub中" class="headerlink" title="添加新的SSH keys到GitHub中"></a>添加新的SSH keys到GitHub中</h1><p>将新生成的SSH keys添加到你的另一个github帐号(或者公司的gitlab)下的SSH Key中。</p>
-<h1 id="清除git的全局设置"><a href="#清除git的全局设置" class="headerlink" title="清除git的全局设置"></a>清除git的全局设置</h1><p>如果你之前在设置本地仓库和github连接的时候设置过user.name和user.email,那么你必须首先清楚掉该设置，因为不清楚掉该设置，两个账号在提交资料的时候，验证肯定冲突（只能设置一个全局的user.name和user.email，而你现在有两个账号就对应两个不同的）。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"your_name"</span></span><br><span class="line">git config --global user.email  <span class="string">"your_email"</span></span><br></pre></td></tr></table></figure>
-<h1 id="执行ssh-agent让ssh识别新的私钥"><a href="#执行ssh-agent让ssh识别新的私钥" class="headerlink" title="执行ssh-agent让ssh识别新的私钥"></a>执行ssh-agent让ssh识别新的私钥</h1><p>分别使用<code>ssh-add</code>将其添加到ssh-agent中。</p>
-<p><code>ssh-add ~/.ssh/id_rsa</code></p>
-<p>注：直接执行<code>ssh-add</code>是临时的，可以执行<code>ssh-add -K</code>将其永久添加</p>
-<p>如果出现<code>Could not open a connection to your authentication agent</code>的错误，可以先执行一遍<code>ssh-agent bash</code>，之后在执行<code>ssh-add</code>。</p>
-<h1 id="配置config文件"><a href="#配置config文件" class="headerlink" title="配置config文件"></a>配置config文件</h1><p>看下<code>~/.ssh/</code>目录下有没有config，没有直接新建一个<code>touch config</code>，有的话就直接在后边添加配置。</p>
-<p>配置如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一个</span></span><br><span class="line"></span><br><span class="line">Host git@one.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/one/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二个</span></span><br><span class="line"></span><br><span class="line">Host git@two.github.com</span><br><span class="line"> HostName https://github.com</span><br><span class="line"> User git</span><br><span class="line"> IdentityFile ~/.ssh/two/id_rsa</span><br><span class="line"></span><br><span class="line"><span class="comment"># ....第N个</span></span><br></pre></td></tr></table></figure>
-<h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@one.github.com</span><br><span class="line">ssh -T git@two.github.com</span><br></pre></td></tr></table></figure>
-<h1 id="clone-Git仓库"><a href="#clone-Git仓库" class="headerlink" title="clone Git仓库"></a>clone Git仓库</h1><p>假设原来的git ssh 地址是<code>git clone git@xxxxxx.com:xxx/test.git</code></p>
-<p>那么新的地址就对应配置config时候不同的密钥对应的HostName，</p>
-<p>比如是上边的one，那么，新地址就应该是<code>git clone git@one.xxxxxx.com:xxx/test.git</code></p>
-<p>当然，如果懒得话，不改地址也是可以的，同样可以正常的操作，但是在push到仓库后，可以看见多个头像。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2020,7 +2014,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2031,7 +2025,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2042,7 +2036,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
