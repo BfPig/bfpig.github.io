@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>WSL 服务自动启动（win10子系统自动启动服务）</title>
+      <link href="/2019/08/22/2019-08-22-WSL%20%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8/"/>
+      <url>/2019/08/22/2019-08-22-WSL%20%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%8A%A8%E5%90%AF%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<p>在win10的cmd命令下，我们可以通过<code>wsl</code>命令启动子系统或分发一些命令，所以我们只需要在Windows启动的时候对子系统分发命令即可达到开机自启的目的。</p><h1 id="配置自启服务文件"><a href="#配置自启服务文件" class="headerlink" title="配置自启服务文件"></a>配置自启服务文件</h1><ul><li>创建并编辑文件<code>/etc/init.wsl</code></li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/init.wsl</span><br></pre></td></tr></table></figure><p>Linux下我们的自启服务通常在<code>/etc/init.d/</code>目录下，假设现在该目录下我们自建了一个sh文件<code>ssh.sh</code>文件，那么我们的init.wsl的内容就可以为：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/sh</span></span><br><span class="line">/etc/init.d/ssh.sh <span class="variable">$1</span></span><br></pre></td></tr></table></figure><ul><li>配置权限</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /etc/init.wsl</span><br></pre></td></tr></table></figure><ul><li>测试</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.wsl [start|stop|restart]</span><br></pre></td></tr></table></figure><h1 id="尝试在win10的cmd下启动init-wsl文件"><a href="#尝试在win10的cmd下启动init-wsl文件" class="headerlink" title="尝试在win10的cmd下启动init.wsl文件"></a>尝试在win10的cmd下启动init.wsl文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d debian -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure><p><code>该命令会在名为debian的wsl 发行版中执行 /etc/init.wsl 文件，如果是Ubuntu，那就把debian 换成Ubuntu</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d Ubuntu -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure><h1 id="配置Windows开机启动"><a href="#配置Windows开机启动" class="headerlink" title="配置Windows开机启动"></a>配置Windows开机启动</h1><p>创建一个VBS文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set ws = CreateObject(<span class="string">"Wscript.Shell"</span>)</span><br><span class="line">ws.run <span class="string">"wsl -d Ubuntu -u root /etc/init.wsl start"</span>, vbhide</span><br></pre></td></tr></table></figure><p>把这个文件拖到win的启动文件夹中即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+          <category> WSL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+            <tag> WSL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用frp进行内网穿透</title>
       <link href="/2019/08/22/2019-08-22-frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/"/>
       <url>/2019/08/22/2019-08-22-frp%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</url>

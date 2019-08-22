@@ -307,6 +307,190 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/08/22/2019-08-22-WSL 服务自动启动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="url">WSL 服务自动启动（win10子系统自动启动服务）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T09:50:05+08:00">
+                2019-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/" itemprop="url" rel="index">
+                    <span itemprop="name">Windows</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/WSL/" itemprop="url" rel="index">
+                    <span itemprop="name">WSL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/22/2019-08-22-WSL 服务自动启动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在win10的cmd命令下，我们可以通过<code>wsl</code>命令启动子系统或分发一些命令，所以我们只需要在Windows启动的时候对子系统分发命令即可达到开机自启的目的。</p>
+<h1 id="配置自启服务文件"><a href="#配置自启服务文件" class="headerlink" title="配置自启服务文件"></a>配置自启服务文件</h1><ul>
+<li>创建并编辑文件<code>/etc/init.wsl</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/init.wsl</span><br></pre></td></tr></table></figure>
+<p>Linux下我们的自启服务通常在<code>/etc/init.d/</code>目录下，假设现在该目录下我们自建了一个sh文件<code>ssh.sh</code>文件，那么我们的init.wsl的内容就可以为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/sh</span></span><br><span class="line">/etc/init.d/ssh.sh <span class="variable">$1</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>配置权限</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /etc/init.wsl</span><br></pre></td></tr></table></figure>
+<ul>
+<li>测试</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.wsl [start|stop|restart]</span><br></pre></td></tr></table></figure>
+<h1 id="尝试在win10的cmd下启动init-wsl文件"><a href="#尝试在win10的cmd下启动init-wsl文件" class="headerlink" title="尝试在win10的cmd下启动init.wsl文件"></a>尝试在win10的cmd下启动init.wsl文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d debian -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
+<p><code>该命令会在名为debian的wsl 发行版中执行 /etc/init.wsl 文件，如果是Ubuntu，那就把debian 换成Ubuntu</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d Ubuntu -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
+<h1 id="配置Windows开机启动"><a href="#配置Windows开机启动" class="headerlink" title="配置Windows开机启动"></a>配置Windows开机启动</h1><p>创建一个VBS文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set ws = CreateObject(<span class="string">"Wscript.Shell"</span>)</span><br><span class="line">ws.run <span class="string">"wsl -d Ubuntu -u root /etc/init.wsl start"</span>, vbhide</span><br></pre></td></tr></table></figure>
+<p>把这个文件拖到win的启动文件夹中即可。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/08/22/2019-08-22-frp内网穿透/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1828,193 +2012,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.ibfpig.top/2019/05/29/2019-05-29-nginx+TengineToSSL/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/29/2019-05-29-nginx+TengineToSSL/" itemprop="url">Nginx/Tengine服务器安装SSL证书</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T12:22:05+08:00">
-                2019-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/nginx/" itemprop="url" rel="index">
-                    <span itemprop="name">nginx</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/nginx/tengine/" itemprop="url" rel="index">
-                    <span itemprop="name">tengine</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/05/29/2019-05-29-nginx+TengineToSSL/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/05/29/2019-05-29-nginx+TengineToSSL/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在证书控制台下载Nginx版本证书。下载到本地的压缩文件包解压后包含：</p>
-<ul>
-<li>.crt文件：是证书文件，crt是pem文件的扩展名。</li>
-<li>.key文件：证书的私钥文件（申请证书时如果没有选择自动创建CSR，则没有该文件）。<br>友情提示： .pem扩展名的证书文件采用Base64-encoded的PEM格式文本文件，可根据需要修改扩展名。</li>
-</ul>
-<p>以Nginx标准配置为例，假如证书文件名是a.pem，私钥文件是a.key。</p>
-<p>1.在Nginx的安装目录下创建cert目录，并且将下载的全部文件拷贝到cert目录中。如果申请证书时是自己创建的CSR文件，请将对应的私钥文件放到cert目录下并且命名为a.key；</p>
-<p>2.打开 Nginx 安装目录下 conf 目录中的 nginx.conf 文件，找到：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># HTTPS server</span></span><br><span class="line"><span class="comment"># #server &#123;</span></span><br><span class="line"><span class="comment"># listen 443;</span></span><br><span class="line"><span class="comment"># server_name localhost;</span></span><br><span class="line"><span class="comment"># ssl on;</span></span><br><span class="line"><span class="comment"># ssl_certificate cert.pem;</span></span><br><span class="line"><span class="comment"># ssl_certificate_key cert.key;</span></span><br><span class="line"><span class="comment"># ssl_session_timeout 5m;</span></span><br><span class="line"><span class="comment"># ssl_protocols SSLv2 SSLv3 TLSv1;</span></span><br><span class="line"><span class="comment"># ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;</span></span><br><span class="line"><span class="comment"># ssl_prefer_server_ciphers on;</span></span><br><span class="line"><span class="comment"># location / &#123;</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br><span class="line"><span class="comment">#&#125;</span></span><br></pre></td></tr></table></figure>
-<p>3.将其修改为 (以下属性中ssl开头的属性与证书配置有直接关系，其它属性请结合自己的实际情况复制或调整) :</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line"> listen 443;</span><br><span class="line"> server_name localhost;</span><br><span class="line"> ssl on;</span><br><span class="line"> root html;</span><br><span class="line"> index index.html index.htm;</span><br><span class="line"> ssl_certificate   cert/a.pem;</span><br><span class="line"> ssl_certificate_key  cert/a.key;</span><br><span class="line"> ssl_session_timeout 5m;</span><br><span class="line"> ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span><br><span class="line"> ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line"> ssl_prefer_server_ciphers on;</span><br><span class="line"> location / &#123;</span><br><span class="line">     root html;</span><br><span class="line">     index index.html index.htm;</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>保存退出。</p>
-<p>4.重启 Nginx。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2065,7 +2062,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">38</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2076,7 +2073,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">29</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2087,7 +2084,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">42</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
