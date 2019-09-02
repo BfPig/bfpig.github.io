@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/08/22/2019-08-22-WSL 服务自动启动/">
+    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/09/02/2019-09-02-mac_app_start/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="殷迦南">
@@ -326,7 +326,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="url">WSL 服务自动启动（win10子系统自动启动服务）</a></h1>
+                <a class="post-title-link" href="/2019/09/02/2019-09-02-mac_app_start/" itemprop="url">MAC上超简单打包shellAPP</a></h1>
         
 
         <div class="post-meta">
@@ -338,8 +338,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T09:50:05+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-02T09:24:05+08:00">
+                2019-09-02
               </time>
             
 
@@ -361,8 +361,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Windows/" itemprop="url" rel="index">
-                    <span itemprop="name">Windows</span>
+                  <a href="/categories/Mac/" itemprop="url" rel="index">
+                    <span itemprop="name">Mac</span>
                   </a>
                 </span>
 
@@ -372,8 +372,19 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Windows/WSL/" itemprop="url" rel="index">
-                    <span itemprop="name">WSL</span>
+                  <a href="/categories/Mac/APP/" itemprop="url" rel="index">
+                    <span itemprop="name">APP</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Mac/APP/shell/" itemprop="url" rel="index">
+                    <span itemprop="name">shell</span>
                   </a>
                 </span>
 
@@ -390,9 +401,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/08/22/2019-08-22-WSL 服务自动启动/#comments" itemprop="discussionUrl">
+                <a href="/2019/09/02/2019-09-02-mac_app_start/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2019/09/02/2019-09-02-mac_app_start/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -422,27 +433,20 @@
       
         
           
-            <p>在win10的cmd命令下，我们可以通过<code>wsl</code>命令启动子系统或分发一些命令，所以我们只需要在Windows启动的时候对子系统分发命令即可达到开机自启的目的。</p>
-<h1 id="配置自启服务文件"><a href="#配置自启服务文件" class="headerlink" title="配置自启服务文件"></a>配置自启服务文件</h1><ul>
-<li>创建并编辑文件<code>/etc/init.wsl</code></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/init.wsl</span><br></pre></td></tr></table></figure>
-<p>Linux下我们的自启服务通常在<code>/etc/init.d/</code>目录下，假设现在该目录下我们自建了一个sh文件<code>ssh.sh</code>文件，那么我们的init.wsl的内容就可以为：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/sh</span></span><br><span class="line">/etc/init.d/ssh.sh <span class="variable">$1</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>配置权限</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /etc/init.wsl</span><br></pre></td></tr></table></figure>
-<ul>
-<li>测试</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.wsl [start|stop|restart]</span><br></pre></td></tr></table></figure>
-<h1 id="尝试在win10的cmd下启动init-wsl文件"><a href="#尝试在win10的cmd下启动init-wsl文件" class="headerlink" title="尝试在win10的cmd下启动init.wsl文件"></a>尝试在win10的cmd下启动init.wsl文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d debian -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
-<p><code>该命令会在名为debian的wsl 发行版中执行 /etc/init.wsl 文件，如果是Ubuntu，那就把debian 换成Ubuntu</code></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d Ubuntu -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
-<h1 id="配置Windows开机启动"><a href="#配置Windows开机启动" class="headerlink" title="配置Windows开机启动"></a>配置Windows开机启动</h1><p>创建一个VBS文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set ws = CreateObject(<span class="string">"Wscript.Shell"</span>)</span><br><span class="line">ws.run <span class="string">"wsl -d Ubuntu -u root /etc/init.wsl start"</span>, vbhide</span><br></pre></td></tr></table></figure>
-<p>把这个文件拖到win的启动文件夹中即可。</p>
+            <p><code>基友喊一起玩DOTA自走棋，在steam安装时候有个生成桌面快捷方式的选项，选择上安装之后在桌面就有个带游戏icon的APP，很明显不可能再复制一份游戏的主体APP文件过来，所以就看了一下包的内容。</code></p>
+<p><code>直接把APP托到编辑器里打开之后，目录结构大致如下图：</code></p>
+<p>在<code>MacOs</code>目录里有个<code>run.sh</code>文件，这就是正常的一个sh文件，里边有一句启动steam游戏的命令，删掉这条命令就可以了，我们改写成自己的bash内容即可。</p>
+<p>在这之前，我自己常用的sh文件都放在个人目录下的shell文件夹，所以我只需要启动我自己的sh文件就可以了</p>
+<h2 id="run-sh"><a href="#run-sh" class="headerlink" title="run.sh"></a>run.sh</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># autogenerated file - do not edit</span></span><br><span class="line"></span><br><span class="line">/Users/<span class="variable">$&#123;username&#125;</span>/shell/start.sh</span><br></pre></td></tr></table></figure>
+<p>尝试一下，运行这个修改过的APP，发现sh命令成功启动~~</p>
+<h2 id="修改ICON"><a href="#修改ICON" class="headerlink" title="修改ICON"></a>修改ICON</h2><p>icon文件就在<code>Resources</code>文件夹里，名字是<code>shortcut.icns</code>，我们找一个我们喜欢的icns文件保留名字不变替换源文件即可。</p>
+<p>替换之后APP的图标还是没变，我们把APP文件复制一份就可以了~~</p>
+<p>我直接复制到<code>/Applications</code>文件夹里，并命名为<code>start.app</code>，这样就可以直接在启动台启动APP了。</p>
+<h2 id="设置开机启动"><a href="#设置开机启动" class="headerlink" title="设置开机启动"></a>设置开机启动</h2><p>在偏好设置里修改登录项，添加这个APP即可开机启动，从而做到开机运行我们的bash</p>
+<h2 id="其他细节"><a href="#其他细节" class="headerlink" title="其他细节"></a>其他细节</h2><h3 id="判断进程是否运行"><a href="#判断进程是否运行" class="headerlink" title="判断进程是否运行"></a>判断进程是否运行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">ps -fe|grep name |grep -v grep</span><br><span class="line"><span class="keyword">if</span> [ $? -ne 0 ]</span><br><span class="line"><span class="keyword">then</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"开始运行"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"已经在运行中了"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<h3 id="自动插入到screen"><a href="#自动插入到screen" class="headerlink" title="自动插入到screen"></a>自动插入到screen</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">screen_name=<span class="string">"screen_name"</span></span><br><span class="line">screen -dmS <span class="variable">$screen_name</span></span><br><span class="line">screen -x -S <span class="variable">$screen_name</span> -p 0 -X stuff <span class="string">'~/shell/xxxxx.sh</span></span><br><span class="line"><span class="string">'</span></span><br></pre></td></tr></table></figure>
+<p>注意<code>screen -x -S</code>命令后边的换行，最后一个单引号要到下一行，这样命令才会执行，不然就只是输入进去了</p>
+<p><code>screen -list</code>查看是否成功插入</p>
 
           
         
@@ -652,6 +656,190 @@
 </li>
 </ul>
 <h2 id="web端查看frp运行状态"><a href="#web端查看frp运行状态" class="headerlink" title="web端查看frp运行状态"></a>web端查看frp运行状态</h2><p><a href="http://x.x.x.x:7500/static/#/proxies/tcp" target="_blank" rel="noopener">http://x.x.x.x:7500/static/#/proxies/tcp</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/08/22/2019-08-22-WSL 服务自动启动/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="url">WSL 服务自动启动（win10子系统自动启动服务）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T09:50:05+08:00">
+                2019-08-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/" itemprop="url" rel="index">
+                    <span itemprop="name">Windows</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/WSL/" itemprop="url" rel="index">
+                    <span itemprop="name">WSL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/22/2019-08-22-WSL 服务自动启动/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/08/22/2019-08-22-WSL 服务自动启动/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在win10的cmd命令下，我们可以通过<code>wsl</code>命令启动子系统或分发一些命令，所以我们只需要在Windows启动的时候对子系统分发命令即可达到开机自启的目的。</p>
+<h1 id="配置自启服务文件"><a href="#配置自启服务文件" class="headerlink" title="配置自启服务文件"></a>配置自启服务文件</h1><ul>
+<li>创建并编辑文件<code>/etc/init.wsl</code></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/init.wsl</span><br></pre></td></tr></table></figure>
+<p>Linux下我们的自启服务通常在<code>/etc/init.d/</code>目录下，假设现在该目录下我们自建了一个sh文件<code>ssh.sh</code>文件，那么我们的init.wsl的内容就可以为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/sh</span></span><br><span class="line">/etc/init.d/ssh.sh <span class="variable">$1</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>配置权限</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 755 /etc/init.wsl</span><br></pre></td></tr></table></figure>
+<ul>
+<li>测试</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.wsl [start|stop|restart]</span><br></pre></td></tr></table></figure>
+<h1 id="尝试在win10的cmd下启动init-wsl文件"><a href="#尝试在win10的cmd下启动init-wsl文件" class="headerlink" title="尝试在win10的cmd下启动init.wsl文件"></a>尝试在win10的cmd下启动init.wsl文件</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d debian -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
+<p><code>该命令会在名为debian的wsl 发行版中执行 /etc/init.wsl 文件，如果是Ubuntu，那就把debian 换成Ubuntu</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -d Ubuntu -u root /etc/init.wsl start</span><br></pre></td></tr></table></figure>
+<h1 id="配置Windows开机启动"><a href="#配置Windows开机启动" class="headerlink" title="配置Windows开机启动"></a>配置Windows开机启动</h1><p>创建一个VBS文件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set ws = CreateObject(<span class="string">"Wscript.Shell"</span>)</span><br><span class="line">ws.run <span class="string">"wsl -d Ubuntu -u root /etc/init.wsl start"</span>, vbhide</span><br></pre></td></tr></table></figure>
+<p>把这个文件拖到win的启动文件夹中即可。</p>
 
           
         
@@ -1839,179 +2027,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/05/29/2019-05-29-ubuntu_java7to8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/29/2019-05-29-ubuntu_java7to8/" itemprop="url">Ubuntu java7 升级到 java8</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-29T13:40:05+08:00">
-                2019-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/java/" itemprop="url" rel="index">
-                    <span itemprop="name">java</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/05/29/2019-05-29-ubuntu_java7to8/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/05/29/2019-05-29-ubuntu_java7to8/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="查看原版本"><a href="#查看原版本" class="headerlink" title="查看原版本"></a>查看原版本</h1><p><code>java -version</code></p>
-<p>显示如下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java version <span class="string">"1.7.0_101"</span></span><br><span class="line">OpenJDK Runtime Environment (IcedTea 2.6.6) (7u101-2.6.6-0ubuntu0.14.04.1)</span><br><span class="line">OpenJDK 64-Bit Server VM (build 24.95-b01, mixed mode)</span><br></pre></td></tr></table></figure>
-<h1 id="安装-opensdk-8"><a href="#安装-opensdk-8" class="headerlink" title="安装 opensdk 8"></a>安装 opensdk 8</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">add-apt-repository ppa:openjdk-r/ppa</span><br><span class="line">apt-get update</span><br><span class="line">apt-get install openjdk-8-jdk</span><br></pre></td></tr></table></figure>
-<h1 id="列出已经安装的Java版本"><a href="#列出已经安装的Java版本" class="headerlink" title="列出已经安装的Java版本"></a>列出已经安装的Java版本</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-java-alternatives -l</span><br></pre></td></tr></table></figure>
-<p>显示如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java-1.7.0-openjdk-amd64 1071 /usr/lib/jvm/java-1.7.0-openjdk-amd64</span><br><span class="line">java-1.8.0-openjdk-amd64 1069 /usr/lib/jvm/java-1.8.0-openjdk-amd64</span><br></pre></td></tr></table></figure>
-<h1 id="手动切换版本"><a href="#手动切换版本" class="headerlink" title="手动切换版本"></a>手动切换版本</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --config java</span><br></pre></td></tr></table></figure>
-<p>选择java-8-openjdk-amd64即可</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">There are 2 choices <span class="keyword">for</span> the alternative java (providing /usr/bin/java).</span><br><span class="line"></span><br><span class="line">  Selection    Path                                            Priority   Status</span><br><span class="line">------------------------------------------------------------</span><br><span class="line">  0            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java   1071      auto mode</span><br><span class="line">  1            /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java   1071      manual mode</span><br><span class="line">* 2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1069      manual mode</span><br><span class="line"></span><br><span class="line">Press enter to keep the current choice[*], or <span class="built_in">type</span> selection number: 2</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2062,7 +2077,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">39</span>
+                  <span class="site-state-item-count">40</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2073,7 +2088,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2084,7 +2099,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">44</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
