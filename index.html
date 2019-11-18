@@ -307,6 +307,289 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/11/18/2019-11-18-全栈养成技/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/18/2019-11-18-全栈养成技/" itemprop="url">全栈养成技</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-18T21:03:15+08:00">
+                2019-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/云开发/" itemprop="url" rel="index">
+                    <span itemprop="name">云开发</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/11/18/2019-11-18-全栈养成技/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2019/11/18/2019-11-18-全栈养成技/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="全栈养成技"><a href="#全栈养成技" class="headerlink" title="全栈养成技"></a>全栈养成技</h1><p><code>理想的开发状态是开发者只需要关注业务逻辑和产品设计</code></p>
+<p>去年9月，微信团队与腾讯云就已经推出了“云开发”平台，云开发是这样介绍的</p>
+<p><code>开发者可以使用云开发开发微信小程序、小游戏，无需搭建服务器，即可使用云端能力。云开发为开发者提供完整的原生云端支持和微信服务支持，弱化后端和运维概念，无需搭建服务器，使用平台提供的 API 进行核心业务开发，即可实现快速上线和迭代，同时这一能力，同开发者已经使用的云服务相互兼容，并不互斥。</code></p>
+<p>在了解云开发的时候，有过几个疑问：</p>
+<ul>
+<li>云开发有什么能力</li>
+<li>在已有的开发架构上融入云开发的兼容性是否良好，是如何处理的</li>
+<li>如何请求和接收外部的网络</li>
+<li>对于一个小程序来说，一般都至少要有一个web后台来供运营使用，运营后台是否也可以使用云开发</li>
+<li>是否支持其他平台(支付宝、头条、淘宝)小程序的开发和使用</li>
+<li>企业微信的兼容性如何</li>
+<li>云开发对接企业微信或者其他平台是否方便</li>
+</ul>
+<p>对于这些疑问，实际体验一下或许可以更快解答</p>
+<h2 id="动手尝鲜"><a href="#动手尝鲜" class="headerlink" title="动手尝鲜"></a>动手尝鲜</h2><h3 id="明确需求"><a href="#明确需求" class="headerlink" title="明确需求"></a>明确需求</h3><p>用于连通线上业务和线下门店的预约到店小程序插件对于很多电商小程序来说是刚需，我在云启星辰开发过一款店铺预约的小程序插件，这个插件现在已经使用在了周大福、老凤祥等一线珠宝品牌的线上小程序中。我们来看看如何使用云开发来改造这款插件</p>
+<p>插件使用后UI样式如图，样式代码不再展示，我们详细看说一下云开发的过程</p>
+<h3 id="开通云开发"><a href="#开通云开发" class="headerlink" title="开通云开发"></a>开通云开发</h3><p>云开发的开通需要在微信开发者工具上进行开通。点击上方工具栏的云开发按照流程创建环境即可开通云开发。</p>
+<p>尝试了一下，免费版似乎只能创建两个环境。一个用来开发测试、一个部署正式的线上服务和数据。</p>
+<p>先看一下云开发有什么能力：云存储、云数据库、云函数、日志运维、监控，分析统计，我们在实际体验中一个一个来看</p>
+<h3 id="云存储"><a href="#云存储" class="headerlink" title="云存储"></a>云存储</h3><p>云存储顾名思义就是把资源储存在云端上，我们可以用来储存用户的一些头像、生成的小程序码、上传的图片视频等，也可以用来储存小程序的UI文件，对于日益复杂的小程序来说，把UI资源储存在云端还是很有必要的。</p>
+<p>所以我们先来尝试一下云储存，把相关的UI文件放在云储存中。</p>
+<p>添加和读取云储存的数据有三种方式：</p>
+<ul>
+<li>小程序通过云开发API调用</li>
+<li>云函数通过API调用</li>
+<li>在开发者工具中进行上传查看和添加</li>
+</ul>
+<p>开发过程中的UI资源，我们可以直接新建一个文件夹进行上传储存，之后直接获取资源链接进行调用就可以了。</p>
+<h3 id="云数据库"><a href="#云数据库" class="headerlink" title="云数据库"></a>云数据库</h3><p>和云储存一样，增删盖茶云数据库数据有三种方式：</p>
+<ul>
+<li>小程序通过云开发API调用</li>
+<li>云函数通过API调用</li>
+<li>在开发者工具直接处理</li>
+</ul>
+<p>其实使用过MongoDB的同学再来使用云数据库会有熟悉感。</p>
+<p>预约店铺，肯定是要有店铺的数据的，预约成功之后还要保存预约记录。</p>
+<ul>
+<li>店铺数据</li>
+</ul>
+<p>我们首先来创建一个<code>store</code>的集合，手动添加一条记录：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"address"</span>:<span class="string">"北京市东城区东长安街"</span>,</span><br><span class="line">    <span class="attr">"location"</span>:&#123;</span><br><span class="line">        <span class="attr">"latitude"</span>:<span class="number">39.90374</span>,</span><br><span class="line">        <span class="attr">"longitude"</span>:<span class="number">116.397827</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">"city"</span>:<span class="string">"深圳"</span>,</span><br><span class="line">    <span class="attr">"province"</span>:<span class="string">"广东"</span>,</span><br><span class="line">    <span class="attr">"country"</span>:<span class="string">"南山区"</span>,</span><br><span class="line">    <span class="attr">"banner"</span>:<span class="string">"https://7971-yq-demo-test-47yk3-1300688546.tcb.qcloud.la/UI/reserve/storeBanner.png?sign=fd1f7e9be2340c9249b18140af379442&amp;t=1573793815"</span>,</span><br><span class="line">    <span class="attr">"store_name"</span>:<span class="string">"迦南的小宝藏"</span>,</span><br><span class="line">    <span class="attr">"icon"</span>:<span class="string">"icon"</span>,</span><br><span class="line">    <span class="attr">"introduction"</span>:<span class="string">"introduction"</span>,</span><br><span class="line">    <span class="attr">"mobile"</span>:<span class="string">"19989897878"</span>,</span><br><span class="line">    <span class="attr">"status"</span>:<span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>默认情况下，新增的每条数据会有一个<code>_id</code>的字段，该字段是UUID的形式，一个集合里该字段唯一</p>
+<ul>
+<li>预约记录</li>
+</ul>
+<p>预约成功肯定是要把记录存起来的，所以还需要一个预约记录的集合<code>reserve</code></p>
+<h3 id="小程序端API尝鲜"><a href="#小程序端API尝鲜" class="headerlink" title="小程序端API尝鲜"></a>小程序端API尝鲜</h3><ul>
+<li>初始化</li>
+</ul>
+<p>小程序在使用云开发的时候要先进行初始化，如果是开发小程序，我们就直接放在<code>app.js</code>的<code>onLaunch</code>中即可，现在我们开发的是插件，所以放在插件目录的<code>index.js</code>中即可</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//  初始化云开发</span></span><br><span class="line">wx.cloud.init(&#123;</span><br><span class="line">  env: <span class="string">'环境ID'</span>  <span class="comment">// 这里的ID是我们之前创建环境时候的环境ID，不是环境的名字，环境一旦创建，ID将是唯一的。</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>初始化数据库</li>
+</ul>
+<p>在插件中组件的js文件<code>attached</code>进行数据库引用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> testDB = wx.cloud.database(&#123;</span><br><span class="line">  env: <span class="string">'环境ID'</span>  <span class="comment">// 这里的ID是我们之前创建环境时候的环境ID，不是环境的名字，环境一旦创建，ID将是唯一的。</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>查询店铺数据</li>
+</ul>
+<p>在正常的业务逻辑中，进入插件时是已经拿到店铺ID的，所以我们直接用已经有的店铺ID来查询店铺数据就好。</p>
+<p>云开发的接口不管是小程序端开始服务端都是支持<code>promise</code>的，所以我们直接使用<code>promise</code>的方式使用。</p>
+<p>首先通过<code>collection</code>来获取集合的引用，之后获取记录的引用即可，使用方式如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 查询store集合中`_id : that.data.storeId`的记录</span></span><br><span class="line">db.collection(<span class="string">'store'</span>).doc(that.data.storeId).get().then(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> &#123; data &#125; = res;</span><br><span class="line">    <span class="keyword">this</span>.setData(&#123;</span><br><span class="line">        store: data</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;).catch(<span class="function">(<span class="params">error</span>) =&gt;</span> &#123;</span><br><span class="line">    wx.showToast(&#123;</span><br><span class="line">        title: <span class="string">'加载店铺信息失败，请重新进入'</span>,</span><br><span class="line">        icon: <span class="string">'none'</span></span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="built_in">console</span>.error(error)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="云函数尝鲜"><a href="#云函数尝鲜" class="headerlink" title="云函数尝鲜"></a>云函数尝鲜</h3><p>我们已经获取到店铺的数据了，之后就要尝试提交数据了。</p>
+<p>在小程序端是可以直接使用<code>add</code>来提交数据的，但是并不建议这么做，考虑到预约成功会发送模板消息，以及要给插件适用方回调数据，使用小程序端API显然是不合适的。</p>
+<p>在插件中使用云开发其实这一点是有点点不爽的，因为自动创建的插件开发结构里是不包含云开发的，我尝试了把云开发的目录复制到插件开发的结构中并不可以，所以我们需要新建一个同样AppId的小程序进行云函数的开发。</p>
+<p>创建好的云开发结构中会比通常的小程序开发结构多一个<code>cloudfunctions</code>的目录(可以在<code>project.config.json</code>里修改<code>cloudfunctionRoot</code>)，这里用来储存云函数。云函数的每个目录里都有一个<code>package.json</code>文件，所以到这里，我在想是不是可以直使用npm来引入我们所需要的<code>module</code>，比如<code>axios</code>等，查看了<a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/guide/functions/npm.html" target="_blank" rel="noopener">官方文档</a>之后发现确实支持。</p>
+<h4 id="创建云函数"><a href="#创建云函数" class="headerlink" title="创建云函数"></a>创建云函数</h4><p>创建云函数可以直接在<code>cloudfunctions</code>目录中新建一个目录，名称为函数名，目录内至少包含一个<code>index.js</code>文件，改文件必须要有一个<code>exports.main</code>的入口函数。或者可以在开发者工具的编辑器中，云函数的本地根目录上右键，新建Node.js云函数。也可以直接在云开发控制台新建一个云函数，之后在开发者工具中同步函数列表。</p>
+<p>新建好的云函数<code>index.js</code>模板代码如下：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 云函数入口文件</span></span><br><span class="line"><span class="keyword">const</span> cloud = <span class="built_in">require</span>(<span class="string">'wx-server-sdk'</span>)</span><br><span class="line"></span><br><span class="line">cloud.init()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 云函数入口函数</span></span><br><span class="line">exports.main = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> wxContext = cloud.getWXContext()</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    event,</span><br><span class="line">    openid: wxContext.OPENID,</span><br><span class="line">    appid: wxContext.APPID,</span><br><span class="line">    unionid: wxContext.UNIONID,</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>入口函数中有两个参数<code>event</code>和<code>context</code>。</p>
+<p><code>event</code>就是调用云函数时候传入的参数，以及自动注入的小程序用户的<code>openid</code>和小程序的<code>appid</code>。<code>context</code>对象包含了此处调用的调用信息和运行状态，可以用它来了解服务运行的情况。</p>
+<h4 id="简单改造尝试云函数"><a href="#简单改造尝试云函数" class="headerlink" title="简单改造尝试云函数"></a>简单改造尝试云函数</h4><p>官方文档给了一个处理数据相加的例子，我们来试试。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 官方示例</span></span><br><span class="line">exports.main = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    sum: event.a + event.b</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="在小程序中调用云函数"><a href="#在小程序中调用云函数" class="headerlink" title="在小程序中调用云函数"></a>在小程序中调用云函数</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">wx.cloud.callFunction(&#123;</span><br><span class="line">  <span class="comment">// 云函数名称</span></span><br><span class="line">  name: <span class="string">'add'</span>,</span><br><span class="line">  <span class="comment">// 传给云函数的参数</span></span><br><span class="line">  data: &#123;</span><br><span class="line">    a: <span class="number">1</span>,</span><br><span class="line">    b: <span class="number">2</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  success: <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(res.result.sum) <span class="comment">// 3</span></span><br><span class="line">  &#125;,</span><br><span class="line">  fail: <span class="built_in">console</span>.error</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>到这里我们尝试时发现返回的并不是理想中的<code>sum = 3</code>，这里需要在云开发控制台中打开本地调试或者要在开发者工具中将该云函数右键上传并部署。其实这一步对于我们正常的开发和联调来说是略微有些麻烦的，并不能像我们正常node开发中，把环境改为本地域名，之后直接运行就可以，并且还要打开好几个窗口，略微有点点不爽。</p>
+<p>另外本地调试之前，我们要先进入云函数的目录中<code>npm install</code>或者<code>yarn</code>一下，否则本地调试会报错。</p>
+<p>我们现在本地调试中进行调试，选择本地调试窗口左侧要调试的云函数，勾选右侧的本地调试，之后修改请求参数(可以保存为模板方向下次调试使用)，点击调试，即可在<code>Source</code>中打断点以及在<code>Console</code>中看见返回的内容。</p>
+<h4 id="在服务端查询数据库"><a href="#在服务端查询数据库" class="headerlink" title="在服务端查询数据库"></a>在服务端查询数据库</h4><p>云函数的<code>Hello World</code> 就体验完了，我们尝试编码需求中所需要的云函数。</p>
+<p>新建一个云函数<code>reserve</code></p>
+<p>初始化云函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cloud.init(&#123;</span><br><span class="line">  env: cloud.DYNAMIC_CURRENT_ENV</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="引用数据库"><a href="#引用数据库" class="headerlink" title="引用数据库"></a>引用数据库</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> db = cloud.database()</span><br></pre></td></tr></table></figure>
+<h4 id="在集合上新增记录"><a href="#在集合上新增记录" class="headerlink" title="在集合上新增记录"></a>在集合上新增记录</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">await</span> db.collection(<span class="string">'todos'</span>).add(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    mobile,</span><br><span class="line">    name,</span><br><span class="line">    reserve_at,</span><br><span class="line">    time</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="修改返回结果"><a href="#修改返回结果" class="headerlink" title="修改返回结果"></a>修改返回结果</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">  code: <span class="number">1</span>,</span><br><span class="line">  msg: <span class="string">'添加成功'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="为了防止出现错误，我们使用try来包裹一下"><a href="#为了防止出现错误，我们使用try来包裹一下" class="headerlink" title="为了防止出现错误，我们使用try来包裹一下"></a>为了防止出现错误，我们使用<code>try</code>来包裹一下</h4><p>完整的云函数文件下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">cloud.init(&#123;</span><br><span class="line">  env: cloud.DYNAMIC_CURRENT_ENV</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">const</span> db = cloud.database();</span><br><span class="line"><span class="comment">// 云函数入口函数</span></span><br><span class="line">exports.main = <span class="keyword">async</span> (event, context) =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> wxContext = cloud.getWXContext()</span><br><span class="line">  <span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> &#123; mobile, name, reserve_at, time &#125; = event</span><br><span class="line">    <span class="keyword">await</span> db.collection(<span class="string">'reserve'</span>).add(&#123;</span><br><span class="line">      data: &#123;</span><br><span class="line">        mobile,</span><br><span class="line">        name,</span><br><span class="line">        reserve_at,</span><br><span class="line">        time,</span><br><span class="line">        openid: wxContext.OPENID,</span><br><span class="line">        appid: wxContext.APPID,</span><br><span class="line">        unionid: wxContext.UNIONID,</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      code: <span class="number">0</span>,</span><br><span class="line">      msg: <span class="string">'添加成功'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line">    <span class="built_in">console</span>.error(e)</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      code: <span class="number">-1</span>,</span><br><span class="line">      msg: <span class="string">'添加失败'</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>本地调试成功返回了<code>{code: 0,msg: &#39;添加成功&#39;}</code></p>
+<p>之后去数据库查看，已经多出了如下数据：<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"_id"</span>:<span class="string">"05a1947c5dd2606b01333ceb6ca8f34f"</span>,</span><br><span class="line">    <span class="attr">"reserve_at"</span>:<span class="string">"2019-11-12"</span>,</span><br><span class="line">    <span class="attr">"time"</span>:<span class="string">"上午"</span>,</span><br><span class="line">    <span class="attr">"openid"</span>:<span class="string">"orjAC5bpYbrTRRRWLdeh8Bbi8MuE"</span>,</span><br><span class="line">    <span class="attr">"appid"</span>:<span class="string">"wxba6cc8995c8d1ac3"</span>,</span><br><span class="line">    <span class="attr">"mobile"</span>:<span class="string">"19989897878"</span>,</span><br><span class="line">    <span class="attr">"name"</span>:<span class="string">"殷迦南"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="增加回调"><a href="#增加回调" class="headerlink" title="增加回调"></a>增加回调</h4><p>这是一个插件，必然要给插件的使用方回调相应的数据，所以我们试试对外发起请求是否方便。</p>
+<p>在这里我们使用<code>axios</code></p>
+<p>在云函数目录下<code>npm install axios --save</code> 或者<code>yarn add axios</code> </p>
+<ul>
+<li>引入axios</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> axios = <span class="built_in">require</span>(<span class="string">'axios'</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>增加回调<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> callback = <span class="keyword">await</span> axios(&#123;</span><br><span class="line">  method: <span class="string">'post'</span>,</span><br><span class="line">  url: <span class="string">'https://dev.xxxxx.com/xxxxx'</span>,</span><br><span class="line">  data</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>判断callback的状态码是否200判断是否回调成功。</p>
+<h3 id="尝试企业微信支持情况"><a href="#尝试企业微信支持情况" class="headerlink" title="尝试企业微信支持情况"></a>尝试企业微信支持情况</h3><p>在不使用云开发的情况下，<code>wx.qy.login</code>获取到<code>code</code>后，请求企业微信API是只能获取到<code>userid</code>，获取不到<code>openid</code>和<code>unionid</code>，但是在云开发的测试体验中是可以获取的到，其结果和个人微信相同，<br>所以在企业微信的开发中依旧不能避免走<code>wx.qy.login</code>来获取<code>code</code>从而获取到用户信息。但是其他方面支持的还是很完善的。</p>
+<h3 id="与外部网络交互情况"><a href="#与外部网络交互情况" class="headerlink" title="与外部网络交互情况"></a>与外部网络交互情况</h3><p>在之前做回调的时候，是可以用请求外部网络的，那外部网络如何访问云函数或者云数据库呢？</p>
+<p>在仔细看了云开发文档之后发现，HTTP触发云函数和调用数据库必须要有<code>access_token</code>，所以肯定不能用做企业微信等平台的回调请求，类似的请求依旧是需要单独开发后端接口来接收回调，后端接口在获取<code>access_token</code>之后请求云函数或云数据库进行下一步操作。</p>
+<p>因此，也不适合基于云开发开发一套后台web管理系统，web后台依旧需要对应的后端服务。</p>
+<h3 id="日志运维、监控、分析统计"><a href="#日志运维、监控、分析统计" class="headerlink" title="日志运维、监控、分析统计"></a>日志运维、监控、分析统计</h3><p>日志运维、监控和分析统计是云开发的一大亮点。</p>
+<p>每一次请请求日志都会被记录下来，包括错误信息以及请求接口的情况，另外还有高级日志支持<code>and</code>、<code>or</code>、<code>逻辑运算连接符</code>等操作进行查询，极大的方便了错误排查和运维。</p>
+<p>开发者平台中的监控可以监控函数调用次数、错误次数、请求时间以、外网流量以及资源使用情况等。分析统计具体的用户访问情况，结合日志，可以清楚的看到每个用户在小程序上的具体操作，这对开发和运营来说也是一大助力。</p>
+<p>但是这些东西似乎目前只能在微信开发者工具中使用和查看，我很期待支持触发回调、一键同步到TAPD指派具体开发人员等操作。</p>
+<h3 id="是否支持其他平台"><a href="#是否支持其他平台" class="headerlink" title="是否支持其他平台"></a>是否支持其他平台</h3><p>与其他平台打通的前提是拥有自身的一套用户体系，单独使用云开发是不现实的，与接收外部请求一样，依旧需要现有后端代码进行”转发”之后才有实现的可能性。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>云开发有什么能力</li>
+<li>在已有的开发架构上融入云开发的兼容性是否良好，是如何处理的</li>
+<li>如何请求和接收外部的网络</li>
+<li>对于一个小程序来说，一般都至少要有一个web后台来供运营使用，运营后台是否也可以使用云开发</li>
+<li>是否支持其他平台(支付宝、头条、淘宝)小程序的开发和使用</li>
+<li>企业微信的兼容性如何</li>
+<li>云开发对接企业微信或者其他平台是否方便</li>
+</ul>
+<p>先解答一下最开始的几个疑惑</p>
+<p>Q:云开发有什么能力<br>A:云存储、云数据库、云函数、日志运维、监控，分析统计</p>
+<p>Q:在已有的开发架构上融入云开发的兼容性是否良好，是如何处理的<br>A:云开发和已有架构是并不冲突的，可以随时加入云开发，减少原本服务器压力</p>
+<p>Q:如何请求和接收外部的网络<br>A:可以使用node进行对外的请求，在接收外部请求的时候必须要携带<code>access_token</code>进行安全校验</p>
+<p>Q:运营后台是否也可以使用云开发<br>A:从外部网络请求云函数和云数据库来看，并不是很友好，需要使用自己的服务端进行“中转“</p>
+<p>Q:是否支持其他平台(支付宝、头条、淘宝)小程序的开发和使用<br>A:在有自身一套用户体系的前提下，使用自己的服务端中转其他平台小程序的请求和数据是可以实现多平台使用的</p>
+<p>Q:企业微信的兼容性如何<br>A:使用云开发来开发企业微信和不使用云开发以及使用云开发的个人小程序来对比，1、弱化了后端和运维，降低了成本；2、可以做到快速迭代和上线；3、暂时无法进行企业微信的免鉴权；</p>
+<p>Q:云开发对接企业微信或者其他平台是否方便<br>A:往往其他平台都是具有回调等常规操作的，单纯依靠云开发略有困难</p>
+<p>大概总结一下目前版本的云开发锁具有的优缺点吧</p>
+<p>优点：<br>1、对于个人微信小程序来说，小程序相关的业务逻辑完全做到了云端开发，并且天然鉴权，开发者只需编写自身业务逻辑代码<br>2、数据库即可在小程序端操作也可以在云函数操作<br>3、不需要自建CDN进行资源存储<br>4、可以把一个前端工程师在无任何学习成本的情况下变为一个全栈工程师，开发出一个高质量的小程序<br>5、基于业务逻辑的0后端0运维<br>5、基于大厂服务来看，非常的安全和稳定</p>
+<p>不足：<br>1、对于一个功能复杂的小程序来说，非业务逻辑(web后台等)暂时做不到完全做到0后端0运维，依旧需要后端支持<br>2、暂不支持企业微信的天然鉴权</p>
+<p>总体来说我还是非常看好云开发，据了解，云开发还正在进一步封装腾讯云、微信平台的其他服务，包括 AI、音视频、订阅消息、微信支付等，提供扩展能力，让开发者可以更便捷地调用，在更多业务场景中可以相关能力。平台的扩展能力还会进一步加强。这是一种新的理念和新的标准，或许未来真的可以做到所有的产品都可以使用云开发。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/10/25/2019-10-25-API规范/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1893,186 +2176,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/06/01/2019-06-01-重学前端01/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/06/01/2019-06-01-重学前端01/" itemprop="url">重学前端01-明确前端学习路线与方法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-01T11:50:05+08:00">
-                2019-06-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">前端笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/06/01/2019-06-01-重学前端01/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/06/01/2019-06-01-重学前端01/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="零散学习造成的问题"><a href="#零散学习造成的问题" class="headerlink" title="零散学习造成的问题"></a>零散学习造成的问题</h1><ul>
-<li><strong>首先是前端的基础知识</strong>，常常有一些工作多年的工程师，在看到一些我认为很基础的 JavaScript 语法的时候，还会惊呼“居然可以这样”。是的，基础知识的欠缺会让你束手束脚，更限制你解决问题的思路。</li>
-<li><strong>其次，技术上存在短板，就会导致前端开发者的上升通道不甚顺畅</strong>。特别是一些小公司的程序员，只能靠自己摸索，这样就很容易陷入重复性劳动的陷阱，最终耽误自己的职业发展。</li>
-<li>除此之外，前端工程师也会面临<strong>技术发展问题带来的挑战</strong>。前端社区高度活跃，前端标准也在快速更新，这样蓬勃发展对技术来说无疑是好事，但是副作用也显而易见，它使得前端工程师的学习压力变得很大。</li>
-</ul>
-<h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>把前端技术背后的设计原理和知识体系讲清楚，让你能对前端技术产生整体认知，这样才能够在未来汹涌而来的新技术中保持领先的状态。</p>
-<h1 id="学习路径与方法"><a href="#学习路径与方法" class="headerlink" title="学习路径与方法"></a>学习路径与方法</h1><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ul>
-<li>带你摸索出适合自己的前端学习方法；</li>
-<li>帮助你建立起前端技术的知识架构；</li>
-<li>让你理解前端技术背后的核心思想。</li>
-</ul>
-<h2 id="两个学习方法"><a href="#两个学习方法" class="headerlink" title="两个学习方法"></a>两个学习方法</h2><h3 id="建立知识架构"><a href="#建立知识架构" class="headerlink" title="建立知识架构"></a>建立知识架构</h3><p>类型转换、this指针、闭包这样的知识点之间没有任何逻辑关系。它们既不是并列关系，又不是递进关系，合在一起，也就没有任何意义。这样的知识架构，无法帮助我们去发现问题和理解问题。</p>
-<p>对于任何计算机语言来说，必定是“用规定的文法，去表达特定语义，最终操作运行时的”一个过程。文法可以分成词法和语法，这来自编译原理的划分，同样是完备的。语义则跟语法具有一一对应关系。</p>
-<p>程序 = 算法 + 数据结构，那么，对运行时来说，类型就是数据结构，执行过程就是算法。</p>
-<ul>
-<li>文法<ul>
-<li>词法</li>
-<li>语法</li>
-</ul>
-</li>
-<li>语义</li>
-<li>运行时<ul>
-<li>类型</li>
-<li>执行过程</li>
-</ul>
-</li>
-</ul>
-<h3 id="追本溯源"><a href="#追本溯源" class="headerlink" title="追本溯源"></a>追本溯源</h3><p>追本溯源，其实就是关注技术提出的背景，关注原始的论文或者文章，关注作者说的话。<br>操作起来也非常简单：翻翻资料（一般 wiki 上就有）找找历史上的文章和人物，再顺藤摸瓜翻出来历史资料就可以了，如果翻出来的是历史人物（幸亏互联网的历史不算悠久），你也可以试着发封邮件问问。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2123,7 +2226,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-count">42</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2134,7 +2237,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2145,7 +2248,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">47</span>
+                  <span class="site-state-item-count">50</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
