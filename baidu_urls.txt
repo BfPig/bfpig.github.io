@@ -4,8 +4,8 @@ https://blog.ibfpig.top/2019/10/25/2019-10-25-API规范/
 https://blog.ibfpig.top/2019/09/02/2019-09-02-mac_app_start/
 https://blog.ibfpig.top/2019/08/22/2019-08-22-frp内网穿透/
 https://blog.ibfpig.top/2019/08/22/2019-08-22-WSL 服务自动启动/
-https://blog.ibfpig.top/2019/07/19/2019-08-13-ES2019-for-of/
 https://blog.ibfpig.top/2019/07/19/2019-07-19-Flutter 生命周期/
+https://blog.ibfpig.top/2019/07/19/2019-08-13-ES2019-for-of/
 https://blog.ibfpig.top/2019/06/18/2019-06-18-小程序遮罩穿透/
 https://blog.ibfpig.top/2019/06/01/2019-06-01-重学前端03/
 https://blog.ibfpig.top/2019/06/01/2019-06-01-重学前端02/
