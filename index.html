@@ -307,6 +307,199 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2020/05/12/2020-05-12-ssh登录慢/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="殷迦南">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="殷迦南小记录">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/12/2020-05-12-ssh登录慢/" itemprop="url">ssh登录慢</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-05-12T16:14:15+08:00">
+                2020-05-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/" itemprop="url" rel="index">
+                    <span itemprop="name">ubuntu</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/ssh/" itemprop="url" rel="index">
+                    <span itemprop="name">ssh</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ubuntu/ssh/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/05/12/2020-05-12-ssh登录慢/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2020/05/12/2020-05-12-ssh登录慢/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>连接ssh时，需要10~20s以上，难以忍受，在网上找了一圈，基本上都是说修改sshd以下三个配置</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">GSSAPIAuthentication no</span><br><span class="line">UsePAM no</span><br><span class="line">UseDNS no</span><br></pre></td></tr></table></figure>
+<p>三个参数挨个尝试了下，发现影响最大的是<code>UsePAM</code>，</p>
+<p>大概了解了下这三个参数，都是安全相关的</p>
+<ul>
+<li><p>GSSAPIAuthentication是</p>
+</li>
+<li><p>UseDNS主要是是反向查客户端的主机名</p>
+</li>
+<li><p>UsePAM是Unix的PAM登陆机制，基于用户名和 ip 地址段的登陆认证和限制</p>
+</li>
+</ul>
+<p>由于<code>GSSAPIAuthentication</code>，<code>UseDNS</code>两个影响不大，</p>
+<p>隐藏着两项我并未关闭，</p>
+<p>大概了解了一下，PAM登录机制，在我的服务器中并未有必要需求，</p>
+<p>并且我另外设置了<code>PermitEmptyPasswords</code>,<code>PasswordAuthentication</code>，在安全性上对<code>UsePAM</code>依赖不高</p>
+<p>所以我这里直接关闭了，具体业务还是要具体看</p>
+<h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><p><a href="https://community.bwbot.org/topic/185/ubuntu-ssh%E7%99%BB%E5%85%A5%E9%80%9F%E5%BA%A6%E5%A4%AA%E6%85%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95" target="_blank" rel="noopener">ubuntu ssh登入速度太慢的解决办法</a></p>
+<p><a href="http://yuex.in/post/2013/09/config-sshd-using-pam.html" target="_blank" rel="noopener">配置 sshd 使用 pam 认证小结</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2020/04/15/2020-04-15-创建远程SMB服务/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2142,169 +2335,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.ibfpig.top/2019/07/19/2019-08-13-ES2019-for-of/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="殷迦南">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="殷迦南小记录">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/07/19/2019-08-13-ES2019-for-of/" itemprop="url">【译】Flutter 生命周期</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-19T10:29:05+08:00">
-                2019-07-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Flutter/" itemprop="url" rel="index">
-                    <span itemprop="name">Flutter</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/07/19/2019-08-13-ES2019-for-of/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2019/07/19/2019-08-13-ES2019-for-of/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li>initState：widget创建执行的第一个方法，可以再里面初始化一些数据，以及绑定控制器</li>
-<li>didChangeDependencies：当State对象的依赖发生变化时会被调用；例如：在之前build() 中包含了一个InheritedWidget，然后在之后的build() 中InheritedWidget发生了变化，那么此时InheritedWidget的子widget的didChangeDependencies()回调都会被调用。InheritedWidget这个widget可以由父控件向子控件共享数据，案例可以参考 scoped_model开源库。</li>
-<li>build ：它主要是用于构建Widget子树的。</li>
-<li>reassemble：此回调是专门为了开发调试而提供的，在热重载(hot reload)时会被调用，此回调在Release模式下永远不会被调用。</li>
-<li>didUpdateWidget：当树rebuid的时候会调用该方法。</li>
-<li>deactivate:当State对象从树中被移除时，会调用此回调。</li>
-<li>dispose():当State对象从树中被永久移除时调用；通常在此回调中释放资源。</li>
-</ul>
-<p>注：代码中的didChangeAppLifecycleState方法复写需要State with WidgetsBindingObserver这个抽象类</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> initState() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement initState</span></span><br><span class="line">    <span class="keyword">super</span>.initState();</span><br><span class="line">    WidgetsBinding.instance.addObserver(<span class="keyword">this</span>);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'initState'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didChangeAppLifecycleState(AppLifecycleState state) &#123;</span><br><span class="line">    <span class="built_in">print</span>(state.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didChangeDependencies() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement didChangeDependencies</span></span><br><span class="line">    <span class="keyword">super</span>.didChangeDependencies();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'didChangeDependencies'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> didUpdateWidget(LifeDemo oldWidget) &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement didUpdateWidget</span></span><br><span class="line">    <span class="keyword">super</span>.didUpdateWidget(oldWidget);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'didUpdateWidget'</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  Widget build(BuildContext context) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'build'</span>);</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement build</span></span><br><span class="line">    <span class="keyword">return</span> MaterialApp(</span><br><span class="line">      home: Center(</span><br><span class="line">          child: GestureDetector(</span><br><span class="line">        child: <span class="keyword">new</span> Text(<span class="string">'lifeCycle'</span>),</span><br><span class="line">        onTap: () &#123;</span><br><span class="line">          Navigator.of(context)</span><br><span class="line">              .push(<span class="keyword">new</span> MaterialPageRoute(builder: (BuildContext c) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> Text(<span class="string">'sdfs'</span>);</span><br><span class="line">          &#125;));</span><br><span class="line">        &#125;,</span><br><span class="line">      )),</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> reassemble() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement reassemble</span></span><br><span class="line">    <span class="keyword">super</span>.reassemble();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'reassemble'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> deactivate() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement deactivate</span></span><br><span class="line">    <span class="keyword">super</span>.deactivate();</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'deactivate'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="meta">@override</span></span><br><span class="line">  <span class="keyword">void</span> dispose() &#123;</span><br><span class="line">    <span class="comment">// <span class="doctag">TODO:</span> implement dispose</span></span><br><span class="line">    <span class="keyword">super</span>.dispose();</span><br><span class="line">    WidgetsBinding.instance.addObserver(<span class="keyword">this</span>);</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">'dispose'</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2355,7 +2385,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">45</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -2366,7 +2396,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-count">46</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -2377,7 +2407,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">53</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
